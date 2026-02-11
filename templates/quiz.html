@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <h2>Página {{ page }} / {{ total_pages }}</h2>
+
+    <form method="post" action="{{ url_for('quiz_post', page=page) }}">
+      <ul class="list">
+        {% for q in questions %}
+          {% set qid = q.id|string %}
+          <li class="item">
+            <label>
+              <input type="checkbox" name="q_{{ qid }}" value="1"
+                {% if answers.get(qid) %}checked{% endif %}>
+              {{ q.text }}
+            </label>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class="actions">
+        {% if page > 1 %}
+          <a class="button secondary" href="{{ url_for('quiz_get', page=page-1) }}">⬅ Anterior</a>
+        {% endif %}
+        <button class="button" type="submit">
+          {% if page == total_pages %}Ver resultado{% else %}Siguiente ➜{% endif %}
+        </button>
+      </div>
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <h2>Resultado</h2>
+
+    {% if max_score == 0 %}
+      <p>No marcaste afirmaciones. Volvé y seleccioná algunas.</p>
+    {% else %}
+      <p><strong>Mayor puntaje:</strong> {{ max_score }} (Tipo/s: {{ top_types | join(", ") }})</p>
+      <table>
+        <thead>
+          <tr><th>Tipo</th><th>Puntaje</th></tr>
+        </thead>
+        <tbody>
+          {% for t, s in sorted_scores %}
+            <tr><td>{{ t }}</td><td>{{ s }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
+    <div class="actions">
+      <a class="button secondary" href="{{ url_for('quiz_get', page=1) }}">Volver</a>
+      <a class="button" href="{{ url_for('reset') }}">Reiniciar</a>
+    </div>
+  </div>
+{% endblock %}

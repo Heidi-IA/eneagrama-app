@@ -1,0 +1,1360 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Protejo a quienes se encuentran bajo mi autoridad.",
+      "type": 5
+    },
+    {
+      "id": 2,
+      "text": "Me cuesta convencerme de que aquello que compré fue una buena decisión.",
+      "type": 6
+    },
+    {
+      "id": 3,
+      "text": "No hay nada tan urgente que no pueda esperar hasta mañana.",
+      "type": 9
+    },
+    {
+      "id": 4,
+      "text": "Siento que soy una persona apreciada por los demás a través de mis logros.",
+      "type": 3
+    },
+    {
+      "id": 5,
+      "text": "Me duele mucho cuando mis amistades se reúnen y no me participan.",
+      "type": 3
+    },
+    {
+      "id": 6,
+      "text": "El dinero es secundario, sólo sirve para atender las necesidades.",
+      "type": 5
+    },
+    {
+      "id": 7,
+      "text": "Suelen acusarme de ser una persona indisciplinada, dispersa, inquieta, superficial.",
+      "type": 7
+    },
+    {
+      "id": 8,
+      "text": "Me considero una persona sensible, auténtica, especial y profunda.",
+      "type": 4
+    },
+    {
+      "id": 9,
+      "text": "A menudo un defecto final arruina el conjunto.",
+      "type": 1
+    },
+    {
+      "id": 10,
+      "text": "Puedo arbitrar desapasionadamente, porque para mí las dos partes son iguales.",
+      "type": 9
+    },
+    {
+      "id": 11,
+      "text": "Es frecuente que otras personas carezcan de capacidad para comprender mis sentimientos.",
+      "type": 4
+    },
+    {
+      "id": 12,
+      "text": "Me gusta la buena compañía, el afecto, la independencia y las conversaciones estimulantes y graciosas.",
+      "type": 7
+    },
+    {
+      "id": 13,
+      "text": "Soy una persona libre, nada me detiene.",
+      "type": 8
+    },
+    {
+      "id": 14,
+      "text": "Me gusta demostrar que puedo hacer lo que me propongo, aunque me consuma todo el tiempo.",
+      "type": 3
+    },
+    {
+      "id": 15,
+      "text": "Con frecuencia me enfado porque ni yo ni los demás hacemos mejor las cosas.",
+      "type": 1
+    },
+    {
+      "id": 16,
+      "text": "Con frecuencia las dudas me invaden.",
+      "type": 6
+    },
+    {
+      "id": 17,
+      "text": "El dinero y las cosas materiales son importantes, me encanta compartirlas.",
+      "type": 2
+    },
+    {
+      "id": 18,
+      "text": "A menudo me siento atrás para observar a los demás, en lugar de involucrarme en la acción.",
+      "type": 5
+    },
+    {
+      "id": 19,
+      "text": "Puedo luchar con convicción por lo que entiendo que es justo.",
+      "type": 8
+    },
+    {
+      "id": 20,
+      "text": "Cuando me enojo, pienso que las personas son ignorantes, poco profundas, etc.",
+      "type": 5
+    },
+    {
+      "id": 21,
+      "text": "No puedo negar mi atención a alguien sin tener una buena excusa.",
+      "type": 2
+    },
+    {
+      "id": 22,
+      "text": "Si los demás fueran tan sensibles como yo, el mundo sería más humano.",
+      "type": 4
+    },
+    {
+      "id": 23,
+      "text": "Me cuesta mucho contar historias sin exagerar un poquito o ponerle algún toque gracioso para captar la atención.",
+      "type": 7
+    },
+    {
+      "id": 24,
+      "text": "Con frecuencia mis propias críticas y las de otros pululan en mi cabeza.",
+      "type": 1
+    },
+    {
+      "id": 25,
+      "text": "Tengo más propensión a resignarme que a luchar.",
+      "type": 9
+    },
+    {
+      "id": 26,
+      "text": "Cuando he temido que las necesidades y demandas de los demás me superasen, he evitado la intimidad.",
+      "type": 3
+    },
+    {
+      "id": 27,
+      "text": "El dinero es seguridad, es necesario ahorrar.",
+      "type": 6
+    },
+    {
+      "id": 28,
+      "text": "Me gusta que me digan que mi ayuda fue muy importante.",
+      "type": 2
+    },
+    {
+      "id": 29,
+      "text": "La vida es una oportunidad para alcanzar aquello que me propongo, aspiro a hacer mejor.",
+      "type": 3
+    },
+    {
+      "id": 30,
+      "text": "Me gusta liderar, defender, luchar y proteger.",
+      "type": 8
+    },
+    {
+      "id": 31,
+      "text": "Me gusta sintetizar y reunir ideas diferentes.",
+      "type": 5
+    },
+    {
+      "id": 32,
+      "text": "Me cuesta relajarme y estar alegre.",
+      "type": 1
+    },
+    {
+      "id": 33,
+      "text": "Frecuentemente me encuentro evaluando a los demás como posibles amenazas para mí.",
+      "type": 6
+    },
+    {
+      "id": 34,
+      "text": "Tiendo a no juzgar a las personas.",
+      "type": 9
+    },
+    {
+      "id": 35,
+      "text": "La mayoría de la gente no aprecia la auténtica belleza de la vida.",
+      "type": 4
+    },
+    {
+      "id": 36,
+      "text": "El dinero es para darse gustos y disfrutar.",
+      "type": 7
+    },
+    {
+      "id": 37,
+      "text": "Me gusta crear cosas nuevas y obtener reconocimiento por mi originalidad, aunque tenga que superarme permanentemente.",
+      "type": 4
+    },
+    {
+      "id": 38,
+      "text": "Generalmente, y hasta tener todo pensado, me lleva bastante tiempo empezar o hacer algo.",
+      "type": 5
+    },
+    {
+      "id": 39,
+      "text": "Me enojo cuando los demás no escuchan lo que tengo para decirles.",
+      "type": 1
+    },
+    {
+      "id": 40,
+      "text": "Suelen acusarme de ser una persona posesiva, manipuladora.",
+      "type": 2
+    },
+    {
+      "id": 41,
+      "text": "Me considero una persona fuerte, justa, independiente y enérgica.",
+      "type": 8
+    },
+    {
+      "id": 42,
+      "text": "Cuando me presentan a alguien, soy una persona entretenida y afectuosa.",
+      "type": 7
+    },
+    {
+      "id": 43,
+      "text": "Tiendo a quitar importancia a las cosas para que los demás se tranquilicen.",
+      "type": 9
+    },
+    {
+      "id": 44,
+      "text": "En general, prefiero estar dentro del desarrollo de una operación que observar como marcha.",
+      "type": 3
+    },
+    {
+      "id": 45,
+      "text": "Actúo con sentido del deber y responsabilidad.",
+      "type": 6
+    },
+    {
+      "id": 46,
+      "text": "Se puede decir que soy una persona afectuosa, perceptiva, generosa, empática, atenta.",
+      "type": 2
+    },
+    {
+      "id": 47,
+      "text": "Me fastidian las personas que no son lógicas.",
+      "type": 5
+    },
+    {
+      "id": 48,
+      "text": "Puedo conciliar para que reine la armonía.",
+      "type": 9
+    },
+    {
+      "id": 49,
+      "text": "Si los demás fueran más decididos y determinados, no malgastarían su tiempo y energía.",
+      "type": 8
+    },
+    {
+      "id": 50,
+      "text": "Me molesta el fracaso, eso es para los débiles.",
+      "type": 3
+    },
+    {
+      "id": 51,
+      "text": "La mayoría de la gente no tiene sentimientos profundos como los míos.",
+      "type": 4
+    },
+    {
+      "id": 52,
+      "text": "Soy una persona permisiva conmigo misma, hay pocas cosas que no disfrute.",
+      "type": 7
+    },
+    {
+      "id": 53,
+      "text": "Me esfuerzo mucho por corregir mis faltas.",
+      "type": 1
+    },
+    {
+      "id": 54,
+      "text": "Ante la inseguridad reacciono volviéndome una persona terca y poniéndome a la defensiva.",
+      "type": 6
+    },
+    {
+      "id": 55,
+      "text": "Me gusta que las personas me compartan lo que sienten.",
+      "type": 2
+    },
+    {
+      "id": 56,
+      "text": "La gente suele pensar que soy el alma de las reuniones.",
+      "type": 7
+    },
+    {
+      "id": 57,
+      "text": "Las primeras impresiones son muy importantes, por eso me gusta proyectar una imagen triunfadora.",
+      "type": 3
+    },
+    {
+      "id": 58,
+      "text": "Me gusta ver las cosas en perspectiva, retroceder e incluirlo todo. Si dejo algo fuera, me acuso por ser tan simplista.",
+      "type": 5
+    },
+    {
+      "id": 59,
+      "text": "La vida es una sucesión de emociones profundas, aspiro a vivir mejor.",
+      "type": 4
+    },
+    {
+      "id": 60,
+      "text": "Es muy importante para mi la lealtad al grupo.",
+      "type": 6
+    },
+    {
+      "id": 61,
+      "text": "Necesito vivir intensamente, sentir la adrenalina.",
+      "type": 8
+    },
+    {
+      "id": 62,
+      "text": "Hacer lo correcto me lleva a sacrificar el tiempo que tendría para el ocio y al descanso.",
+      "type": 1
+    },
+    {
+      "id": 63,
+      "text": "Aspiro a estar mejor.",
+      "type": 9
+    },
+    {
+      "id": 64,
+      "text": "Me gusta intimar, servir, entregar.",
+      "type": 2
+    },
+    {
+      "id": 65,
+      "text": "Me acusan de ser una persona dramática, pero en realidad no me comprenden.",
+      "type": 4
+    },
+    {
+      "id": 66,
+      "text": "Me es muy difícil ir en contra de lo dispuesto por la autoridad.",
+      "type": 6
+    },
+    {
+      "id": 67,
+      "text": "Me he dado cuenta que, frecuentemente, me catalogan como demasiado racional.",
+      "type": 5
+    },
+    {
+      "id": 68,
+      "text": "Me considero una persona simple, serena, equilibrada.",
+      "type": 9
+    },
+    {
+      "id": 69,
+      "text": "En cualquier juego, aunque sea sólo por diversión, siempre me gusta ganar.",
+      "type": 3
+    },
+    {
+      "id": 70,
+      "text": "Normalmente soy una persona demasiado intransigente y exigente con los demás.",
+      "type": 1
+    },
+    {
+      "id": 71,
+      "text": "Las cosas siempre funcionan de la mejor manera posible.",
+      "type": 7
+    },
+    {
+      "id": 72,
+      "text": "A veces soy una persona muy impulsiva, impongo mis verdades.",
+      "type": 8
+    },
+    {
+      "id": 73,
+      "text": "Noto enseguida si algo no funciona, está mal, o está fuera de lugar.",
+      "type": 1
+    },
+    {
+      "id": 74,
+      "text": "Me gusta tener objetivos claros y saber en qué punto del camino hacia ellos me encuentro.",
+      "type": 3
+    },
+    {
+      "id": 75,
+      "text": "Me parece que siento el peligro y la amenaza más que otras personas.",
+      "type": 6
+    },
+    {
+      "id": 76,
+      "text": "Si los demás fueran más apacibles y relajados viviríamos en un mundo más tranquilo.",
+      "type": 9
+    },
+    {
+      "id": 77,
+      "text": "Me molesta lo rutinario y repetitivo, prefiero lo distinto y único.",
+      "type": 4
+    },
+    {
+      "id": 78,
+      "text": "Me gusta animar a la gente.",
+      "type": 7
+    },
+    {
+      "id": 79,
+      "text": "Siento orgullo de ser una persona objetiva y clara.",
+      "type": 5
+    },
+    {
+      "id": 80,
+      "text": "Me gusta ser quien decide y defender a los que están conmigo, aunque tenga que enfrentar cualquier situación.",
+      "type": 8
+    },
+    {
+      "id": 81,
+      "text": "Aunque a veces no quisiera comprometerme, me cuesta decir que no y poner límites a mi entrega.",
+      "type": 2
+    },
+    {
+      "id": 82,
+      "text": "Necesito gran cantidad de espacio y de tiempos privados para estudiar y reflexionar.",
+      "type": 5
+    },
+    {
+      "id": 83,
+      "text": "Me pregunto a menudo si tengo suficiente valor para hacer lo que hay que hacer.",
+      "type": 6
+    },
+    {
+      "id": 84,
+      "text": "Necesito estar siempre en actividad, me hace sentir realmente con vida.",
+      "type": 3
+    },
+    {
+      "id": 85,
+      "text": "Parece que me preocupo más que otros para que todo esté prolijo y ordenado.",
+      "type": 1
+    },
+    {
+      "id": 86,
+      "text": "Mi vida es como una montaña rusa: a veces estoy en la cima y otras en un pozo, me cuesta equilibrar mis emociones.",
+      "type": 4
+    },
+    {
+      "id": 87,
+      "text": "La vida es una oportunidad para brindarme a los otros, aspiro a dar mejor.",
+      "type": 2
+    },
+    {
+      "id": 88,
+      "text": "Soy una persona tranquila y pacífica, estoy bien así.",
+      "type": 9
+    },
+    {
+      "id": 89,
+      "text": "Me gusta casi todo lo que encuentro.",
+      "type": 7
+    },
+    {
+      "id": 90,
+      "text": "La vida es una lucha constante, hay que enfrentarla con coraje.",
+      "type": 8
+    },
+    {
+      "id": 91,
+      "text": "No sé como participar en conversaciones intrascendentes.",
+      "type": 5
+    },
+    {
+      "id": 92,
+      "text": "Me gusta sentirme una persona juguetona, infantil, que se me vea alegre.",
+      "type": 7
+    },
+    {
+      "id": 93,
+      "text": "Necesito tranquilidad, que nadie me apure, aunque mi calma pueda irritar a los demás.",
+      "type": 9
+    },
+    {
+      "id": 94,
+      "text": "Para mí es más importante disfrutar de la seguridad que desarrollar mis propios intereses.",
+      "type": 6
+    },
+    {
+      "id": 95,
+      "text": "Me molesta cuando no puedo imponerme, son situaciones que me desbordan.",
+      "type": 8
+    },
+    {
+      "id": 96,
+      "text": "Me cuesta compartir mis sentimientos más profundos porque temo que desvaloricen mi imagen.",
+      "type": 3
+    },
+    {
+      "id": 97,
+      "text": "Si algo no está bien, realmente me molesta.",
+      "type": 1
+    },
+    {
+      "id": 98,
+      "text": "Me gusta dar para que me acepten, aunque tenga que postergar mis propias necesidades.",
+      "type": 2
+    },
+    {
+      "id": 99,
+      "text": "Aun en la rutina diaria, me gusta poner mi impronta personal.",
+      "type": 4
+    },
+    {
+      "id": 100,
+      "text": "Por naturaleza soy una persona reservada, introvertida, independiente.",
+      "type": 5
+    },
+    {
+      "id": 101,
+      "text": "Me gustaría que los demás estuviesen mejor dispuestos respecto a todo.",
+      "type": 7
+    },
+    {
+      "id": 102,
+      "text": "No creo que yo haga algo extraordinario, soy una persona común.",
+      "type": 6
+    },
+    {
+      "id": 103,
+      "text": "Suelo juzgar a las personas por su capacidad de triunfar.",
+      "type": 3
+    },
+    {
+      "id": 104,
+      "text": "Muchas veces siento que no hay nadie como yo, otras que los demás son mejores.",
+      "type": 4
+    },
+    {
+      "id": 105,
+      "text": "A veces soy una persona demasiado generosa.",
+      "type": 2
+    },
+    {
+      "id": 106,
+      "text": "Tiendo a cuidar los detalles, el orden y la precisión.",
+      "type": 1
+    },
+    {
+      "id": 107,
+      "text": "Aun cuando me encuentre en desventaja, me enfrento sin miedo a la situación",
+      "type": 8
+    },
+    {
+      "id": 108,
+      "text": "A veces soy complaciente, aunque piensen que no me juego por una posición.",
+      "type": 9
+    },
+    {
+      "id": 109,
+      "text": "Necesito que se den cuenta de mis necesidades, así como yo estoy pendiente de los demás.",
+      "type": 2
+    },
+    {
+      "id": 110,
+      "text": "Me han apreciado por mi inquebrantable espíritu y mi gran sentido del humor.",
+      "type": 7
+    },
+    {
+      "id": 111,
+      "text": "Me molesta que me manden.",
+      "type": 8
+    },
+    {
+      "id": 112,
+      "text": "Si surge un problema, primero lo estudio por mi cuenta y luego lo discuto con los demás.",
+      "type": 5
+    },
+    {
+      "id": 113,
+      "text": "Me identifico tanto con mi trabajo o rol que hasta a veces me olvido de quién soy.",
+      "type": 3
+    },
+    {
+      "id": 114,
+      "text": "Me gusta expresar lo que siento en el arte, la originalidad, lo diferente y que de esa manera me reconozcan.",
+      "type": 4
+    },
+    {
+      "id": 115,
+      "text": "Sin leyes estrictas, es difícil decir lo que tienen que hacer las personas.",
+      "type": 6
+    },
+    {
+      "id": 116,
+      "text": "Me gusta ordenar, organizar, planificar.",
+      "type": 1
+    },
+    {
+      "id": 117,
+      "text": "La vida es simple, para qué complicarnos.",
+      "type": 9
+    },
+    {
+      "id": 118,
+      "text": "Soy sumamente competente, mi vida es interesante.",
+      "type": 3
+    },
+    {
+      "id": 119,
+      "text": "Me olvido fácilmente de lo que me produce dolor, no creo que sea bueno estar mucho tiempo triste.",
+      "type": 7
+    },
+    {
+      "id": 120,
+      "text": "Si los demás se parecieran a mí, todo sería mejor.",
+      "type": 1
+    },
+    {
+      "id": 121,
+      "text": "Tiendo a ser una persona solitaria, me cuesta expresar mis emociones.",
+      "type": 5
+    },
+    {
+      "id": 122,
+      "text": "Si los demás pensaran más en el prójimo, el mundo sería más solidario.",
+      "type": 2
+    },
+    {
+      "id": 123,
+      "text": "Me he inclinado a ser una persona muy emotiva y poco disciplinada.",
+      "type": 4
+    },
+    {
+      "id": 124,
+      "text": "Yo manejo mis tiempos.",
+      "type": 8
+    },
+    {
+      "id": 125,
+      "text": "Me molestan que me presionen, prefiero gozar de la tranquilidad y comodidad.",
+      "type": 9
+    },
+    {
+      "id": 126,
+      "text": "Me gusta colaborar con los demás, ellos pueden fiarse de mí.",
+      "type": 6
+    },
+    {
+      "id": 127,
+      "text": "Soy consciente de las contradicciones y muy sensible a ellas.",
+      "type": 6
+    },
+    {
+      "id": 128,
+      "text": "Necesito que las cosas salgan como las había pensado, que se hagan bien.",
+      "type": 1
+    },
+    {
+      "id": 129,
+      "text": "Puedo percibir fácilmente lo que la gente necesita.",
+      "type": 2
+    },
+    {
+      "id": 130,
+      "text": "Suelen acusarme de ser una persona agresiva, egoísta, dominante, autoritaria.",
+      "type": 8
+    },
+    {
+      "id": 131,
+      "text": "Otras personas me envidian por mi capacidad de hacer muchas cosas.",
+      "type": 3
+    },
+    {
+      "id": 132,
+      "text": "Me resulta difícil aceptar compromisos a largo plazo.",
+      "type": 7
+    },
+    {
+      "id": 133,
+      "text": "Trato de resolver mis problemas pensando.",
+      "type": 5
+    },
+    {
+      "id": 134,
+      "text": "Muchas veces no tengo palabras suficientes para poder expresar lo que siento.",
+      "type": 4
+    },
+    {
+      "id": 135,
+      "text": "Aunque me guste sostener la armonía, si veo que no puedo mediar en el conflicto me retiro de la escena.",
+      "type": 9
+    },
+    {
+      "id": 136,
+      "text": "No entiendo a la gente que vive apurada, estresada.",
+      "type": 9
+    },
+    {
+      "id": 137,
+      "text": "Me identifico con mi grupo y desconfío de los demás.",
+      "type": 6
+    },
+    {
+      "id": 138,
+      "text": "Mi teoría es que si algo es bueno, más es mejor.",
+      "type": 7
+    },
+    {
+      "id": 139,
+      "text": "Observo y analizo la realidad para entenderla.",
+      "type": 5
+    },
+    {
+      "id": 140,
+      "text": "Me parece que el fin de una relación me afecta más que a la mayoría.",
+      "type": 4
+    },
+    {
+      "id": 141,
+      "text": "El tiempo es oro, debe utilizarse de manera productiva.",
+      "type": 3
+    },
+    {
+      "id": 142,
+      "text": "Trato de no meterme en la vida de los demás, pero si lo hago es por su bien.",
+      "type": 2
+    },
+    {
+      "id": 143,
+      "text": "Me gustan que me sigan cuando asumo retos en situaciones críticas, o están conmigo o en mi contra.",
+      "type": 8
+    },
+    {
+      "id": 144,
+      "text": "A veces soy muy moralista.",
+      "type": 1
+    },
+    {
+      "id": 145,
+      "text": "Puedo cumplir fielmente, soy leal, obediente y responsable.",
+      "type": 6
+    },
+    {
+      "id": 146,
+      "text": "Necesito mi tiempo para estar conmigo.",
+      "type": 4
+    },
+    {
+      "id": 147,
+      "text": "Prefiero hablar suavemente, sin exaltarme ni levantar la voz.",
+      "type": 9
+    },
+    {
+      "id": 148,
+      "text": "Si tengo que elegir entre algo nuevo y algo conocido, tiendo a escoger lo nuevo.",
+      "type": 7
+    },
+    {
+      "id": 149,
+      "text": "No me importa sacrificarme por los demás, con tal de hacerlos felices.",
+      "type": 2
+    },
+    {
+      "id": 150,
+      "text": "Me considero una persona inteligente, objetiva, racional, sabia y profunda.",
+      "type": 5
+    },
+    {
+      "id": 151,
+      "text": "Soy visto por los demás como una persona que logra lo que se propone.",
+      "type": 3
+    },
+    {
+      "id": 152,
+      "text": "Me gusta hacer las cosas, aunque tenga que sobre exigirme, porque nadie las hace tan bien como yo.",
+      "type": 1
+    },
+    {
+      "id": 153,
+      "text": "Jamás podría dar un paso al costado pensando que alguien pueda dirigir un grupo mejor que yo.",
+      "type": 8
+    },
+    {
+      "id": 154,
+      "text": "Se puede decir que soy una persona eficiente, enérgica, emprendedora, efectiva, exitosa.",
+      "type": 3
+    },
+    {
+      "id": 155,
+      "text": "Me gusta acompañar, sostener, colaborar.",
+      "type": 6
+    },
+    {
+      "id": 156,
+      "text": "Muchas veces me encuentro con sobrecargas por tener que atender la dependencia de otros respecto de mí.",
+      "type": 2
+    },
+    {
+      "id": 157,
+      "text": "Si los demás fueran tan lógicos y objetivos como yo, la vida sería más interesante.",
+      "type": 5
+    },
+    {
+      "id": 158,
+      "text": "Mi deseo de atender mis necesidades personales ha repercutido negativamente en mis relaciones.",
+      "type": 4
+    },
+    {
+      "id": 159,
+      "text": "La vida es una oportunidad para mejorar cada día, aspiro a ser mejor.",
+      "type": 1
+    },
+    {
+      "id": 160,
+      "text": "Suelo fijarme en el lado bueno de las cosas y dejar de lado el aspecto negativo de la vida.",
+      "type": 7
+    },
+    {
+      "id": 161,
+      "text": "Me encanta disponer de tiempo libre para descansar.",
+      "type": 9
+    },
+    {
+      "id": 162,
+      "text": "El dinero me permite reafirmar mi poder.",
+      "type": 8
+    },
+    {
+      "id": 163,
+      "text": "Si los demás se comprometieran como yo, no ocurrirían tantas cosas desagradables.",
+      "type": 6
+    },
+    {
+      "id": 164,
+      "text": "Necesito contar con información, entender de lo que se habla.",
+      "type": 5
+    },
+    {
+      "id": 165,
+      "text": "Se puede decir que soy una persona paciente, diplomática, conciliadora.",
+      "type": 9
+    },
+    {
+      "id": 166,
+      "text": "Suelo pasar de una cosa a otra, en vez de profundizar en una sola.",
+      "type": 7
+    },
+    {
+      "id": 167,
+      "text": "Se puede decir que soy una persona cálida, introspectiva, intuitiva.",
+      "type": 4
+    },
+    {
+      "id": 168,
+      "text": "Me molesta equivocarme, no me gustan que me vean cometiendo errores.",
+      "type": 1
+    },
+    {
+      "id": 169,
+      "text": "Vivo con cierta tensión porque me propongo demasiados objetivos.",
+      "type": 3
+    },
+    {
+      "id": 170,
+      "text": "Mi entrega a los demás muchas veces ha repercutido en mi propia salud o bienestar.",
+      "type": 2
+    },
+    {
+      "id": 171,
+      "text": "Cuando se me pasa el enojo, ni me acuerdo lo que dije.",
+      "type": 8
+    },
+    {
+      "id": 172,
+      "text": "Puedo encontrar lo positivo de cada situación.",
+      "type": 7
+    },
+    {
+      "id": 173,
+      "text": "Necesito estar seguro, no me gustan los cambios, lo desconocido.",
+      "type": 6
+    },
+    {
+      "id": 174,
+      "text": "No me gusta pensar que yo pueda ser vulgar.",
+      "type": 4
+    },
+    {
+      "id": 175,
+      "text": "Suelen acusarme de ser una persona apática, pasiva, abstraída de la realidad.",
+      "type": 9
+    },
+    {
+      "id": 176,
+      "text": "No grito, mi tono de voz es fuerte.",
+      "type": 8
+    },
+    {
+      "id": 177,
+      "text": "Me gusta saber el porqué de las cosas, profundizar mis conocimientos, aunque después no los comparta a los demás.",
+      "type": 5
+    },
+    {
+      "id": 178,
+      "text": "Suelen acusarme de ser una persona competitiva, vanidosa, narcisista.",
+      "type": 3
+    },
+    {
+      "id": 179,
+      "text": "Mi actitud de servicio me lleva a una dedicación activa, poniendo todo mi tiempo y esfuerzo.",
+      "type": 2
+    },
+    {
+      "id": 180,
+      "text": "Aunque generalmente no lo exprese, me irrito fácilmente cuando los demás no hacen lo que corresponde.",
+      "type": 1
+    },
+    {
+      "id": 181,
+      "text": "Por ser una persona demasiado agresiva, a veces he irritado a los demás.",
+      "type": 8
+    },
+    {
+      "id": 182,
+      "text": "Me gusta que me den tiempo para terminar las cosas que tengo que hacer y para tomar mis decisiones.",
+      "type": 9
+    },
+    {
+      "id": 183,
+      "text": "Me siento una persona impulsada a ayudar a otras personas, aunque ellas no me lo pidan.",
+      "type": 2
+    },
+    {
+      "id": 184,
+      "text": "Puedo detectar nuevas oportunidades en las distintas situaciones que vivo",
+      "type": 3
+    },
+    {
+      "id": 185,
+      "text": "Me siento bien teniendo todo bajo control.",
+      "type": 1
+    },
+    {
+      "id": 186,
+      "text": "La vida es una ocasión para reflexionar y aprender, aspiro a entender mejor.",
+      "type": 5
+    },
+    {
+      "id": 187,
+      "text": "Suelen acusarme de ser una persona depresiva, fatalista, excéntrica, autodestructiva.",
+      "type": 4
+    },
+    {
+      "id": 188,
+      "text": "Me gusta disfrutar y que todos disfrutemos.",
+      "type": 7
+    },
+    {
+      "id": 189,
+      "text": "A veces tengo mucho temor, me da la sensación que siempre estoy luchando con mis miedos.",
+      "type": 6
+    },
+    {
+      "id": 190,
+      "text": "Me molesta no entender algo, me hace sentir ignorante.",
+      "type": 5
+    },
+    {
+      "id": 191,
+      "text": "Me gusta estar en familia, que los míos estén cerca y protegidos.",
+      "type": 6
+    },
+    {
+      "id": 192,
+      "text": "Me gusta rescatar a las personas que veo que están en apuros o en situaciones embarazosas.",
+      "type": 2
+    },
+    {
+      "id": 193,
+      "text": "Si los demás vieran el lado positivo de las cosas, serían más felices.",
+      "type": 7
+    },
+    {
+      "id": 194,
+      "text": "Me gusta que estén atentos a mis necesidades, pero cuando yo lo quiero.",
+      "type": 3
+    },
+    {
+      "id": 195,
+      "text": "El dinero me da tranquilidad.",
+      "type": 9
+    },
+    {
+      "id": 196,
+      "text": "Son muy importantes, para mí, las formas, la estética y el buen gusto.",
+      "type": 4
+    },
+    {
+      "id": 197,
+      "text": "Juzgo el comportamiento de la gente sin pensar en sus motivaciones.",
+      "type": 1
+    },
+    {
+      "id": 198,
+      "text": "Con frecuencia el parecer de los demás no me interesa.",
+      "type": 8
+    },
+    {
+      "id": 199,
+      "text": "Necesito nuevas experiencias, nuevas sensaciones, no me gusta la rutina ni los problemas.",
+      "type": 7
+    },
+    {
+      "id": 200,
+      "text": "Me gusta proyectar, lograr éxito, triunfar.",
+      "type": 3
+    },
+    {
+      "id": 201,
+      "text": "Me gusta que me respeten y me quieran tal como soy.",
+      "type": 4
+    },
+    {
+      "id": 202,
+      "text": "No me gusta que me pidan una opinión cuando no estoy dispuesto a darla.",
+      "type": 9
+    },
+    {
+      "id": 203,
+      "text": "Me gusta que la gente necesite de mí.",
+      "type": 2
+    },
+    {
+      "id": 204,
+      "text": "El tiempo es de cada uno, me molesta que la gente no cumpla estrictamente los horarios comprometidos.",
+      "type": 1
+    },
+    {
+      "id": 205,
+      "text": "Si me conocen como soy, no entiendo por qué me provocan y me hacen enojar.",
+      "type": 8
+    },
+    {
+      "id": 206,
+      "text": "La vida es sacrificada, muchas veces hay que aceptar lo que te toca.",
+      "type": 6
+    },
+    {
+      "id": 207,
+      "text": "Aunque deba tomar una decisión sencilla, necesito contar con toda la información.",
+      "type": 5
+    },
+    {
+      "id": 208,
+      "text": "Prefiero aislarme para pensar lo que siento.",
+      "type": 5
+    },
+    {
+      "id": 209,
+      "text": "Me gusta cuidar a los demás, prestar atención a sus necesidades.",
+      "type": 2
+    },
+    {
+      "id": 210,
+      "text": "No puedo dejar de pensar en las metas que me he propuesto.",
+      "type": 3
+    },
+    {
+      "id": 211,
+      "text": "Se puede decir que soy una persona ética, confiable, productiva, ordenada y honesta.",
+      "type": 1
+    },
+    {
+      "id": 212,
+      "text": "Me molesta cometer alguna transgresión, prefiero que esté claro lo que debo hacer.",
+      "type": 6
+    },
+    {
+      "id": 213,
+      "text": "Cuando los problemas agobian, lo mejor es no hacer nada.",
+      "type": 9
+    },
+    {
+      "id": 214,
+      "text": "Soy una persona propensa a la nostalgia, a la melancolía y a revivir el pasado.",
+      "type": 4
+    },
+    {
+      "id": 215,
+      "text": "Disfruto en el ejercicio del poder.",
+      "type": 8
+    },
+    {
+      "id": 216,
+      "text": "A veces soy una persona dispersa y curiosa, todo me interesa.",
+      "type": 7
+    },
+    {
+      "id": 217,
+      "text": "Si los demás lograran estar motivados como yo, podrían vivir mejor.",
+      "type": 3
+    },
+    {
+      "id": 218,
+      "text": "Me cuesta pensar sólo en las cosas positivas y alegres que he vivido.",
+      "type": 4
+    },
+    {
+      "id": 219,
+      "text": "Me gusta estar alegre, evitar las penas y el aburrimiento, aunque piensen que soy superficial.",
+      "type": 7
+    },
+    {
+      "id": 220,
+      "text": "Soy una persona que casi siempre está calmada y tranquila.",
+      "type": 9
+    },
+    {
+      "id": 221,
+      "text": "Me doy cuenta fácilmente donde reside el poder en un grupo.",
+      "type": 8
+    },
+    {
+      "id": 222,
+      "text": "Descalifico a las personas que considero ignorantes.",
+      "type": 5
+    },
+    {
+      "id": 223,
+      "text": "Suelen acusarme de ser una persona inflexible, formal, celosa, controladora, obsesiva.",
+      "type": 1
+    },
+    {
+      "id": 224,
+      "text": "Me comunico con mis amistades más a menudo de lo que ellas se comunican conmigo.",
+      "type": 2
+    },
+    {
+      "id": 225,
+      "text": "Aunque haya tomado una decisión, con frecuencia me replanteo si habrá sido la correcta.",
+      "type": 6
+    },
+    {
+      "id": 226,
+      "text": "No me gustan las improvisaciones, las considero una irresponsabilidad.",
+      "type": 1
+    },
+    {
+      "id": 227,
+      "text": "Los demás se han interesado en mí porque soy una persona extrovertida y me intereso y me comprometo por ellos.",
+      "type": 2
+    },
+    {
+      "id": 228,
+      "text": "No me gusta perder tiempo con los demás cuando puedo estar leyendo un buen libro o navegando por Internet.",
+      "type": 5
+    },
+    {
+      "id": 229,
+      "text": "Suelo proyectar mis miedos a los demás.",
+      "type": 6
+    },
+    {
+      "id": 230,
+      "text": "Me doy cuenta de los puntos débiles de los demás y los ataco si me provocan.",
+      "type": 8
+    },
+    {
+      "id": 231,
+      "text": "La armonía y la aceptación son valores importantes para mí.",
+      "type": 9
+    },
+    {
+      "id": 232,
+      "text": "Tiendo a ser sensible y a permanecer en mi mundo.",
+      "type": 4
+    },
+    {
+      "id": 233,
+      "text": "La vida es una oportunidad de pasarla bien y si hay penas, olvidarlas.",
+      "type": 7
+    },
+    {
+      "id": 234,
+      "text": "El dinero es importante porque brinda oportunidades, hay que saber invertirlo, multiplicarlo.",
+      "type": 3
+    },
+    {
+      "id": 235,
+      "text": "Me resulta fácil expresar mi insatisfacción.",
+      "type": 8
+    },
+    {
+      "id": 236,
+      "text": "Me fastidia que me perturben.",
+      "type": 9
+    },
+    {
+      "id": 237,
+      "text": "Me molesta el dinero, mejor gastarlo en algo refinado, exquisito.",
+      "type": 4
+    },
+    {
+      "id": 238,
+      "text": "Se puede decir que soy una persona perceptiva, analítica, estudiosa y perseverante.",
+      "type": 5
+    },
+    {
+      "id": 239,
+      "text": "Me importa mucho lo que los otros puedan llegar a pensar de mí.",
+      "type": 6
+    },
+    {
+      "id": 240,
+      "text": "Cuido muy bien mi dinero y el de los demás.",
+      "type": 1
+    },
+    {
+      "id": 241,
+      "text": "Siempre pasan cosas buenas y malas, es mejor enfocarse en las buenas.",
+      "type": 7
+    },
+    {
+      "id": 242,
+      "text": "Hay muchas personas que dependen de mi ayuda y generosidad.",
+      "type": 2
+    },
+    {
+      "id": 243,
+      "text": "A veces necesito dejar de lado alguna norma si ésta me impide llegar a mis objetivos.",
+      "type": 3
+    },
+    {
+      "id": 244,
+      "text": "Soy una persona buena para persuadir y movilizar a los demás.",
+      "type": 3
+    },
+    {
+      "id": 245,
+      "text": "Me gusta que las personas aprendan de mi y sepan agradecer mis consejos.",
+      "type": 1
+    },
+    {
+      "id": 246,
+      "text": "No me asusta enfrentarme con otros y lo hago.",
+      "type": 8
+    },
+    {
+      "id": 247,
+      "text": "Suelen acusarme de ser una persona distante, arrogante, desvalorizadora.",
+      "type": 5
+    },
+    {
+      "id": 248,
+      "text": "Me he inclinado a no imponerme ante los demás, evito entrar en conflictos.",
+      "type": 9
+    },
+    {
+      "id": 249,
+      "text": "El tiempo es necesario para hacer lo que se debe.",
+      "type": 6
+    },
+    {
+      "id": 250,
+      "text": "Una de mis cualidades es la habilidad para describir mis estados internos.",
+      "type": 4
+    },
+    {
+      "id": 251,
+      "text": "Me encanta compartir mis anécdotas de los buenos momentos que he pasado.",
+      "type": 7
+    },
+    {
+      "id": 252,
+      "text": "A veces siento que no soy libre porque tengo que atender a los otros.",
+      "type": 2
+    },
+    {
+      "id": 253,
+      "text": "No me gusta que me digan que me adapte o me conforme.",
+      "type": 8
+    },
+    {
+      "id": 254,
+      "text": "Me gusta que respeten mi soledad y mi distancia para poder procesar mis emociones y pensamientos.",
+      "type": 5
+    },
+    {
+      "id": 255,
+      "text": "No hay libertad sin responsabilidad.",
+      "type": 1
+    },
+    {
+      "id": 256,
+      "text": "No tengo problemas de tomar riesgos.",
+      "type": 3
+    },
+    {
+      "id": 257,
+      "text": "Me precio de ser una persona estable.",
+      "type": 9
+    },
+    {
+      "id": 258,
+      "text": "Creo que merezco estar en primer término en la vida de algunos, por todo lo que he hecho por ellos.",
+      "type": 2
+    },
+    {
+      "id": 259,
+      "text": "Suelen acusarme de ser una persona indecisa, cobarde, desconfiada.",
+      "type": 6
+    },
+    {
+      "id": 260,
+      "text": "El tiempo es la oportunidad de poder hacer de todo.",
+      "type": 7
+    },
+    {
+      "id": 261,
+      "text": "Amo la libertad, me permite ser.",
+      "type": 4
+    },
+    {
+      "id": 262,
+      "text": "No soporto a quien cambia de parecer en función de las conveniencias.",
+      "type": 8
+    },
+    {
+      "id": 263,
+      "text": "Me gusta tener libertad para poder hacer más cosas.",
+      "type": 3
+    },
+    {
+      "id": 264,
+      "text": "No me gusta estar en medio del baile, prefiero mirar desde un extremo de la barra.",
+      "type": 5
+    },
+    {
+      "id": 265,
+      "text": "Se puede decir que soy una persona entusiasta, curiosa, divertida, simpática, alegre y optimista.",
+      "type": 7
+    },
+    {
+      "id": 266,
+      "text": "Necesito estar motivado por algo trascendente para entrar en acción.",
+      "type": 9
+    },
+    {
+      "id": 267,
+      "text": "Me gusta crear, soñar, vibrar la vida.",
+      "type": 4
+    },
+    {
+      "id": 268,
+      "text": "Yo se bien dónde tengo cada cosa, me molesta que las toquen o desacomoden.",
+      "type": 1
+    },
+    {
+      "id": 269,
+      "text": "Me gusta que me valoren y confíen en mí, que me digan qué esperan de mí.",
+      "type": 6
+    },
+    {
+      "id": 270,
+      "text": "A menudo hay personas que se me acercan pidiéndome que las conforte y las aconseje.",
+      "type": 2
+    }
+  ],
+  "stats": {
+    "questions_in_afirmaciones": 270,
+    "types_in_eneagrama": 270,
+    "joined": 270,
+    "missing_type_skipped": 0
+  }
+}

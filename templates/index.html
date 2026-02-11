@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <p>Auto-identificación (marcá las afirmaciones que aplican a vos).</p>
+    <a class="button" href="{{ url_for('quiz_get', page=1) }}">Empezar</a>
+  </div>
+{% endblock %}
