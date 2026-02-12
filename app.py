@@ -121,6 +121,7 @@ def result():
     El valor del eneatipo 1 radica en la EXCELENCIA. Acción (orden práctico).
     Su mayor contribución es ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
     Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado.
+    No le gusta que le cambien de lugar sus cosas. 
     Sus conductas recurrentes pueden ser el controlar, corregir, juzgar, criticar.
     Desarrolla hábitos como buscar culpables, corrigir errores y tener la razón. 
     El resultado de estas conductas y hábitos es un predominio del deber sobre el placer.
