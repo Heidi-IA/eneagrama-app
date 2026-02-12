@@ -9,6 +9,13 @@
     <div class="card shadow-lg border-0 p-4 text-center">
       <h2 class="fw-bold">Tus resultados</h2>
 
+{% if top_types %}
+  <div class="alert alert-success text-center">
+    Tu eneatipo principal es: <strong>{{ top_types[0] }}</strong> ({{ max_score }} puntos)
+  </div>
+{% endif %}
+
+    
       <ul class="list-group mt-4 text-start">
         {% for tipo, score in sorted_scores %}
         <li class="list-group-item d-flex justify-content-between align-items-center">
