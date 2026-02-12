@@ -1,22 +1,43 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eneagrama</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{% block title %}Eneagrama{% endblock %}</title>
+
+  <!-- Bootstrap (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Eneagrama</h1>
-      <nav>
-        <a href="{{ url_for('index') }}">Inicio</a>
-        <a href="{{ url_for('reset') }}">Reiniciar</a>
-      </nav>
-    </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="{{ url_for('index') }}">Eneagrama</a>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="alert alert-info">
+          {{ messages[0] }}
+        </div>
+      {% endif %}
+    {% endwith %}
 
     {% block content %}{% endblock %}
-  </div>
+  </main>
+
+  <footer class="border-top py-4 mt-5">
+    <div class="container small text-muted">
+      Eneagrama · {{ (now() if false else "") }}
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

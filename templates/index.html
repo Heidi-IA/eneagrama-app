@@ -1,7 +1,34 @@
 {% extends "base.html" %}
+
+{% block title %}Inicio · Eneagrama{% endblock %}
+
 {% block content %}
-  <div class="card">
-    <p>Auto-identificación (marcá las afirmaciones que aplican a vos).</p>
-    <a class="button" href="{{ url_for('quiz_get', page=1) }}">Empezar</a>
+
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+
+    <div class="card shadow-lg border-0 p-4 text-center">
+      <h1 class="display-5 fw-bold mb-3">
+        Test de Eneagrama
+      </h1>
+
+      <p class="lead text-muted mb-4">
+        Descubrí tu eneatipo a través de este test de autoidentificación personal.
+        Respondé con sinceridad y obtené tu perfil al finalizar.
+      </p>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="{{ url_for('quiz') }}" class="btn btn-primary btn-lg">
+          Comenzar Test
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 small text-muted">
+      Duración estimada: 10–15 minutos
+    </div>
+
   </div>
+</div>
+
 {% endblock %}

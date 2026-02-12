@@ -1,30 +1,59 @@
 {% extends "base.html" %}
+
+{% block title %}Test · Eneagrama{% endblock %}
+
 {% block content %}
-  <div class="card">
-    <h2>Página {{ page }} / {{ total_pages }}</h2>
 
-    <form method="post" action="{{ url_for('quiz_post', page=page) }}">
-      <ul class="list">
+<div class="row justify-content-center">
+  <div class="col-lg-9">
+
+    <div class="card shadow-lg border-0 p-4">
+
+      <h2 class="mb-4 text-center fw-bold">
+        Responde las siguientes afirmaciones
+      </h2>
+
+      <form method="POST">
+
         {% for q in questions %}
-          {% set qid = q.id|string %}
-          <li class="item">
-            <label>
-              <input type="checkbox" name="q_{{ qid }}" value="1"
-                {% if answers.get(qid) %}checked{% endif %}>
-              {{ q.text }}
-            </label>
-          </li>
-        {% endfor %}
-      </ul>
+        <div class="mb-4 p-3 border rounded question-card">
 
-      <div class="actions">
-        {% if page > 1 %}
-          <a class="button secondary" href="{{ url_for('quiz_get', page=page-1) }}">⬅ Anterior</a>
-        {% endif %}
-        <button class="button" type="submit">
-          {% if page == total_pages %}Ver resultado{% else %}Siguiente ➜{% endif %}
-        </button>
-      </div>
-    </form>
+          <p class="fw-semibold mb-3">
+            {{ loop.index }}. {{ q.text }}
+          </p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" 
+                   name="q{{ loop.index0 }}" 
+                   value="1" required>
+            <label class="form-check-label">
+              Sí
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" 
+                   name="q{{ loop.index0 }}" 
+                   value="0">
+            <label class="form-check-label">
+              No
+            </label>
+          </div>
+
+        </div>
+        {% endfor %}
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-success btn-lg px-5">
+            Ver Resultado
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
   </div>
+</div>
+
 {% endblock %}
