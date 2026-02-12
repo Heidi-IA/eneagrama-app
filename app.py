@@ -155,7 +155,7 @@ def result():
     y no sus necesidades.
   
     Tríada: Instintiva, área de la acción o visceral (expresión). Dosifica planificadamente su energía. Detallista.""",
-
+      
        1: """🟡 ¿Cómo puedes sentirte mejor?:
     "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
     Desarrollando tareas creativas, que te incentiven. 
