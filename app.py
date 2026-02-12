@@ -23,17 +23,18 @@ def index():
 
 @app.get("/quiz")
 def quiz_get():
-    questions = load_questions()
+    questions_all = load_questions()
     page = int(request.args.get("page", 1))
+
     per_page = 30
-    total_pages = (len(questions) + per_page - 1) // per_page
+    total_pages = (len(questions_all) + per_page - 1) // per_page
 
     page = max(1, min(page, total_pages))
     start = (page - 1) * per_page
     end = start + per_page
-    chunk = questions[start:end]
+    chunk = questions_all[start:end]
 
-    answers = session.get("answers", {})  # { "id": true/false }
+    answers = session.get("answers", {})
 
     return render_template(
         "quiz.html",
@@ -46,29 +47,34 @@ def quiz_get():
 
 @app.post("/quiz")
 def quiz_post():
-    # guardamos checks de la página actual
-    questions = load_questions()
-    page = int(request.args.get("page", 1))
-    per_page = 30
-    total_pages = (len(questions) + per_page - 1) // per_page
-    page = max(1, min(page, total_pages))
 
+    questions_all = load_questions()
+    page = int(request.args.get("page", 1))
+
+    per_page = 30
+    total_pages = (len(questions_all) + per_page - 1) // total_pages
+
+    page = max(1, min(page, total_pages))
     start = (page - 1) * per_page
     end = start + per_page
-    chunk = questions[start:end]
+    chunk = questions_all[start:end]
 
+    # guardar respuestas
     answers = session.get("answers", {})
-    # setear true/false por cada id en la página
+
     for q in chunk:
         qid = str(q["id"])
         answers[qid] = (request.form.get(f"q_{qid}") == "1")
 
     session["answers"] = answers
 
-    if page >= total_pages:
-        return redirect(url_for("result"))
+    # si no es última página → siguiente page
+    if page < total_pages:
+        return redirect(url_for("quiz_get", page=page + 1))
 
-    return redirect(url_for("quiz_get", page=page + 1))
+    # si es última → resultado
+    return redirect(url_for("result"))
+
 
 
 @app.get("/reset")
