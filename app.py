@@ -49,7 +49,7 @@ def quiz_get():
 def quiz_post():
 
     questions_all = load_questions()
-    page = int(request.args.get("page", 1))
+    page = int(request.args.get("page") or 1)
 
     per_page = 30
     total_pages = (len(questions_all) + per_page - 1) // per_page
@@ -59,7 +59,7 @@ def quiz_post():
     end = start + per_page
     chunk = questions_all[start:end]
 
-    # guardar respuestas
+    # guardar respuestas de esta página
     answers = session.get("answers", {})
 
     for q in chunk:
