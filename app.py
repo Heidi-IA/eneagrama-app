@@ -141,8 +141,8 @@ def result():
     
     Pecado capital: Ira (reprimida).
     
-    Luz: Integridad, mejora del mundo, coherencia.
-    Sombra: Juicio constante, perfeccionismo paralizante.
+    En su lado luz el eneatipo 1  representa integridad, mejora del mundo, coherencia.
+    Sin embargo, en su lado sombra desarrolla un juicio constante y perfeccionismo paralizante.
     
     Integración o conductas a incorporar: espontaneidad, alegría y flexibilidad.
     Desintegración o conductas a evitar: emocionalidad, resentimiento y melancolía.
