@@ -10,13 +10,14 @@
       <h2 class="fw-bold">Tus resultados</h2>
 
       <ul class="list-group mt-4 text-start">
-        {% for tipo, score in results %}
+        {% for tipo, score in sorted_scores %}
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Tipo {{ tipo }}
           <span class="badge bg-primary rounded-pill">{{ score }}</span>
         </li>
         {% endfor %}
       </ul>
+
 
       <div class="mt-4">
         <a href="{{ url_for('reset') }}" class="btn btn-secondary">
