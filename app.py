@@ -166,7 +166,7 @@ def result():
     Comprender que hay más de una manera correcta de hacer las cosas.
     Practicar el perdón con uno mismo y los demás. Tratarte con menos rigor.
     Parar, darse tiempos. Soltarse y soltar.
-    Dejarse llevar por la corrienre.
+    Dejarse llevar por la corriente.
     Confiar en las buenas intenciones de los demás.
     Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
     ayudar a los demás a tomar decisiones.
