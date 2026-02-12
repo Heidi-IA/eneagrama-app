@@ -116,17 +116,56 @@ def result():
     buscan mejorar el mundo y la perfección. 
     Son responsables, disciplinadas, y muy exigentes consigo mismas y con los demás. 
     Tienden a autocriticarse y a querer que todo sea “lo correcto”.""",
+
+        1: """🟡 Características principales:
+    Miedo básico: Ser corrupto, defectuoso o moralmente incorrecto.
     
+    Fortalezas: Ético, disciplinado, responsable, justo.
+    Debilidades: Crítico, rígido, autoexigente, intolerante.
+    
+    Pecado capital: Ira (reprimida).
+    
+    Luz: Integridad, mejora del mundo, coherencia.
+    Sombra: Juicio constante, perfeccionismo paralizante.
+    
+    Integración (va al 7): Se vuelve más espontáneo, alegre y flexible.
+    Desintegración (va al 4): Se vuelve más emocional, resentido y melancólico.
+    
+    Alas: 9 (más calmado) o 2 (más servicial).
+    
+    Tríada: Instintiva (Ira).""",
+
+        
         2: """🔵 Tipo 2 — El Ayudador:
     Empáticos, cálidos y orientados a servir a otros. 
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
     Pueden descuidar sus propias necesidades al priorizar las de otros.""",
+
+        1: """🔵 Características principales:
+    Miedo básico: No ser amado o necesario.
     
+    Fortalezas: Generoso, empático, afectuoso.
+    Debilidades: Dependiente, complaciente, manipulador sutil.
+    
+    Pecado capital: Orgullo.
+    
+    Luz: Amor genuino y servicio desinteresado.
+    Sombra: Dar para recibir, invasión emocional.
+    
+    Integración (va al 4): Se conecta con sus propias emociones y autenticidad.
+    Desintegración (va al 8): Se vuelve controlador y dominante.
+    
+    Alas: 1 (más estructurado) o 3 (más orientado al logro).
+    
+    Tríada: Emocional (Vergüenza).""",
+        
         3: """🟢 Tipo 3 — El Triunfador:
     Energéticos, adaptables y orientados al éxito. 
     Se enfocan en metas, logros y reconocimiento. 
     Suelen inspirar a otros con su energía, aunque pueden priorizar imagen y resultados.""",
-    
+
+        
+        
         4: """🔴 Tipo 4 — El Individualista:
     Creativos, sensibles y emocionalmente profundos. 
     Se sienten únicos e intensos, valoran la autenticidad. 
