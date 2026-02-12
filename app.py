@@ -133,7 +133,7 @@ def result():
     El pecado capital del eneatipo 1 es la ira (reprimida). 
     En su lado luz el eneatipo 1  representa integridad, mejora del mundo, coherencia.
     Sin embargo, en su lado sombra desarrolla un juicio constante y perfeccionismo paralizante.
-    Para lograr su integración es aconsejable que incorpore conductas como la espontaneidad, alegría y flexibilidad,
+    Para lograr su evolución es aconsejable que incorpore conductas como la espontaneidad, alegría y flexibilidad,
     evitando la emocionalidad, resentimiento y melancolía.
     Las actitudes que equilibran a la esencia 1 son ser más calmado y más servicial.
     El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
@@ -141,6 +141,7 @@ def result():
     Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
     no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
     y no sus necesidades.
+    Otra de las áreas de expansión es su punto ciego, que es tomar riesgos, mostrarse, exponerse. 
     La escencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
     Dosifica planificadamente su energía. Es detallista.
     Cabe destacar que existen 3 sub-tipos:
