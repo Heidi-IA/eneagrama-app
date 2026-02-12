@@ -1,27 +1,30 @@
 {% extends "base.html" %}
+
+{% block title %}Resultado · Eneagrama{% endblock %}
+
 {% block content %}
-  <div class="card">
-    <h2>Resultado</h2>
+<div class="row justify-content-center">
+  <div class="col-lg-8">
 
-    {% if max_score == 0 %}
-      <p>No marcaste afirmaciones. Volvé y seleccioná algunas.</p>
-    {% else %}
-      <p><strong>Mayor puntaje:</strong> {{ max_score }} (Tipo/s: {{ top_types | join(", ") }})</p>
-      <table>
-        <thead>
-          <tr><th>Tipo</th><th>Puntaje</th></tr>
-        </thead>
-        <tbody>
-          {% for t, s in sorted_scores %}
-            <tr><td>{{ t }}</td><td>{{ s }}</td></tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    {% endif %}
+    <div class="card shadow-lg border-0 p-4 text-center">
+      <h2 class="fw-bold">Tus resultados</h2>
 
-    <div class="actions">
-      <a class="button secondary" href="{{ url_for('quiz_get', page=1) }}">Volver</a>
-      <a class="button" href="{{ url_for('reset') }}">Reiniciar</a>
+      <ul class="list-group mt-4 text-start">
+        {% for tipo, score in results %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Tipo {{ tipo }}
+          <span class="badge bg-primary rounded-pill">{{ score }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <div class="mt-4">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+          Volver al inicio
+        </a>
+      </div>
     </div>
+
   </div>
+</div>
 {% endblock %}
