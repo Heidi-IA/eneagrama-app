@@ -118,6 +118,19 @@ def result():
     Tienden a autocriticarse y a querer que todo sea “lo correcto”.""",
 
         1: """🟡 Características principales:
+    Valor: EXCELENCIA. Acción (orden práctico).
+
+    Contribución: al ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
+    Posee buena orientación al detalle, reacio a delegar, preocupación excesiva.
+
+    Conductas: controlar, corregir, juzgar, criticar.
+
+    Hábitos: busca culpables, corrige errores, busca tener la razón. 
+
+    Resultado: predominio del deber sobre el placer.
+
+    Creencia: el mundo es un lugar imperfecto para perfeccionar.
+        
     Miedo básico: Ser corrupto, defectuoso o moralmente incorrecto.
     
     Fortalezas: Ético, disciplinado, responsable, justo.
@@ -132,9 +145,12 @@ def result():
     Desintegración (va al 4): Se vuelve más emocional, resentido y melancólico.
     
     Alas: 9 (más calmado) o 2 (más servicial).
-    
+  
     Tríada: Instintiva (Ira).""",
 
+    1: """🟡 ¿Cómo puedes sentirte mejor?:
+    "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
+    Desarrollando tareas creativas, que lo incentiven, sintiendo disfrute.""",        
         
         2: """🔵 Tipo 2 — El Ayudador:
     Empáticos, cálidos y orientados a servir a otros. 
