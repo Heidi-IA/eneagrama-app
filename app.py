@@ -155,7 +155,21 @@ def result():
     y no sus necesidades.
   
     Tríada: Instintiva, área de la acción o visceral (expresión). Dosifica planificadamente su energía. Detallista.
-      
+
+    Existen 3 sub-tipos:
+    
+    🏠 1 Conservación (Ansiedad)
+
+    Preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
+
+    👥 1 Social (Rigidez)
+
+    Defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
+
+    ❤️ 1 Sexual (Celo)
+
+    Más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.
+         
        🟡 ¿Cómo puedes sentirte mejor?:
     "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
     Desarrollando tareas creativas, que te incentiven. 
