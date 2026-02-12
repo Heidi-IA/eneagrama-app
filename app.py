@@ -143,7 +143,7 @@ def result():
     y no sus necesidades.
     Otra de las áreas de expansión es su punto ciego, que es tomar riesgos, mostrarse, exponerse. 
     La escencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
-    Dosifica planificadamente su energía. Es detallista.
+    Dosifica planificadamente su energía. Es detallista. Vive en el presente y tiene la necesidad de autonomía.
     Cabe destacar que existen 3 sub-tipos:
     
     🏠 1 Conservación (Ansiedad)
@@ -176,9 +176,39 @@ def result():
         2: """🔵 Tipo 2 — El Ayudador:
     Empáticos, cálidos y orientados a servir a otros. 
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
-    Pueden descuidar sus propias necesidades al priorizar las de otros.""",
+    Pueden descuidar sus propias necesidades al priorizar las de otros.
+   
+        🔵 Características principales:
+    El valor del eneatipo 2 radica en la CONEXIÓN EMOCIONAL. Dar.
+    Su mayor contribución es ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
+    Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado.
+    No le gusta que le cambien de lugar sus cosas. 
+    Sus conductas recurrentes pueden ser el controlar, corregir, juzgar, criticar.
+    Desarrolla hábitos como buscar culpables, corrigir errores y tener la razón. 
+    El resultado de estas conductas y hábitos es un predominio del deber sobre el placer.
+    La creencia arraigada en su interior es "el mundo es un lugar imperfecto para perfeccionar".
+    El miedo básico es ser corrupto, defectuoso o moralmente incorrecto.
+    Su miedo constitutivo a no poder le genera la necesidad de ser fuerte y la reacción ante este miedo es controlando. 
+    Sus principales fortalezas son ser ético, disciplinado, responsable, justo. Y sus principales áreas de mejora radican en 
+    su ser crítico, rígido, autoexigente, intolerante.
+    El pecado capital del eneatipo 1 es la ira (reprimida). 
+    En su lado luz el eneatipo 1  representa integridad, mejora del mundo, coherencia.
+    Sin embargo, en su lado sombra desarrolla un juicio constante y perfeccionismo paralizante.
+    Para lograr su evolución es aconsejable que incorpore conductas como la espontaneidad, alegría y flexibilidad,
+    evitando la emocionalidad, resentimiento y melancolía.
+    Las actitudes que equilibran a la esencia 1 son ser más calmado y más servicial.
+    El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
+    y no sólo por principios y normas: "lo correcto". Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
+    Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
+    no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
+    y no sus necesidades.
+    Otra de las áreas de expansión es su punto ciego, que es tomar riesgos, mostrarse, exponerse. 
+    La escencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
+    Dosifica planificadamente su energía. Es detallista.
+    Cabe destacar que existen 3 sub-tipos
 
-        2: """🔵 Características principales:
+
+
     Miedo básico: No ser amado o necesario.
     
     Fortalezas: Generoso, empático, afectuoso.
