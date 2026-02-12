@@ -141,7 +141,7 @@ def result():
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
     Pueden descuidar sus propias necesidades al priorizar las de otros.""",
 
-        1: """🔵 Características principales:
+        2: """🔵 Características principales:
     Miedo básico: No ser amado o necesario.
     
     Fortalezas: Generoso, empático, afectuoso.
@@ -164,37 +164,167 @@ def result():
     Se enfocan en metas, logros y reconocimiento. 
     Suelen inspirar a otros con su energía, aunque pueden priorizar imagen y resultados.""",
 
-        
-        
+        3: """🟢 Características principales:
+    Miedo básico: Ser un fracaso o no valer.
+    
+    Fortalezas: Eficiente, adaptable, motivador.
+    Debilidades: Vanidoso, competitivo, desconectado emocionalmente.
+    
+    Pecado capital: Vanidad.
+    
+    Luz: Inspirador, productivo, ejemplo de superación.
+    Sombra: Identidad basada en la imagen.
+    
+    Integración (va al 6): Se vuelve más cooperativo y comprometido.
+    Desintegración (va al 9): Se vuelve apático y desconectado.
+    
+    Alas: 2 (más sociable) o 4 (más creativo).
+    
+    Tríada: Emocional (Vergüenza).""",
+                
         4: """🔴 Tipo 4 — El Individualista:
     Creativos, sensibles y emocionalmente profundos. 
     Se sienten únicos e intensos, valoran la autenticidad. 
     Tienden a ser introspectivos y a explorar su mundo interior con profundidad.""",
+
+         4: """🔴 Características principales:
+    Miedo básico: No tener identidad o significado.
+    
+    Fortalezas: Creativo, sensible, profundo.
+    Debilidades: Melancólico, comparativo, dramático.
+    
+    Pecado capital: Envidia.
+    
+    Luz: Autenticidad y expresión emocional profunda.
+    Sombra: Victimismo, aislamiento.
+    
+    Integración (va al 1): Se vuelve más disciplinado y estructurado.
+    Desintegración (va al 2): Se vuelve dependiente y complaciente.
+    
+    Alas: 3 (más orientado al logro) o 5 (más introspectivo).
+    
+    Tríada: Emocional (Vergüenza).""",   
     
         5: """🟣 Tipo 5 — El Investigador:
     Curiosos, observadores y analíticos. 
     Buscan conocimiento, comprensión y autonomía. 
     Prefieren observar antes que participar y disfrutan de profundizar en temas complejos.""",
+
+        5: """🟣 Características principales:
+    Miedo básico: Ser incompetente o incapaz.
     
+    Fortalezas: Analítico, observador, independiente.
+    Debilidades: Aislado, distante, acumulador de energía.
+    
+    Pecado capital: Avaricia.
+    
+    Luz: Sabiduría, claridad mental.
+    Sombra: Retraimiento extremo, frialdad.
+    
+    Integración (va al 8): Se vuelve más decidido y activo.
+    Desintegración (va al 7): Se vuelve disperso e impulsivo.
+    
+    Alas: 4 (más creativo) o 6 (más leal y precavido).
+    
+    Tríada: Mental (Miedo).""",    
+
+        
         6: """🟠 Tipo 6 — El Leal:
     Personas leales, responsables, cautelosas y con gran sentido de comunidad. 
     Valoran la seguridad, la confianza y la previsibilidad. 
     Pueden preocuparse por posibles riesgos, pero son muy comprometidos.""",
+
+        6: """🟠 Características principales:
+    Miedo básico: No tener seguridad ni apoyo.
     
+    Fortalezas: Leal, responsable, comprometido.
+    Debilidades: Ansioso, desconfiado, dubitativo.
+    
+    Pecado capital: Miedo (cobardía).
+    
+    Luz: Valentía y compromiso con la comunidad.
+    Sombra: Parálisis por miedo o actitud desafiante constante.
+    
+    Integración (va al 9): Se vuelve más confiado y tranquilo.
+    Desintegración (va al 3): Se vuelve competitivo y orientado a la imagen.
+    
+    Alas: 5 (más analítico) o 7 (más sociable).
+    
+    Tríada: Mental (Miedo).""",   
+
+        
         7: """🟤 Tipo 7 — El Entusiasta:
     Activos, optimistas, espontáneos y con deseos de experiencias nuevas. 
     Ayudan a otros a ver el lado positivo de la vida. 
     A veces evitan el dolor y buscan diversión constante.""",
+
+        7: """🟤 Características principales:
+    Miedo básico: Sentir dolor o quedar atrapado en el sufrimiento.
     
+    Fortalezas: Optimista, creativo, versátil.
+    Debilidades: Disperso, impulsivo, evasivo.
+    
+    Pecado capital: Gula.
+    
+    Luz: Alegría, entusiasmo, visión positiva.
+    Sombra: Huida del dolor, superficialidad.
+    
+    Integración (va al 5): Se vuelve más profundo y enfocado.
+    Desintegración (va al 1): Se vuelve rígido y crítico.
+    
+    Alas: 6 (más responsable) o 8 (más decidido).
+        
+    Tríada: Mental (Miedo).""",   
+    
+        
         8: """🔶 Tipo 8 — El Desafiador:
     Directos, fuertes, protectores y decididos. 
     Buscan controlar su entorno y no temen enfrentar conflictos. 
     Son líderes naturales, enfocados en la justicia y en la acción.""",
+
+        8: """🔶  Características principales:
+    Miedo básico: Ser vulnerable o controlado.
     
+    Fortalezas: Fuerte, protector, líder natural.
+    Debilidades: Dominante, confrontativo, excesivo.
+    
+    Pecado capital: Lujuria (exceso de intensidad).
+    
+    Luz: Justicia, protección y liderazgo valiente.
+    Sombra: Autoritarismo, agresividad.
+    
+    Integración (va al 2): Se vuelve más compasivo y protector amoroso.
+    Desintegración (va al 5): Se aísla y se vuelve más desconfiado.
+    
+    Alas: 7 (más entusiasta) o 9 (más conciliador).
+    
+    Tríada: Instintiva (Ira).""",    
+    
+        
         9: """🔷 Tipo 9 — El Pacificador:
     Calmados, tranquilos, atentos y conciliadores. 
     Valoran la paz y evitan confrontaciones. 
     Pueden perder su propia agenda para mantener la armonía.""",
+
+        9: """🔷  Características principales:
+    Miedo básico: Pérdida de conexión y conflicto.
+    
+    Fortalezas: Mediador, paciente, estable.
+    Debilidades: Indeciso, pasivo, evasivo.
+    
+    Pecado capital: Pereza (inercia interior).
+    
+    Luz: Armonía, integración, serenidad.
+    Sombra: Desconexión de sí mismo, postergación.
+    
+    Integración (va al 3): Se vuelve más activo y orientado a metas.
+    Desintegración (va al 6): Se vuelve ansioso e inseguro.
+    
+    Alas: 8 (más firme) o 1 (más estructurado).
+    
+    Tríada: Instintiva (Ira).""",
+    
+   
     }
 
 
