@@ -144,7 +144,7 @@ def result():
     Luz: Integridad, mejora del mundo, coherencia.
     Sombra: Juicio constante, perfeccionismo paralizante.
     
-    Integración o conductas a incorporar: espontáneidad, alegría y flexibilidad.
+    Integración o conductas a incorporar: espontaneidad, alegría y flexibilidad.
     Desintegración o conductas a evitar: emocionalidad, resentimiento y melancolía.
     
     Qué equilibra a la esencia 1: ser más calmado y más servicial.
