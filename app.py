@@ -24,7 +24,7 @@ def index():
 @app.get("/quiz")
 def quiz_get():
     questions_all = load_questions()
-    page = int(request.args.get("page", 1))
+    page = int(request.args.get("page") or 1)
 
     per_page = 30
     total_pages = (len(questions_all) + per_page - 1) // per_page
