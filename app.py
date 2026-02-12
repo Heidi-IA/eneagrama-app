@@ -144,13 +144,12 @@ def result():
     Luz: Integridad, mejora del mundo, coherencia.
     Sombra: Juicio constante, perfeccionismo paralizante.
     
-    Integración o conductas a incorporar (va al 7): Se vuelve más espontáneo, alegre y flexible.
-    Desintegración o conductas a evitar (va al 4): Se vuelve más emocional, resentido y melancólico.
+    Integración o conductas a incorporar: Se vuelve más espontáneo, alegre y flexible.
+    Desintegración o conductas a evitar: Se vuelve más emocional, resentido y melancólico.
     
-    Alas o eneatipos que equilibran a la esencia 1: 9 (más calmado) y 2 (más servicial).
+    Qué equilibra a la esencia 1: ser más calmado y más servicial.
     El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
-    y no sólo por principios y normas: "lo correcto". 
-    Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
+    y no sólo por principios y normas: "lo correcto". Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
     Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
     no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
     y no sus necesidades.
