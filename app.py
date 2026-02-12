@@ -115,9 +115,9 @@ def result():
     Personas éticas, con fuerte sentido del bien y del mal, 
     buscan mejorar el mundo y la perfección. 
     Son responsables, disciplinadas, y muy exigentes consigo mismas y con los demás. 
-    Tienden a autocriticarse y a querer que todo sea “lo correcto”.""",
+    Tienden a autocriticarse y a querer que todo sea “lo correcto”.
 
-        1: """🟡 Características principales:
+        🟡 Características principales:
     Valor: EXCELENCIA. Acción (orden práctico).
 
     Contribución: al ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
@@ -156,7 +156,7 @@ def result():
   
     Tríada: Instintiva, área de la acción o visceral (expresión). Dosifica planificadamente su energía. Detallista.""",
       
-       1: """🟡 ¿Cómo puedes sentirte mejor?:
+       🟡 ¿Cómo puedes sentirte mejor?:
     "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
     Desarrollando tareas creativas, que te incentiven. 
     Dándote tiempo libre para el placer y la relajación. Sintiendo disfrute.
