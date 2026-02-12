@@ -111,48 +111,48 @@ def result():
     sorted_porcentajes = [(t, porcentaje_scores[t]) for (t, _) in sorted_scores]
 
     eneatipo_textos = {
-        1: """🟡 Tipo 1 — El Reformador
+        1: """🟡 Tipo 1 — El Reformador:
     Personas éticas, con fuerte sentido del bien y del mal, 
     buscan mejorar el mundo y la perfección. 
     Son responsables, disciplinadas, y muy exigentes consigo mismas y con los demás. 
     Tienden a autocriticarse y a querer que todo sea “lo correcto”.""",
     
-        2: """🔵 Tipo 2 — El Ayudador
+        2: """🔵 Tipo 2 — El Ayudador:
     Empáticos, cálidos y orientados a servir a otros. 
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
     Pueden descuidar sus propias necesidades al priorizar las de otros.""",
     
-        3: """🟢 Tipo 3 — El Triunfador
+        3: """🟢 Tipo 3 — El Triunfador:
     Energéticos, adaptables y orientados al éxito. 
     Se enfocan en metas, logros y reconocimiento. 
     Suelen inspirar a otros con su energía, aunque pueden priorizar imagen y resultados.""",
     
-        4: """🔴 Tipo 4 — El Individualista
+        4: """🔴 Tipo 4 — El Individualista:
     Creativos, sensibles y emocionalmente profundos. 
     Se sienten únicos e intensos, valoran la autenticidad. 
     Tienden a ser introspectivos y a explorar su mundo interior con profundidad.""",
     
-        5: """🟣 Tipo 5 — El Investigador
+        5: """🟣 Tipo 5 — El Investigador:
     Curiosos, observadores y analíticos. 
     Buscan conocimiento, comprensión y autonomía. 
     Prefieren observar antes que participar y disfrutan de profundizar en temas complejos.""",
     
-        6: """🟠 Tipo 6 — El Leal
+        6: """🟠 Tipo 6 — El Leal:
     Personas leales, responsables, cautelosas y con gran sentido de comunidad. 
     Valoran la seguridad, la confianza y la previsibilidad. 
     Pueden preocuparse por posibles riesgos, pero son muy comprometidos.""",
     
-        7: """🟤 Tipo 7 — El Entusiasta
+        7: """🟤 Tipo 7 — El Entusiasta:
     Activos, optimistas, espontáneos y con deseos de experiencias nuevas. 
     Ayudan a otros a ver el lado positivo de la vida. 
     A veces evitan el dolor y buscan diversión constante.""",
     
-        8: """🔶 Tipo 8 — El Desafiador
+        8: """🔶 Tipo 8 — El Desafiador:
     Directos, fuertes, protectores y decididos. 
     Buscan controlar su entorno y no temen enfrentar conflictos. 
     Son líderes naturales, enfocados en la justicia y en la acción.""",
     
-        9: """🔷 Tipo 9 — El Pacificador
+        9: """🔷 Tipo 9 — El Pacificador:
     Calmados, tranquilos, atentos y conciliadores. 
     Valoran la paz y evitan confrontaciones. 
     Pueden perder su propia agenda para mantener la armonía.""",
