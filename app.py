@@ -121,7 +121,7 @@ def result():
     Valor: EXCELENCIA. Acción (orden práctico).
 
     Contribución: al ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
-    Posee buena orientación al detalle, reacio a delegar, preocupación excesiva.
+    Posee buena orientación al detalle, reacio a delegar, preocupación excesiva. Prolijo y ordenado.
 
     Conductas: controlar, corregir, juzgar, criticar.
 
@@ -132,25 +132,45 @@ def result():
     Creencia: el mundo es un lugar imperfecto para perfeccionar.
         
     Miedo básico: Ser corrupto, defectuoso o moralmente incorrecto.
+
+    Miedo constitutivo: Miedo a no poder, necesidad de ser fuerte. 
+    Reacción ante el miedo: controlando. 
     
     Fortalezas: Ético, disciplinado, responsable, justo.
-    Debilidades: Crítico, rígido, autoexigente, intolerante.
+    Áreas de mejora: Crítico, rígido, autoexigente, intolerante.
     
     Pecado capital: Ira (reprimida).
     
     Luz: Integridad, mejora del mundo, coherencia.
     Sombra: Juicio constante, perfeccionismo paralizante.
     
-    Integración (va al 7): Se vuelve más espontáneo, alegre y flexible.
-    Desintegración (va al 4): Se vuelve más emocional, resentido y melancólico.
+    Integración o conductas a incorporar (va al 7): Se vuelve más espontáneo, alegre y flexible.
+    Desintegración o conductas a evitar (va al 4): Se vuelve más emocional, resentido y melancólico.
     
-    Alas: 9 (más calmado) o 2 (más servicial).
+    Alas o eneatipos que equilibran a la esencia 1: 9 (más calmado) y 2 (más servicial).
+    El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
+    y no sólo por principios y normas: "lo correcto". 
+    Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
+    Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
+    no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
+    y no sus necesidades.
   
-    Tríada: Instintiva (Ira).""",
+    Tríada: Instintiva, área de la acción o visceral (expresión). Dosifica planificadamente su energía. Detallista.""",
 
-    1: """🟡 ¿Cómo puedes sentirte mejor?:
+       1: """🟡 ¿Cómo puedes sentirte mejor?:
     "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
-    Desarrollando tareas creativas, que lo incentiven, sintiendo disfrute.""",        
+    Desarrollando tareas creativas, que te incentiven. 
+    Dándote tiempo libre para el placer y la relajación. Sintiendo disfrute.
+    Focalizarte en un ideal de vida. Poner las formas en función del fondo.
+    Recordar que todos somos uno y perfectos tal como somos.
+    Comprender que hay más de una manera correcta de hacer las cosas.
+    Practicar el perdón con uno mismo y los demás. Tratarte con menos rigor.
+    Parar, darse tiempos. Soltarse y soltar.
+    Dejarse llevar por la corrienre.
+    Confiar en las buenas intenciones de los demás.
+    Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
+    ayudar a los demás a tomar decisiones.
+    El objetivo de la vida es ser humano, no perfecto.""",        
         
         2: """🔵 Tipo 2 — El Ayudador:
     Empáticos, cálidos y orientados a servir a otros. 
