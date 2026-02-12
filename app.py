@@ -118,45 +118,31 @@ def result():
     Tienden a autocriticarse y a querer que todo sea “lo correcto”.
 
         🟡 Características principales:
-    Valor: EXCELENCIA. Acción (orden práctico).
-
-    Contribución: al ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
-    Posee buena orientación al detalle, reacio a delegar, preocupación excesiva. Prolijo y ordenado.
-
-    Conductas: controlar, corregir, juzgar, criticar.
-
-    Hábitos: busca culpables, corrige errores, busca tener la razón. 
-
-    Resultado: predominio del deber sobre el placer.
-
-    Creencia: el mundo es un lugar imperfecto para perfeccionar.
-        
-    Miedo básico: Ser corrupto, defectuoso o moralmente incorrecto.
-
-    Miedo constitutivo: Miedo a no poder, necesidad de ser fuerte. 
-    Reacción ante el miedo: controlando. 
-    
-    Fortalezas: Ético, disciplinado, responsable, justo.
-    Áreas de mejora: Crítico, rígido, autoexigente, intolerante.
-    
-    Pecado capital: Ira (reprimida).
-    
+    El valor del eneatipo 1 radica en la EXCELENCIA. Acción (orden práctico).
+    Su mayor contribución es ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
+    Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado.
+    Sus conductas recurrentes pueden ser el controlar, corregir, juzgar, criticar.
+    Desarrolla hábitos como buscar culpables, corrigir errores y tener la razón. 
+    El resultado de estas conductas y hábitos es un predominio del deber sobre el placer.
+    La creencia arraigada en su interior es "el mundo es un lugar imperfecto para perfeccionar".
+    El miedo básico es ser corrupto, defectuoso o moralmente incorrecto.
+    Su miedo constitutivo a no poder le genera la necesidad de ser fuerte y la reacción ante este miedo es controlando. 
+    Sus principales fortalezas son ser ético, disciplinado, responsable, justo. Y sus principales áreas de mejora radican en 
+    su ser crítico, rígido, autoexigente, intolerante.
+    El pecado capital del eneatipo 1 es la ira (reprimida). 
     En su lado luz el eneatipo 1  representa integridad, mejora del mundo, coherencia.
     Sin embargo, en su lado sombra desarrolla un juicio constante y perfeccionismo paralizante.
-    
-    Integración o conductas a incorporar: espontaneidad, alegría y flexibilidad.
-    Desintegración o conductas a evitar: emocionalidad, resentimiento y melancolía.
-    
-    Qué equilibra a la esencia 1: ser más calmado y más servicial.
+    Para lograr su integración es aconsejable que incorpore conductas como la espontaneidad, alegría y flexibilidad,
+    evitando la emocionalidad, resentimiento y melancolía.
+    Las actitudes que equilibran a la esencia 1 son ser más calmado y más servicial.
     El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
     y no sólo por principios y normas: "lo correcto". Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
     Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
     no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
     y no sus necesidades.
-  
-    Tríada: Instintiva, área de la acción o visceral (expresión). Dosifica planificadamente su energía. Detallista.
-
-    Existen 3 sub-tipos:
+    La escencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
+    Dosifica planificadamente su energía. Es detallista.
+    Cabe destacar que existen 3 sub-tipos:
     
     🏠 1 Conservación (Ansiedad)
 
@@ -173,7 +159,7 @@ def result():
        🟡 ¿Cómo puedes sentirte mejor?:
     "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
     Desarrollando tareas creativas, que te incentiven. 
-    Dándote tiempo libre para el placer y la relajación. Sintiendo disfrute.
+    Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
     Focalizarte en un ideal de vida. Poner las formas en función del fondo.
     Recordar que todos somos uno y perfectos tal como somos.
     Comprender que hay más de una manera correcta de hacer las cosas.
