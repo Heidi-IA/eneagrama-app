@@ -52,7 +52,7 @@ def quiz_post():
     page = int(request.args.get("page", 1))
 
     per_page = 30
-    total_pages = (len(questions_all) + per_page - 1) // total_pages
+    total_pages = (len(questions_all) + per_page - 1) // per_page
 
     page = max(1, min(page, total_pages))
     start = (page - 1) * per_page
@@ -74,7 +74,6 @@ def quiz_post():
 
     # si es última → resultado
     return redirect(url_for("result"))
-
 
 
 @app.get("/reset")
