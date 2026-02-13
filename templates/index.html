@@ -46,17 +46,35 @@
           </select>
         </div>
 
-        <!-- Fecha de nacimiento -->
+        <!-- Fecha de nacimiento en formato DD/MM/AAAA -->
         <div class="mb-3 text-start">
           <label class="form-label">Fecha de nacimiento</label>
-          <input type="date" class="form-control" name="fecha_nacimiento" required>
+          <input type="text" class="form-control" name="fecha_nacimiento"
+                 placeholder="DD/MM/AAAA"
+                 pattern="\d{2}/\d{2}/\d{4}"
+                 required>
+          <div class="form-text">Ingresá tu fecha de nacimiento con formato DD/MM/AAAA</div>
         </div>
-
-        <!-- Hora de nacimiento -->
+        
+        <!-- Hora de nacimiento con opción desconocida -->
         <div class="mb-3 text-start">
           <label class="form-label">Hora de nacimiento</label>
-          <input type="time" class="form-control" name="hora_nacimiento" required>
+        
+          <div class="input-group">
+            <input type="time" class="form-control" name="hora_nacimiento">
+            <span class="input-group-text">
+              <input class="form-check-input mt-0" type="checkbox"
+                     name="hora_desconocida" value="1"
+                     aria-label="Hora de nacimiento desconocida">
+            </span>
+            <span class="input-group-text">Desconozco</span>
+          </div>
+        
+          <div class="form-text">
+            Si no conocés tu hora de nacimiento, marcá “Desconozco”.
+          </div>
         </div>
+
 
         <!-- Botón de enviar -->
         <div class="d-grid gap-2 col-6 mx-auto">
