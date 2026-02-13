@@ -216,19 +216,21 @@ def result():
     Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.
 
     🔵 ¿Cómo puedes sentirte mejor?:
-    "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
-    Desarrollando tareas creativas, que te incentiven. 
-    Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
-    Focalizarte en un ideal de vida. Poner las formas en función del fondo.
-    Recordar que todos somos uno y perfectos tal como somos.
-    Comprender que hay más de una manera correcta de hacer las cosas.
-    Practicar el perdón con uno mismo y los demás. Tratarte con menos rigor.
-    Parar, darse tiempos. Soltarse y soltar.
-    Dejarse llevar por la corriente.
-    Confiar en las buenas intenciones de los demás.
-    Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
-    ayudar a los demás a tomar decisiones.
-    El objetivo de la vida es ser humano, no perfecto.""",     
+    "Me voy a querer más que ayer, pero menos que mañana."
+    Aprender a decir que NO con asertividad. 
+    Comprendiendo que todos somos amados por lo que somos, no por lo que damos y
+    que en último término las personas siempre satisfacen sus necesidades. 
+    Comprendiendo que ser amado no depende de cambiar para complacer a los demás. 
+    Mantener claro quién eres realmente. 
+    Prestar atención a tus deseos y necesidades y atenderlos. 
+    Reconocer que no eres indispensable y que eso está bien.
+    No ayudar cuando la persona no lo pide.
+    Permitir que te ayuden.
+    Aprender que existe un orden del cual eres parte.
+    Aplicar reglas como directrices adecuadas.
+    Conseguir grandes cosas atendiendo proyectos propios. 
+    Dejar de estar excesivamente pendiente de las necesidades ajenas. 
+    Eficacia y eficiencia en el servicio y no sólo cubrir necesidades de los otros.""",     
    
         
         3: """🟢 Tipo 3 — El Triunfador:
