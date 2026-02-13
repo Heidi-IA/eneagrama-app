@@ -11,16 +11,45 @@
       <h2 class="fw-bold">Tus resultados</h2>
 
       {% if top_types %}
-      <div class="alert alert-success mt-3">
-        <h4>Tu eneatipo principal es: <strong>{{ top_types[0] }}</strong></h4>
-        <p>{{ eneatipo_textos[top_types[0]] }}</p>
-      </div>
+        {% set principal = top_types[0] %}
+        {% set txt = eneatipo_textos[principal] %}
+      
+        <!-- Recuadro: Título + Descripción -->
+        <div class="card border-primary mb-3">
+          <div class="card-header bg-primary text-white">
+            {{ txt.titulo }}
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{ txt.descripcion }}</p>
+          </div>
+        </div>
+      
+        <!-- Recuadro: Características principales -->
+        <div class="card border-secondary mb-3">
+          <div class="card-header bg-secondary text-white">
+            🟡 Características principales
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{ txt.caracteristicas }}</p>
+          </div>
+        </div>
+      
+        <!-- Recuadro: Cómo puedes sentirte mejor -->
+        <div class="card border-success mb-3">
+          <div class="card-header bg-success text-white">
+            🟡 ¿Cómo puedes sentirte mejor?
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{ txt.mejorar }}</p>
+          </div>
+        </div>
       {% endif %}
+      }
 
       <p class="small text-muted">Total de afirmaciones marcadas: <strong>{{ total_marked }}</strong></p>
 
       <!-- Gráfico -->
-      <canvas id="eneagramaChart" height="200"></canvas>
+      <canvas id="eneagramaChart" height="100"></canvas>
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script>
