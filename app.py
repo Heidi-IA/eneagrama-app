@@ -364,6 +364,7 @@ def result():
     Ejercitando toma de decisiones conscientes.
     Integrando presencia activa con serenidad interior.""",
 }
+}
 
     return render_template(
         "result.html",
