@@ -179,51 +179,29 @@ def result():
     ayudar a los demás a tomar decisiones.
     El objetivo de la vida es ser humano, no perfecto.""",        
      },       
-        2: """🔵 Tipo 2 — El Ayudador:
-    Empáticos, cálidos y orientados a servir a otros. 
+2: {
+    "titulo": "🔵 Tipo 2 — El Ayudador",
+    "descripcion": """Empáticos, cálidos y orientados a servir a otros. 
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
-    Pueden descuidar sus propias necesidades al priorizar las de otros.
-   
-        🔵 Características principales:
-    El valor del eneatipo 2 radica en la CONEXIÓN EMOCIONAL. Dar.
+    Pueden descuidar sus propias necesidades al priorizar las de otros.""",
+    "caracteristicas": """El valor del eneatipo 2 radica en la CONEXIÓN EMOCIONAL. Dar.
     Su mayor contribución es identificar el talento, delegar eficazmente, y entregar feedback. Es un COORDINADOR. 
     Puede crear una atmósfera negativa, manipular y estar orientado a los conflictos. 
     Sus conductas recurrentes pueden ser agradar, ayudar, adular y buscar. 
     Desarrolla hábitos como descuido de las propias necesidades y dificultad para poner límites. 
     El resultado de estas conductas y hábitos es sentirse usado, vacío y frustrado. 
     La creencia arraigada en su interior es "el mundo es un lugar donde es necesario dar para recibir".
-    El miedo básico es ser no ser amado o necesario.
-    Su miedo constitutivo al rechazo le genera la necesidad de aceptación y la reacción ante este miedo es necesitando que lo necesiten, es decir, dando (manifestando), lo que genera adicción a los otros. 
-    Sus principales fortalezas son ser generoso, empático, afectuoso. Y sus principales áreas de mejora radican en 
-    la dependiencia, complaciencia y la manipulación sutil.
+    El miedo básico es no ser amado o necesario.
+    Sus principales fortalezas son generoso, empático, afectuoso. Y sus áreas de mejora radican en 
+    dependiencia, complacencia y la manipulación sutil.
     El pecado capital del eneatipo 2 es la soberbia u orgullo. 
-    En su lado luz el eneatipo 2  representa amor genuino y servicio desinteresado.
-    Sin embargo, en su lado sombra desarrolla un dar para recibir e invasión emocional.
-    Para lograr su evolución es aconsejable que incorpore conductas como conectar con sus propias emociones y autenticidad,
-    evitando volverse controlador y dominante.
-    Las actitudes que equilibran a la esencia 2 son la estructura y la orientación al logro.
-    El desarrollo de estas características le permite adquirir honestidad, es decir, decir las cosas como son sin adular, también puede adquirir orden. claridad, sin vueltas. 
-    Cuando toma acción y concreción, aprende a manejar lo material y ganar dinero. Se vuelve práctivo, concreto y es claro y firme para decir las cosas. 
-    Cuando no se desarrollan, el eneatipo 2 tiende a caer la rigidez y una actitud moralista, se la pasa dando consejos a otros. También puede engañar y tratar de ganarse al otro
-    vendiendo una imagen y diciendo lo que le conviene para lograr lo que quiere. 
-    Otra de las áreas de expansión es su punto ciego, que es tomar distancia, dejando que otros ocupen sus roles. 
-    La esencia 2 se encuentra dentro de la tríada emocional, es decir, el área del corazón y la sensibilidad.
-    Cabe destacar que existen 3 sub-tipos
-    🏠 2 Conservación (Privilegio)
-    
-    Busca ser indispensable. Ayuda para asegurarse amor y protección.
-    
-    👥 2 Social (Ambición)
-    
-    Quiere ser querido y reconocido socialmente. Seductor social.
-    
-    ❤️ 2 Sexual (Conquista)
-    
-    Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.
-
-    🔵 ¿Cómo puedes sentirte mejor?:
-    "Me voy a querer más que ayer, pero menos que mañana."
-    Aprender a decir que NO con asertividad. 
+    En su lado luz representa amor genuino y servicio desinteresado.
+    En su lado sombra desarrolla un dar para recibir e invasión emocional.
+    Cabe destacar que existen 3 sub-tipos:
+    🏠 2 Conservación (Privilegio): Busca ser indispensable. Ayuda para asegurarse amor y protección.
+    👥 2 Social (Ambición): Quiere ser querido y reconocido socialmente. Seductor social.
+    ❤️ 2 Sexual (Conquista): Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.""",
+    "mejorar": """Aprender a decir que NO con asertividad. 
     Comprendiendo que todos somos amados por lo que somos, no por lo que damos y
     que en último término las personas siempre satisfacen sus necesidades. 
     Comprendiendo que ser amado no depende de cambiar para complacer a los demás. 
@@ -233,180 +211,159 @@ def result():
     No ayudar cuando la persona no lo pide.
     Permitir que te ayuden.
     Aprender que existe un orden del cual eres parte.
-    Aplicar reglas como directrices adecuadas.
     Conseguir grandes cosas atendiendo proyectos propios. 
-    Dejar de estar excesivamente pendiente de las necesidades ajenas. 
-    Eficacia y eficiencia en el servicio y no sólo cubrir necesidades de los otros.""",     
-   
-        
-        3: """🟢 Tipo 3 — El Triunfador:
-    Energéticos, adaptables y orientados al éxito. 
+    Dejar de estar excesivamente pendiente de las necesidades ajenas.""",
+},
+  
+3: {
+    "titulo": "🟢 Tipo 3 — El Triunfador",
+    "descripcion": """Energéticos, adaptables y orientados al éxito. 
     Se enfocan en metas, logros y reconocimiento. 
     Suelen inspirar a otros con su energía, aunque pueden priorizar imagen y resultados.""",
-
-        3: """🟢 Características principales:
-    Miedo básico: Ser un fracaso o no valer.
-    
+    "caracteristicas": """Miedo básico: Ser un fracaso o no valer.
     Fortalezas: Eficiente, adaptable, motivador.
     Debilidades: Vanidoso, competitivo, desconectado emocionalmente.
-    
     Pecado capital: Vanidad.
-    
-    Luz: Inspirador, productivo, ejemplo de superación.
-    Sombra: Identidad basada en la imagen.
-    
-    Integración (va al 6): Se vuelve más cooperativo y comprometido.
-    Desintegración (va al 9): Se vuelve apático y desconectado.
-    
-    Alas: 2 (más sociable) o 4 (más creativo).
-    
-    Tríada: Emocional (Vergüenza).""",
-                
-        4: """🔴 Tipo 4 — El Individualista:
-    Creativos, sensibles y emocionalmente profundos. 
+    En su lado luz es inspirador, productivo y ejemplo de superación.
+    En su lado sombra puede basar su identidad en la imagen.
+    Cabe destacar las alas:
+    🟢 3 con ala 2: Más sociable y enfocado en relaciones.
+    🟢 3 con ala 4: Más creativo y expresivo.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Centrando tu atención en tus valores internos en lugar de la imagen.
+    Practicando la autenticidad sobre la apariencia.
+    Valorando tus logros sin depender de la aprobación externa.
+    Fomentando la empatía y la conexión genuina.
+    Permitirte descansar sin sentir culpa.
+    Equilibrar productividad con presencia y gratitud.""",
+},
+        
+4: {
+    "titulo": "🔴 Tipo 4 — El Individualista",
+    "descripcion": """Creativos, sensibles y emocionalmente profundos. 
     Se sienten únicos e intensos, valoran la autenticidad. 
     Tienden a ser introspectivos y a explorar su mundo interior con profundidad.""",
-
-         4: """🔴 Características principales:
-    Miedo básico: No tener identidad o significado.
-    
+    "caracteristicas": """Miedo básico: No tener identidad o significado.
     Fortalezas: Creativo, sensible, profundo.
     Debilidades: Melancólico, comparativo, dramático.
-    
     Pecado capital: Envidia.
-    
-    Luz: Autenticidad y expresión emocional profunda.
-    Sombra: Victimismo, aislamiento.
-    
-    Integración (va al 1): Se vuelve más disciplinado y estructurado.
-    Desintegración (va al 2): Se vuelve dependiente y complaciente.
-    
-    Alas: 3 (más orientado al logro) o 5 (más introspectivo).
-    
-    Tríada: Emocional (Vergüenza).""",   
-    
-        5: """🟣 Tipo 5 — El Investigador:
-    Curiosos, observadores y analíticos. 
-    Buscan conocimiento, comprensión y autonomía. 
+    En su lado luz se expresa con autenticidad emocional profunda.
+    En su sombra puede caer en victimismo o aislamiento.
+    Alcanzan equilibrio entre estructura y expresión personal.
+    Alas:
+    🔴 4 con ala 3: Más orientado al logro.
+    🔴 4 con ala 5: Más introspectivo y cerebral.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Cultivando la disciplina personal y la estructura.
+    Aprendiendo a aceptar tus emociones sin quedarte atrapado en ellas.
+    Fomentando la creatividad con propósito.
+    Practicando gratitud y conexión con otros.
+    Explorando logros tangibles además del mundo interior.""",
+},
+
+5: {
+    "titulo": "🟣 Tipo 5 — El Investigador",
+    "descripcion": """Curiosos, observadores y analíticos. Buscan conocimiento, comprensión y autonomía. 
     Prefieren observar antes que participar y disfrutan de profundizar en temas complejos.""",
-
-        5: """🟣 Características principales:
-    Miedo básico: Ser incompetente o incapaz.
-    
+    "caracteristicas": """Miedo básico: Ser incompetente o incapaz.
     Fortalezas: Analítico, observador, independiente.
-    Debilidades: Aislado, distante, acumulador de energía.
-    
+    Debilidades: Aislado, distante, retraído.
     Pecado capital: Avaricia.
-    
-    Luz: Sabiduría, claridad mental.
-    Sombra: Retraimiento extremo, frialdad.
-    
-    Integración (va al 8): Se vuelve más decidido y activo.
-    Desintegración (va al 7): Se vuelve disperso e impulsivo.
-    
-    Alas: 4 (más creativo) o 6 (más leal y precavido).
-    
-    Tríada: Mental (Miedo).""",    
-
+    En su lado luz se expresa con sabiduría y claridad mental.
+    En su sombra puede caer en retraimiento extremo o frialdad.
+    Cabe destacar alas:
+    🟣 5 con ala 4: Más creativo.
+    🟣 5 con ala 6: Más precavido y leal.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Integrando acción deliberada y participación social.
+    Cultivando conexiones con otros sin perder tu independencia.
+    Practicando compartir tu conocimiento con humildad.
+    Balanceando reflexión con experiencia directa.""",
+},
         
-        6: """🟠 Tipo 6 — El Leal:
-    Personas leales, responsables, cautelosas y con gran sentido de comunidad. 
+6: {
+    "titulo": "🟠 Tipo 6 — El Leal",
+    "descripcion": """Personas leales, responsables, cautelosas y con gran sentido de comunidad. 
     Valoran la seguridad, la confianza y la previsibilidad. 
     Pueden preocuparse por posibles riesgos, pero son muy comprometidos.""",
-
-        6: """🟠 Características principales:
-    Miedo básico: No tener seguridad ni apoyo.
-    
+    "caracteristicas": """Miedo básico: No tener seguridad ni apoyo.
     Fortalezas: Leal, responsable, comprometido.
     Debilidades: Ansioso, desconfiado, dubitativo.
-    
-    Pecado capital: Miedo (cobardía).
-    
-    Luz: Valentía y compromiso con la comunidad.
-    Sombra: Parálisis por miedo o actitud desafiante constante.
-    
-    Integración (va al 9): Se vuelve más confiado y tranquilo.
-    Desintegración (va al 3): Se vuelve competitivo y orientado a la imagen.
-    
-    Alas: 5 (más analítico) o 7 (más sociable).
-    
-    Tríada: Mental (Miedo).""",   
-
+    Pecado capital: Miedo.
+    En su lado luz se expresa con valentía y compromiso con la comunidad.
+    En su sombra puede caer en parálisis por miedo.
+    Cabe destacar alas:
+    🟠 6 con ala 5: Más analítico e introspectivo.
+    🟠 6 con ala 7: Más social y adaptable.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Practicando confianza en ti mismo.
+    Cultivando cooperación y apertura.
+    Aprendiendo a discernir riesgos reales de miedos imaginarios.
+    Practicando calma antes que reacción.
+    Construyendo seguridad desde el interior.""",
+},
         
-        7: """🟤 Tipo 7 — El Entusiasta:
-    Activos, optimistas, espontáneos y con deseos de experiencias nuevas. 
-    Ayudan a otros a ver el lado positivo de la vida. 
-    A veces evitan el dolor y buscan diversión constante.""",
-
-        7: """🟤 Características principales:
-    Miedo básico: Sentir dolor o quedar atrapado en el sufrimiento.
-    
+ 7: {
+    "titulo": "🟤 Tipo 7 — El Entusiasta",
+    "descripcion": """Activos, optimistas, espontáneos y con deseos de experiencias nuevas. 
+    Ayudan a otros ver el lado positivo de la vida. A veces evitan el dolor y buscan diversión constante.""",
+    "caracteristicas": """Miedo básico: Sentir dolor o quedar atrapado en el sufrimiento.
     Fortalezas: Optimista, creativo, versátil.
     Debilidades: Disperso, impulsivo, evasivo.
-    
-    Pecado capital: Gula.
-    
-    Luz: Alegría, entusiasmo, visión positiva.
-    Sombra: Huida del dolor, superficialidad.
-    
-    Integración (va al 5): Se vuelve más profundo y enfocado.
-    Desintegración (va al 1): Se vuelve rígido y crítico.
-    
-    Alas: 6 (más responsable) o 8 (más decidido).
+    Pecado capital: Gula (deseo de experiencias).
+    En su lado luz se expresa con alegría y entusiasmo.
+    En su sombra puede evadir el dolor y superficializar experiencias.
+    Alas:
+    🟤 7 con ala 6: Más responsable y comunitario.
+    🟤 7 con ala 8: Más decidido y firme.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Cultivando enfoque y presencia emocional.
+    Aceptando el dolor como parte de la vida.
+    Desarrollando rutinas que equilibren diversión y responsabilidad.
+    Profundizando experiencias en lugar de dispersarlas.""",
+},
         
-    Tríada: Mental (Miedo).""",   
-    
-        
-        8: """🔶 Tipo 8 — El Desafiador:
-    Directos, fuertes, protectores y decididos. 
+8: {
+    "titulo": "🔶 Tipo 8 — El Desafiador",
+    "descripcion": """Directos, fuertes, protectores y decididos. 
     Buscan controlar su entorno y no temen enfrentar conflictos. 
-    Son líderes naturales, enfocados en la justicia y en la acción.""",
-
-        8: """🔶  Características principales:
-    Miedo básico: Ser vulnerable o controlado.
-    
+    Son líderes naturales, enfocados en la justicia y la acción.""",
+    "caracteristicas": """Miedo básico: Ser vulnerable o controlado.
     Fortalezas: Fuerte, protector, líder natural.
     Debilidades: Dominante, confrontativo, excesivo.
-    
-    Pecado capital: Lujuria (exceso de intensidad).
-    
-    Luz: Justicia, protección y liderazgo valiente.
-    Sombra: Autoritarismo, agresividad.
-    
-    Integración (va al 2): Se vuelve más compasivo y protector amoroso.
-    Desintegración (va al 5): Se aísla y se vuelve más desconfiado.
-    
-    Alas: 7 (más entusiasta) o 9 (más conciliador).
-    
-    Tríada: Instintiva (Ira).""",    
-    
+    Pecado capital: Lujuria (intensidad).
+    En su lado luz se expresa con justicia y liderazgo valiente.
+    En su sombra puede volverse autoritario o agresivo.
+    Alas:
+    🔶 8 con ala 7: Más entusiasta.
+    🔶 8 con ala 9: Más conciliador.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Practicando empatía sin perder firmeza.
+    Abrazando vulnerabilidad como fuerza interna.
+    Equilibrando poder con compasión.
+    Construyendo confianza sin confrontación innecesaria.""",
+},
         
-        9: """🔷 Tipo 9 — El Pacificador:
-    Calmados, tranquilos, atentos y conciliadores. 
+9: {
+    "titulo": "🔷 Tipo 9 — El Pacificador",
+    "descripcion": """Calmados, tranquilos, atentos y conciliadores. 
     Valoran la paz y evitan confrontaciones. 
-    Pueden perder su propia agenda para mantener la armonía.""",
-
-        9: """🔷  Características principales:
-    Miedo básico: Pérdida de conexión y conflicto.
-    
+    Pueden perder su propia agenda personal para mantener la armonía.""",
+    "caracteristicas": """Miedo básico: Pérdida de conexión y conflicto.
     Fortalezas: Mediador, paciente, estable.
     Debilidades: Indeciso, pasivo, evasivo.
-    
     Pecado capital: Pereza (inercia interior).
-    
-    Luz: Armonía, integración, serenidad.
-    Sombra: Desconexión de sí mismo, postergación.
-    
-    Integración (va al 3): Se vuelve más activo y orientado a metas.
-    Desintegración (va al 6): Se vuelve ansioso e inseguro.
-    
-    Alas: 8 (más firme) o 1 (más estructurado).
-    
-    Tríada: Instintiva (Ira).""",
-    
-   
-    }
-
+    En su lado luz se expresa con armonía y serenidad.
+    En su sombra puede desconectarse de sí mismo.
+    Alas:
+    🔷 9 con ala 8: Más firme.
+    🔷 9 con ala 1: Más estructurado.""",
+    "mejorar": """¿Cómo puedes sentirte mejor?:
+    Practicando afirmación personal sin necesidad de evitar confrontaciones.
+    Cultivando claridad y enfoque.
+    Ejercitando toma de decisiones conscientes.
+    Integrando presencia activa con serenidad interior.""",
+}
 
     return render_template(
         "result.html",
