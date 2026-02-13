@@ -195,7 +195,7 @@ def result():
     Sin embargo, en su lado sombra desarrolla un dar para recibir e invasión emocional.
     Para lograr su evolución es aconsejable que incorpore conductas como conectar con sus propias emociones y autenticidad,
     evitando volverse controlador y dominante.
-    Las actitudes que equilibran a la esencia 1 son la estructura y la orientación al logro.
+    Las actitudes que equilibran a la esencia 2 son la estructura y la orientación al logro.
     El desarrollo de estas características le permite adquirir honestidad, es decir, decir las cosas como son sin adular, también puede adquirir orden. claridad, sin vueltas. 
     Cuando toma acción y concreción, aprende a manejar lo material y ganar dinero. Se vuelve práctivo, concreto y es claro y firme para decir las cosas. 
     Cuando no se desarrollan, el eneatipo 2 tiende a caer la rigidez y una actitud moralista, se la pasa dando consejos a otros. También puede engañar y tratar de ganarse al otro
