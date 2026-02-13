@@ -142,7 +142,7 @@ def result():
     no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
     y no sus necesidades.
     Otra de las áreas de expansión es su punto ciego, que es tomar riesgos, mostrarse, exponerse. 
-    La escencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
+    La esencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
     Dosifica planificadamente su energía. Es detallista. Vive en el presente y tiene la necesidad de autonomía.
     Cabe destacar que existen 3 sub-tipos:
     
@@ -180,51 +180,56 @@ def result():
    
         🔵 Características principales:
     El valor del eneatipo 2 radica en la CONEXIÓN EMOCIONAL. Dar.
-    Su mayor contribución es ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
-    Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado.
-    No le gusta que le cambien de lugar sus cosas. 
-    Sus conductas recurrentes pueden ser el controlar, corregir, juzgar, criticar.
-    Desarrolla hábitos como buscar culpables, corrigir errores y tener la razón. 
-    El resultado de estas conductas y hábitos es un predominio del deber sobre el placer.
-    La creencia arraigada en su interior es "el mundo es un lugar imperfecto para perfeccionar".
-    El miedo básico es ser corrupto, defectuoso o moralmente incorrecto.
-    Su miedo constitutivo a no poder le genera la necesidad de ser fuerte y la reacción ante este miedo es controlando. 
-    Sus principales fortalezas son ser ético, disciplinado, responsable, justo. Y sus principales áreas de mejora radican en 
-    su ser crítico, rígido, autoexigente, intolerante.
-    El pecado capital del eneatipo 1 es la ira (reprimida). 
-    En su lado luz el eneatipo 1  representa integridad, mejora del mundo, coherencia.
-    Sin embargo, en su lado sombra desarrolla un juicio constante y perfeccionismo paralizante.
-    Para lograr su evolución es aconsejable que incorpore conductas como la espontaneidad, alegría y flexibilidad,
-    evitando la emocionalidad, resentimiento y melancolía.
-    Las actitudes que equilibran a la esencia 1 son ser más calmado y más servicial.
-    El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
-    y no sólo por principios y normas: "lo correcto". Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
-    Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
-    no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
-    y no sus necesidades.
-    Otra de las áreas de expansión es su punto ciego, que es tomar riesgos, mostrarse, exponerse. 
-    La escencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
-    Dosifica planificadamente su energía. Es detallista.
+    Su mayor contribución es identificar el talento, delegar eficazmente, y entregar feedback. Es un COORDINADOR. 
+    Puede crear una atmósfera negativa, manipular y estar orientado a los conflictos. 
+    Sus conductas recurrentes pueden ser agradar, ayudar, adular y buscar. 
+    Desarrolla hábitos como descuido de las propias necesidades y dificultad para poner límites. 
+    El resultado de estas conductas y hábitos es sentirse usado, vacío y frustrado. 
+    La creencia arraigada en su interior es "el mundo es un lugar donde es necesario dar para recibir".
+    El miedo básico es ser no ser amado o necesario.
+    Su miedo constitutivo al rechazo le genera la necesidad de aceptación y la reacción ante este miedo es necesitando que lo necesiten, es decir, dando (manifestando), lo que genera adicción a los otros. 
+    Sus principales fortalezas son ser generoso, empático, afectuoso. Y sus principales áreas de mejora radican en 
+    la dependiencia, complaciencia y la manipulación sutil.
+    El pecado capital del eneatipo 2 es la soberbia u orgullo. 
+    En su lado luz el eneatipo 2  representa amor genuino y servicio desinteresado.
+    Sin embargo, en su lado sombra desarrolla un dar para recibir e invasión emocional.
+    Para lograr su evolución es aconsejable que incorpore conductas como conectar con sus propias emociones y autenticidad,
+    evitando volverse controlador y dominante.
+    Las actitudes que equilibran a la esencia 1 son la estructura y la orientación al logro.
+    El desarrollo de estas características le permite adquirir honestidad, es decir, decir las cosas como son sin adular, también puede adquirir orden. claridad, sin vueltas. 
+    Cuando toma acción y concreción, aprende a manejar lo material y ganar dinero. Se vuelve práctivo, concreto y es claro y firme para decir las cosas. 
+    Cuando no se desarrollan, el eneatipo 2 tiende a caer la rigidez y una actitud moralista, se la pasa dando consejos a otros. También puede engañar y tratar de ganarse al otro
+    vendiendo una imagen y diciendo lo que le conviene para lograr lo que quiere. 
+    Otra de las áreas de expansión es su punto ciego, que es tomar distancia, dejando que otros ocupen sus roles. 
+    La esencia 2 se encuentra dentro de la tríada emocional, es decir, el área del corazón y la sensibilidad.
     Cabe destacar que existen 3 sub-tipos
+    🏠 2 Conservación (Privilegio)
+    
+    Busca ser indispensable. Ayuda para asegurarse amor y protección.
+    
+    👥 2 Social (Ambición)
+    
+    Quiere ser querido y reconocido socialmente. Seductor social.
+    
+    ❤️ 2 Sexual (Conquista)
+    
+    Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.
 
-
-
-    Miedo básico: No ser amado o necesario.
-    
-    Fortalezas: Generoso, empático, afectuoso.
-    Debilidades: Dependiente, complaciente, manipulador sutil.
-    
-    Pecado capital: Orgullo.
-    
-    Luz: Amor genuino y servicio desinteresado.
-    Sombra: Dar para recibir, invasión emocional.
-    
-    Integración (va al 4): Se conecta con sus propias emociones y autenticidad.
-    Desintegración (va al 8): Se vuelve controlador y dominante.
-    
-    Alas: 1 (más estructurado) o 3 (más orientado al logro).
-    
-    Tríada: Emocional (Vergüenza).""",
+    🔵 ¿Cómo puedes sentirte mejor?:
+    "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
+    Desarrollando tareas creativas, que te incentiven. 
+    Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
+    Focalizarte en un ideal de vida. Poner las formas en función del fondo.
+    Recordar que todos somos uno y perfectos tal como somos.
+    Comprender que hay más de una manera correcta de hacer las cosas.
+    Practicar el perdón con uno mismo y los demás. Tratarte con menos rigor.
+    Parar, darse tiempos. Soltarse y soltar.
+    Dejarse llevar por la corriente.
+    Confiar en las buenas intenciones de los demás.
+    Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
+    ayudar a los demás a tomar decisiones.
+    El objetivo de la vida es ser humano, no perfecto.""",     
+   
         
         3: """🟢 Tipo 3 — El Triunfador:
     Energéticos, adaptables y orientados al éxito. 
