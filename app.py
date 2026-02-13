@@ -165,8 +165,7 @@ def result():
     🏠 1 Conservación (Ansiedad): preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
     👥 1 Social (Rigidez): defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
     ❤️ 1 Sexual (Celo): más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",         
-    "mejorar": """¿Cómo puedes sentirte mejor?:
-    "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
+    "mejorar": """Tener presente que "SIEMPRE no es realmente siempre y NUNCA no son todas las veces".
     Desarrollando tareas creativas, que te incentiven. 
     Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
     Focalizarte en un ideal de vida. Poner las formas en función del fondo.
@@ -179,7 +178,7 @@ def result():
     Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
     ayudar a los demás a tomar decisiones.
     El objetivo de la vida es ser humano, no perfecto.""",        
-        
+     },       
         2: """🔵 Tipo 2 — El Ayudador:
     Empáticos, cálidos y orientados a servir a otros. 
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
