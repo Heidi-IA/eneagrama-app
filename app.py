@@ -44,6 +44,25 @@ def quiz_get():
         answers=answers,
     )
 
+@app.post("/start")
+def start_quiz():
+    fecha = request.form.get("fecha_nacimiento")
+    hora = request.form.get("hora_nacimiento")
+    desconozco_hora = request.form.get("hora_desconocida") == "1"
+
+    session["usuario"] = {
+        "nombre": request.form.get("nombre"),
+        "email": request.form.get("email"),
+        "sexo": request.form.get("sexo"),
+        "fecha_nacimiento": fecha,
+        "hora_nacimiento": None if desconozco_hora else hora,
+        "hora_desconocida": desconozco_hora,
+    }
+
+    # Inicializar respuestas vacías
+    session["answers"] = {}
+
+    return redirect(url_for("quiz_get", page=1))
 
 @app.post("/quiz")
 def quiz_post():
