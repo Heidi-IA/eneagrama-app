@@ -116,11 +116,15 @@ def result():
         if answers.get(qid):
             scores[q["type"]] += 1
 
-    # Transformar a porcentajes
+    # Transformar a porcentajes (sobre total_marked)
     porcentaje_scores = {}
     for tipo, score in scores.items():
         porcentaje = (score / total_marked * 100) if total_marked > 0 else 0
         porcentaje_scores[tipo] = round(porcentaje, 1)
+
+    # ✅ NUEVO: labels/values para el radar (en orden 1..9)
+    labels = [str(i) for i in range(1, 10)]
+    values = [porcentaje_scores[i] for i in range(1, 10)]
 
     # Eneatipo principal
     max_score = max(scores.values()) if scores else 0
@@ -374,5 +378,6 @@ def result():
         max_score=max_score,
         total_marked=total_marked,
         eneatipo_textos=eneatipo_textos,
+        labels=labels,
+        values=values,
     )
-
