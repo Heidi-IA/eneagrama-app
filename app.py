@@ -178,7 +178,7 @@ def result():
     Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
     ayudar a los demás a tomar decisiones.
     El objetivo de la vida es ser humano, no perfecto.""",        
-     },       
+},       
 2: {
     "titulo": "🔵 Tipo 2 — El Ayudador",
     "descripcion": """Empáticos, cálidos y orientados a servir a otros. 
