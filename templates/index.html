@@ -8,6 +8,7 @@
   <div class="col-lg-8">
 
     <div class="card shadow-lg border-0 p-4 text-center">
+
       <h1 class="display-5 fw-bold mb-3">
         Test de Eneagrama _ versión extendida
       </h1>
@@ -15,19 +16,59 @@
       <p class="lead text-muted mb-4">
         El eneagrama es un modelo de personalidad basado en 9 patrones principales de pensamiento, emoción y comportamiento.
         Descubrí tu eneatipo a través de este test de autoidentificación personal.
-        Respondé con sinceridad y obtené tu perfil al finalizar.
         Con esta versión no sólo vas a conocer tu eneatipo dominante, también vas a explorar tus miedos más profundos y las creencias que 
         limitan tu evolución.
+        Responde con sinceridad tildando sólo las afirmaciones completas con las que te identificas y obtené tu perfil al finalizar. 
       </p>
 
-      <div class="d-grid gap-2 col-6 mx-auto">
-       <a href="{{ url_for('quiz_get', page=1) }}" class="btn btn-primary btn-lg">Comenzar Test</a>
+      <form method="POST" action="{{ url_for('start_quiz') }}">
 
-      </div>
+        <!-- Nombre completo -->
+        <div class="mb-3 text-start">
+          <label class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" name="nombre" required>
+        </div>
+
+        <!-- Correo electrónico -->
+        <div class="mb-3 text-start">
+          <label class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" name="email" required>
+        </div>
+
+        <!-- Sexo -->
+        <div class="mb-3 text-start">
+          <label class="form-label">Sexo</label>
+          <select class="form-select" name="sexo" required>
+            <option value="">Seleccioná...</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+          </select>
+        </div>
+
+        <!-- Fecha de nacimiento -->
+        <div class="mb-3 text-start">
+          <label class="form-label">Fecha de nacimiento</label>
+          <input type="date" class="form-control" name="fecha_nacimiento" required>
+        </div>
+
+        <!-- Hora de nacimiento -->
+        <div class="mb-3 text-start">
+          <label class="form-label">Hora de nacimiento</label>
+          <input type="time" class="form-control" name="hora_nacimiento" required>
+        </div>
+
+        <!-- Botón de enviar -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button type="submit" class="btn btn-primary btn-lg">Comenzar Test</button>
+        </div>
+
+      </form>
+
     </div>
 
     <div class="text-center mt-4 small text-muted">
-      Duración estimada: 25-30 minutos
+      Duración estimada: 25–30 minutos
     </div>
 
   </div>
