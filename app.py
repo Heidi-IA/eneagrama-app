@@ -111,14 +111,12 @@ def result():
     sorted_porcentajes = [(t, porcentaje_scores[t]) for (t, _) in sorted_scores]
 
     eneatipo_textos = {
-        1: """🟡 Tipo 1 — El Reformador:
-    Personas éticas, con fuerte sentido del bien y del mal, 
-    buscan mejorar el mundo y la perfección. 
-    Son responsables, disciplinadas, y muy exigentes consigo mismas y con los demás. 
-    Tienden a autocriticarse y a querer que todo sea “lo correcto”.
-
-        🟡 Características principales:
-    El valor del eneatipo 1 radica en la EXCELENCIA. Acción (orden práctico).
+    1: {
+        "titulo": "🟡 Tipo 1 — El Reformador",
+        "descripcion": """Personas éticas, con fuerte sentido del bien y del mal, buscan mejorar el mundo y la perfección. 
+         Son responsables, disciplinadas, y muy exigentes consigo mismas y con los demás. 
+         Tienden a autocriticarse y a querer que todo sea “lo correcto”.""",
+        "caracteristicas": """El valor del eneatipo 1 radica en la EXCELENCIA. Acción (orden práctico).
     Su mayor contribución es ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
     Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado.
     No le gusta que le cambien de lugar sus cosas. 
@@ -145,20 +143,10 @@ def result():
     La esencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
     Dosifica planificadamente su energía. Es detallista. Vive en el presente y tiene la necesidad de autonomía.
     Cabe destacar que existen 3 sub-tipos:
-    
-    🏠 1 Conservación (Ansiedad)
-
-    Preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
-
-    👥 1 Social (Rigidez)
-
-    Defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
-
-    ❤️ 1 Sexual (Celo)
-
-    Más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.
-         
-       🟡 ¿Cómo puedes sentirte mejor?:
+    🏠 1 Conservación (Ansiedad): preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
+    👥 1 Social (Rigidez): defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
+    ❤️ 1 Sexual (Celo): más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",         
+    "mejorar": """¿Cómo puedes sentirte mejor?:
     "SIEMPRE no es realmente siempre y NUNCA no son todas las veces"
     Desarrollando tareas creativas, que te incentiven. 
     Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
