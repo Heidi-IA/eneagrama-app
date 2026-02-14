@@ -132,7 +132,7 @@ def clasificar_eje(valor_redondeado_1d: float) -> str:
         return "no_desarrollado"
     if 8 <= v <= 10.9:
         return "bajo_leve"
-    if v == 11.1:
+    if abs(v - 11.1) <= 0.1:
         return "equilibrado"
     if 11.2 <= v <= 14:
         return "alto_leve"
