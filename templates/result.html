@@ -136,6 +136,25 @@
         </ul>
       </div>
 
+      <div class="card border-warning mt-4 text-start">
+        <div class="card-header bg-warning fw-bold">
+          Tu camino de evolución
+        </div>
+        <div class="card-body">
+          <p class="mb-3">
+            Para librarte de las cadenas invisibles que hoy frenan tu desarrollo es recomendable modificar las siguientes creencias limitantes:
+          </p>
+      
+          <ol class="mb-0">
+            {% for tipo, pct, texto in camino_evolucion %}
+              <li class="mb-2">
+                <strong>Tipo {{ tipo }} ({{ pct }}%)</strong>: {{ texto }}
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+
 
       <div class="mt-4">
         <a href="{{ url_for('reset') }}" class="btn btn-secondary">
