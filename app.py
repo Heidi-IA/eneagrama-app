@@ -121,7 +121,7 @@ def result():
     for tipo, score in scores.items():
         porcentaje = (score / total_marked * 100) if total_marked > 0 else 0
         porcentaje_scores[tipo] = round(porcentaje, 1)
-
+       
     # ✅ NUEVO: labels/values para el radar (en orden 1..9)
     labels = [str(i) for i in range(1, 10)]
     values = [porcentaje_scores[i] for i in range(1, 10)]
@@ -369,6 +369,26 @@ def result():
     Integrando presencia activa con serenidad interior.""",
 }
 }
+    creencias_limitantes = {
+        1: "Miedo a PERDER LA LIBERTAD por quedar atrapado en estructuras o situaciones que me asfixian (trabajo, pareja, etc).",
+        2: "Miedo a ABRIRME AFECTIVAMENTE, por que puedo sufrir.",
+        3: "Miedo a FRACASAR, por lo que no estoy haciendo lo que tengo que hacer para lograr el desarrollo personal.",
+        4: "Miedo a MIRARME A MI MISMO, porque hay algo de mí que no me gusta ver, o que no puedo cambiar (culpa del pasado, baja autoestima, etc).",
+        5: "Miedo a SUFRIR POR ALGO QUE NO QUIERO O NO PUEDO VER O ACEPTAR, algo de mi realidad que me duele, no está superado, o no sé qué es, pero me molesta.",
+        6: "Miedo a PERDER LA LIBERTAD por quedar atrapado en obligaciones o compromisos que se ha creado uno mismo.",
+        7: "Miedo a DISFRUTAR, por no poder soltar cosas o situaciones por exceso de responsabilidades y por temor a perder el control (mal concepto de la alegría).",
+        8: "Miedo a TOMAR UNA DECISIÓN, por las consecuencias que va atraer o traerme y no saber decir que basta o que no. Hay algo a lo cual no le estoy diciendo que no.",
+        9: "Miedo a PARAR, porque si paro, ¿quién se hace cargo de todo lo que me hago cargo yo?, es una manera de seguir adicto a la actividad.",
+    }
+
+    # Ranking de los 3 tipos con menor porcentaje
+    # (si total_marked == 0, todos dan 0; en ese caso igual mostramos 1..9 ordenados)
+    low3 = sorted(porcentaje_scores.items(), key=lambda x: (x[1], x[0]))[:3]
+
+    # Lista lista para el template: [(tipo, porcentaje, texto), ...]
+    camino_evolucion = [
+        (tipo, pct, creencias_limitantes[tipo]) for tipo, pct in low3
+    ]
 
     return render_template(
         "result.html",
@@ -380,4 +400,5 @@ def result():
         eneatipo_textos=eneatipo_textos,
         labels=labels,
         values=values,
+        camino_evolucion=camino_evolucion,
     )
