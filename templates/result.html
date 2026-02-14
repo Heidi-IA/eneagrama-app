@@ -155,6 +155,27 @@
         </div>
       </div>
 
+      <div class="card border-info mt-4 text-start">
+        <div class="card-header bg-info text-white fw-bold">
+          Análisis de Ejes de Equilibrio
+        </div>
+        <div class="card-body">
+          {% for p in analisis_ejes_parrafos %}
+            <p class="{% if not loop.last %}mb-3{% else %}mb-0{% endif %}">{{ p }}</p>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="card border-dark mt-3 text-start">
+        <div class="card-header fw-bold">
+          Síntesis Evolutiva
+        </div>
+        <div class="card-body">
+          {% for p in sintesis_parrafos %}
+            <p class="{% if not loop.last %}mb-3{% else %}mb-0{% endif %}">{{ p }}</p>
+          {% endfor %}
+        </div>
+      </div>
 
       <div class="mt-4">
         <a href="{{ url_for('reset') }}" class="btn btn-secondary">
