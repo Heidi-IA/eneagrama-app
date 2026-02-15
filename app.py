@@ -29,7 +29,13 @@ EJES_SIMETRIA = {
 
 ORDEN_EJES = ["HACER", "COMUNICAR", "TENER", "SER", "ESTAR"]
 MEDIA_TEO = 11.1
+TOL = 0.1  # permite 11.0–11.2 como “equilibrado/desarrollado”
 
+def es_desarrollado(valor: float) -> bool:
+    return valor >= (MEDIA_TEO - TOL)
+
+def es_bajo(valor: float) -> bool:
+    return valor < (MEDIA_TEO - TOL)
 
 def load_questions():
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
