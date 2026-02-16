@@ -7,6 +7,39 @@ DATA_PATH = Path("data/questions.json")
 app = Flask(__name__)
 app.secret_key = "CHANGE_ME_IN_HEROKU"  # luego lo ponemos por variable de entorno
 
+ALAS = {
+    1: (9, 2),
+    2: (1, 3),
+    3: (2, 4),
+    4: (3, 5),
+    5: (4, 6),
+    6: (5, 7),
+    7: (6, 8),
+    8: (7, 9),
+    9: (8, 1),
+}
+
+DESCRIPCION_ALAS = {
+    "1w9": "Más tranquilo, idealista, moral, reservado.",
+    "1w2": "Más servicial, orientado a ayudar, más expresivo.",
+    "2w1": "Más responsable, ético, estructurado.",
+    "2w3": "Más sociable, carismático, orientado al éxito.",
+    "3w2": "Encantador, enfocado en la imagen y relaciones.",
+    "3w4": "Más introspectivo, creativo, busca autenticidad.",
+    "4w3": "Más expresivo, artístico, orientado a destacar.",
+    "4w5": "Más introspectivo, profundo, reservado.",
+    "5w4": "Creativo, sensible, más emocional.",
+    "5w6": "Analítico, estratégico, más racional y cauteloso.",
+    "6w5": "Más intelectual, prudente, observador.",
+    "6w7": "Más sociable, inquieto, busca seguridad en grupos.",
+    "7w6": "Más responsable y colaborador.",
+    "7w8": "Más fuerte, independiente y dominante.",
+    "8w7": "Más enérgico, impulsivo, expansivo.",
+    "8w9": "Más calmado, protector, firme pero estable.",
+    "9w8": "Más firme, protector, práctico.",
+    "9w1": "Más idealista, organizado y correcto.",
+}
+
 VIRTUDES_POR_TIPO = {
     1: "Organizar",
     2: "Escuchar",
