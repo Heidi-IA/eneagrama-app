@@ -442,9 +442,9 @@ def result():
     La esencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
     Dosifica planificadamente su energía. Es detallista. Vive en el presente y tiene la necesidad de autonomía.
     Cabe destacar que existen 3 sub-tipos:
-    🏠 1 Conservación (Ansiedad): preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
-    👥 1 Social (Rigidez): defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
-    ❤️ 1 Sexual (Celo): más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",         
+    🏠 1 Conservación, busca seguridad, recursos, estabilidad. Puede desarrollar ansiedad: preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
+    👥 1 Social, busca grupo, pertenencia, imagen social. Puede desarrollar rigidez: defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
+    ❤️ 1 Sexual, busca intensidad, conexión profunda, sus relaciones son uno a uno, es selectivo. Puede desarrollar celo: más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",         
     "mejorar": """Tener presente que "SIEMPRE no es realmente siempre y NUNCA no son todas las veces".
     Desarrollando tareas creativas, que te incentiven. 
     Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
