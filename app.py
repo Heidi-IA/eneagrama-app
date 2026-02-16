@@ -417,9 +417,7 @@ def result():
 
     if ejes_principales_nombres:
         p2 = (
-            f"Tus principales virtudes se manifiestan en los ejes del "
-            f"{juntar_lista_humana(ejes_principales_nombres)}, "
-            f"donde destacan tu capacidad de {juntar_lista_humana(virtudes_principales)}."
+            f"Tus principales virtudes son {juntar_lista_humana(virtudes_principales)}."
         )
         sintesis_parrafos.append(p2)
 
@@ -427,12 +425,8 @@ def result():
         p3 = (
             f"Estas cualidades constituyen pilares de tu estructura personal, "
             f"aunque será importante moderarlas cuando se intensifiquen en exceso. "
-            f"Antídotos: {juntar_lista_humana(list(dict.fromkeys(antidotos_moderar)))}."
-        )
+            )
         sintesis_parrafos.append(p3)
-
-
-
 
     
     # Eneatipo principal
