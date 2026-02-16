@@ -218,69 +218,106 @@ def result():
         est = item["estado"]
         antidoto = item["antidoto"]
 
-        if eje == "HACER":
+    if eje == "HACER":
+        if es_bajo(v):
             base = (
-                f"El eje del HACER se encuentra "
-                f"{'por encima de la media' if v > MEDIA_TEO else 'por debajo de la media' if v < MEDIA_TEO else 'equilibrado'}, "
-                "indicando una marcada orientación a la acción, ejecución y control. "
-                "En su luz, esto te permite concretar y avanzar con determinación; "
-                "en su sombra, puede traducirse en tensión o exceso de exigencia."
+                "El eje del HACER aparece por debajo de la media, lo que indica que "
+                "hay algo urgente que necesita ponerse en acción. En esta etapa, el desafío es "
+                "dejar de evaluar o postergar y hacer lo que debas hacer para avanzar."
+                f" Antídoto: {antidoto}."
+            )
+        else:
+            base = (
+                "El eje del HACER se encuentra por encima de la media, indicando una marcada orientación "
+                "a la acción, ejecución y control. En su luz, esto implica claridad sobre tu ideal de vida "
+                "y capacidad de concretar; en su sombra, puede traducirse en controlarte y controlar el entorno "
+                "de forma permanente."
             )
             if est in ("elevado", "excesivo"):
-                base += f" Antídoto: {antidoto}."
-            analisis_ejes_parrafos.append(base)
-            continue
+                base += f" Si esta energía se intensifica, conviene moderarla. Antídoto: {antidoto}."
+        analisis_ejes_parrafos.append(base)
+        continue
 
-        if eje == "COMUNICAR":
+    if eje == "COMUNICAR":
+        if es_bajo(v):
             base = (
-                f"El eje del COMUNICAR aparece "
-                f"{'por debajo de la media' if v < MEDIA_TEO else 'por encima de la media' if v > MEDIA_TEO else 'equilibrado'}, "
-                "lo que impacta directamente en la forma de expresar lo emocional y vincularte con los demás."
+              "El eje del COMUNICAR aparece por debajo de la media, lo que indica que "
+              "hay algo importante que no estás diciendo o expresando. Esto se vincula con tu mundo interno: "
+              "aunque tema las consecuencias, comunicar lo esencial es parte de tu sanación."
+              f" Antídoto: {antidoto}."
             )
-            if est in ("no_desarrollado", "bajo_leve"):
+        else:
+            base = (
+              "El eje del COMUNICAR se encuentra por encima de la media. En su luz, "
+              "indica una buena capacidad de comunicación: saber escuchar, llegar al otro y conectar con empatía; "
+              "en su sombra, puede aparecer hablar mucho sin decir lo esencial."
+            )
+            # si está muy alto, sugerimos moderar
+            if item["estado"] in ("elevado", "excesivo"):
                 base += f" Antídoto: {antidoto}."
-            elif est in ("elevado", "excesivo"):
-                base += f" Conviene moderar la intensidad para no caer en su sombra. Antídoto: {antidoto}."
-            analisis_ejes_parrafos.append(base)
-            continue
+        analisis_ejes_parrafos.append(base)
+        continue
 
-        if eje == "TENER":
-            base = (
-                f"El eje del TENER aparece "
-                f"{'por debajo de la media' if v < MEDIA_TEO else 'por encima de la media' if v > MEDIA_TEO else 'equilibrado'}, "
-                "lo que se relaciona con la seguridad interna, el logro y la forma de sostener recursos y estructura."
-            )
-            if est in ("no_desarrollado", "bajo_leve"):
-                base += f" Antídoto: {antidoto}."
-            elif est in ("elevado", "excesivo"):
-                base += f" Es una fortaleza, pero requiere moderación para no rigidizarte. Antídoto: {antidoto}."
-            analisis_ejes_parrafos.append(base)
-            continue
 
-        if eje == "SER":
+    if eje == "TENER":
+        if es_bajo(v):
             base = (
-                f"El eje del SER aparece "
-                f"{'por debajo de la media' if v < MEDIA_TEO else 'por encima de la media' if v > MEDIA_TEO else 'equilibrado'}, "
-                "señalando el nivel de introspección, autoconocimiento y profundidad emocional."
+                "El eje del TENER aparece por debajo de la media, lo que sugiere una carencia en la forma "
+                "de sostener recursos, seguridad y valoración interna. Esto puede expresarse como dificultad "
+                "para reconocer tu propio valor, ordenar prioridades, poner precio/cobrar, administrar o pedir lo "
+                "que necesitás sin culpa."
+                f" Antídoto: {antidoto}."
             )
-            if est in ("no_desarrollado", "bajo_leve"):
-                base += f" Antídoto: {antidoto}."
-            elif est in ("elevado", "excesivo"):
-                base += f" Es una fortaleza, pero conviene evitar el aislamiento. Antídoto: {antidoto}."
-            analisis_ejes_parrafos.append(base)
-            continue
+        else:
+            base = (
+                "El eje del TENER se encuentra por encima de la media. En su luz, indica capacidad para trabajar, "
+                "lograr y alcanzar lo que querés, con decisión y empuje; en su sombra, puede llevar a desatender lo "
+                "afectivo, lo físico o lo espiritual por una preocupación excesiva por el tener."
+            )
+            if est in ("elevado", "excesivo"):
+                base += f" Si se intensifica, practicá moderación. Antídoto: {antidoto}."
+        analisis_ejes_parrafos.append(base)
+        continue
 
-        if eje == "ESTAR":
+
+    if eje == "SER":
+        if es_bajo(v):
             base = (
-                f"El eje del ESTAR aparece "
-                f"{'por debajo de la media' if v < MEDIA_TEO else 'por encima de la media' if v > MEDIA_TEO else 'equilibrado'}, "
-                "señalando tu capacidad de habitar el presente y sostener presencia."
+                "El eje del SER aparece por debajo de la media, indicando que hay un llamado a profundizar: "
+                "mirarte a vos misma y a tu realidad con más honestidad y reflexión. No se trata de aislarse, "
+                "sino de hacer un trabajo de introspección que te devuelva claridad y sentido."
+                f" Antídoto: {antidoto}."
             )
-            if est in ("no_desarrollado", "bajo_leve"):
-                base += f" Antídoto: {antidoto}."
-            elif est in ("elevado", "excesivo"):
-                base += f" Posees una energía fuerte aquí; aprendé a moderarla. Antídoto: {antidoto}."
-            analisis_ejes_parrafos.append(base)
+        else:
+            base = (
+                "El eje del SER se encuentra por encima de la media. En su luz, indica profundidad y reflexión, "
+                "una buena mirada de la vida y de vos misma; en su sombra, puede traducirse en encerrarte, "
+                "aislarte o esconderte, evitando mirar una parte de tu realidad que no te gusta."
+            )
+            if est in ("elevado", "excesivo"):
+                base += f" Si se intensifica, cuidá no aislarte. Antídoto: {antidoto}."
+        analisis_ejes_parrafos.append(base)
+        continue
+
+    if eje == "ESTAR":
+        if es_bajo(v):
+            base = (
+                "El eje del ESTAR aparece por debajo de la media, indicando dificultad para habitar el presente: "
+                "podés estar pendiente del pasado o del futuro, o viviendo con tensión. El desafío evolutivo es "
+                "aprender a estar aquí y ahora, sosteniendo tu centro."
+                f" Antídoto: {antidoto}."
+            )
+        else:
+            base = (
+                "El eje del ESTAR se encuentra por encima de la media. En su luz, indica presencia y capacidad de "
+                "vivir el presente con intensidad; en su sombra, puede aparecer una forma de 'estar sin estar': "
+                "se evita el conflicto o se busca que no haya problemas, pero internamente no hay presencia real."
+            )
+            if est in ("elevado", "excesivo"):
+                base += f" Si se intensifica, buscá presencia genuina. Antídoto: {antidoto}."
+        analisis_ejes_parrafos.append(base)
+        continue
+
 
     # -----------------------------
     # Texto: Síntesis Evolutiva
