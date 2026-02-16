@@ -290,15 +290,24 @@ def result():
     ejes_moderar = [x for x in ejes if x["estado"] in ("elevado", "excesivo")]
 
     # virtudes de desafío (sin repetir, manteniendo orden)
+    # ejes bajos (por promedio del eje)
+    ejes_bajos = [x for x in ejes if es_bajo(x["valor"])]
+    
     virtudes_desafio = []
     antidotos_desafio = []
     ejes_desafio_nombres = []
+    
     for x in ejes_bajos:
         ejes_desafio_nombres.append(x["eje"])
         antidotos_desafio.append(x["antidoto"])
-        for v in x["virtudes"]:
-            if v not in virtudes_desafio:
-                virtudes_desafio.append(v)
+    
+        # ✅ SOLO virtudes de los TIPOS que están por debajo de la media
+        for t in x["tipos"]:
+            if es_bajo(porcentaje_scores[t]):
+                v = VIRTUDES_POR_TIPO[t]
+                if v not in virtudes_desafio:
+                    virtudes_desafio.append(v)
+
 
     # virtudes principales
     virtudes_principales = []
