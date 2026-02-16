@@ -580,7 +580,7 @@ def result():
 
     Cuando estas cualidades no se desarrollan, puede caer en la sobreentrega, el resentimiento silencioso y la sensación de no ser valorado.
 
-    La esencia 2 se encuentra dentro de la tríada emocional (área del sentimiento y la vinculación).
+    Otra de las áreas de expansión es su punto ciego: tomar distancia, dejando que otros ocupen sus roles, cambiar la vista de observador a tercera persona, imparcial, sin involucrarse. El eneatipo 2 pertenece a la triada de la emoción, vive en el pasado y tiene una fuerte necesidad de relación. La esencia 2 se encuentra dentro de la tríada emocional (área del sentimiento y la vinculación).
 
     Cabe destacar que existen 3 subtipos:
     🏠 2 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar privilegio. Busca ser indispensable. Ayuda para asegurarse amor y protección.
