@@ -496,9 +496,9 @@ def result():
     Otra de las áreas de expansión es su punto ciego: tomar riesgos, mostrarse, exponerse. La esencia 1 se encuentra dentro de la tríada instintiva (área de la acción o visceral, expresión). Dosifica planificadamente su energía. Es detallista, vive en el presente y tiene necesidad de autonomía.
     
     Cabe destacar que existen 3 subtipos:
-    🏠 1 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar ansiedad: preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
-    👥 1 Social: busca grupo, pertenencia e imagen social. Puede desarrollar rigidez: defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
-    ❤️ 1 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar celo: más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",
+    🏠 1 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar ansiedad. Preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
+    👥 1 Social: busca grupo, pertenencia e imagen social. Puede desarrollar rigidez. Defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
+    ❤️ 1 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar celo. Más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",
 
     "orientacion":"""    
     🎯 Vocación base
@@ -575,9 +575,44 @@ def result():
     En su lado luz representa amor genuino y servicio desinteresado.
     En su lado sombra desarrolla un dar para recibir e invasión emocional.
     Cabe destacar que existen 3 sub-tipos:
-    🏠 2 Conservación (Privilegio): Busca ser indispensable. Ayuda para asegurarse amor y protección.
-    👥 2 Social (Ambición): Quiere ser querido y reconocido socialmente. Seductor social.
-    ❤️ 2 Sexual (Conquista): Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.""",
+    🏠 2 Conservación, busca seguridad, recursos y estabilidad. Puede desarrollar privilegio. Busca ser indispensable. Ayuda para asegurarse amor y protección.
+    👥 2 Social, busca grupo, pertenencia e imagen social. Puede desarrollar ambición. Quiere ser querido y reconocido socialmente. Seductor social.
+    ❤️ 2 Sexual, busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar conquista. Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.""",
+    "orientacion":"""    
+    🎯 Vocación base
+    
+    Psicología
+    
+    Enfermería
+    
+    Recursos Humanos
+    
+    Coaching
+    
+    Organización de eventos
+    
+    Trabajo social
+    
+    🔁 Según subtipo
+    
+    🟢 Conservación (cuidador protector)
+    – Enfermería
+    – Nutrición
+    – Estética / bienestar
+    
+    🔵 Social (conector comunitario)
+    – Relaciones públicas
+    – ONG
+    – Gestión de comunidades
+    
+    🔴 Sexual (seductor emocional)
+    – Coaching motivacional
+    – Ventas relacionales
+    – Marketing experiencial
+    
+    🌱 Clave evolutiva
+    
+    Profesiones donde aprendan a poner límites.""",
     "mejorar": """Aprender a decir que NO con asertividad. 
     Comprendiendo que todos somos amados por lo que somos, no por lo que damos y
     que en último término las personas siempre satisfacen sus necesidades. 
