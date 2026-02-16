@@ -415,37 +415,32 @@ def result():
         "descripcion": """Personas éticas, con fuerte sentido del bien y del mal, buscan mejorar el mundo y la perfección. 
          Son responsables, disciplinadas, y muy exigentes consigo mismas y con los demás. 
          Tienden a autocriticarse y a querer que todo sea “lo correcto”.""",
-        "caracteristicas": """El valor del eneatipo 1 radica en la EXCELENCIA. Acción (orden práctico).
-    Su mayor contribución es ser bueno localizando errores, pule y perfecciona. Es un FINALIZADOR. 
-    Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado.
-    No le gusta que le cambien de lugar sus cosas. 
-    Sus conductas recurrentes pueden ser el controlar, corregir, juzgar, criticar.
-    Desarrolla hábitos como buscar culpables, corrigir errores y tener la razón. 
-    El resultado de estas conductas y hábitos es un predominio del deber sobre el placer.
-    La creencia arraigada en su interior es "el mundo es un lugar imperfecto para perfeccionar".
-    El miedo básico es ser corrupto, defectuoso o moralmente incorrecto.
-    Su miedo constitutivo a no poder le genera la necesidad de ser fuerte y la reacción ante este miedo es controlando. 
-    Sus principales fortalezas son ser ético, disciplinado, responsable, justo. Y sus principales áreas de mejora radican en 
-    su ser crítico, rígido, autoexigente, intolerante.
-    El pecado capital del eneatipo 1 es la ira (reprimida). 
-    En su lado luz el eneatipo 1  representa integridad, mejora del mundo, coherencia.
-    Sin embargo, en su lado sombra desarrolla un juicio constante y perfeccionismo paralizante.
-    Para lograr su evolución es aconsejable que incorpore conductas como la espontaneidad, alegría y flexibilidad,
-    evitando la emocionalidad, resentimiento y melancolía.
-    Las actitudes que equilibran a la esencia 1 son ser más calmado y más servicial.
-    El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real, 
-    y no sólo por principios y normas: "lo correcto". Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
-    Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total, "nada va a cambiar" y/o 
-    no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume
-    y no sus necesidades.
-    Otra de las áreas de expansión es su punto ciego, que es tomar riesgos, mostrarse, exponerse. 
-    La esencia 1 se encuentra dentro de la tríada instintiva, es decir, el área de la acción o visceral (expresión). 
-    Dosifica planificadamente su energía. Es detallista. Vive en el presente y tiene la necesidad de autonomía.
-    Cabe destacar que existen 3 sub-tipos:
-    🏠 1 Conservación, busca seguridad, recursos, estabilidad. Puede desarrollar ansiedad: preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
-    👥 1 Social, busca grupo, pertenencia, imagen social. Puede desarrollar rigidez: defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
-    ❤️ 1 Sexual, busca intensidad, conexión profunda, sus relaciones son uno a uno, es selectivo. Puede desarrollar celo: más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",         
-    "orientacion":"""
+    "caracteristicas": """El valor del eneatipo 1 radica en la EXCELENCIA. Acción (orden práctico).
+    
+    Su mayor contribución es localizar errores, pulir y perfeccionar. Es un FINALIZADOR. Posee buena orientación al detalle, es reacio a delegar, y puede desarrollar una preocupación excesiva. Es prolijo y ordenado; no le gusta que le cambien de lugar sus cosas.
+    
+    Sus conductas recurrentes pueden ser: controlar, corregir, juzgar, criticar. Desarrolla hábitos como buscar culpables, corregir errores y tener la razón. El resultado de estas conductas y hábitos es un predominio del deber sobre el placer.
+    
+    La creencia arraigada en su interior es: "el mundo es un lugar imperfecto para perfeccionar". El miedo básico es ser corrupto, defectuoso o moralmente incorrecto. Su miedo constitutivo a no poder le genera la necesidad de ser fuerte, y la reacción ante este miedo es controlar.
+    
+    Sus principales fortalezas son ser ético, disciplinado, responsable y justo. Sus principales áreas de mejora radican en ser crítico, rígido, autoexigente e intolerante. El pecado capital del eneatipo 1 es la ira (reprimida).
+    
+    En su lado luz representa integridad, mejora del mundo y coherencia. En su lado sombra desarrolla un juicio constante y un perfeccionismo paralizante.
+    
+    Para lograr su evolución es aconsejable incorporar espontaneidad, alegría y flexibilidad, evitando emocionalidad, resentimiento y melancolía. Las actitudes que equilibran a la esencia 1 son ser más calmado y más servicial.
+    
+    El desarrollo de estas características le permite adquirir ecuanimidad, empatía y colaboración con la gente real (y no sólo por principios y normas: "lo correcto"). Busca el orden y la superación con paciencia, tolerancia, comprensión y amorosidad.
+    
+    Cuando no se desarrollan, el eneatipo 1 tiende a caer en el pesimismo total ("nada va a cambiar") y/o no se atiende a sí mismo: no toma vacaciones, no descansa, atiende las responsabilidades que asume y no sus necesidades.
+    
+    Otra de las áreas de expansión es su punto ciego: tomar riesgos, mostrarse, exponerse. La esencia 1 se encuentra dentro de la tríada instintiva (área de la acción o visceral, expresión). Dosifica planificadamente su energía. Es detallista, vive en el presente y tiene necesidad de autonomía.
+    
+    Cabe destacar que existen 3 subtipos:
+    🏠 1 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar ansiedad: preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
+    👥 1 Social: busca grupo, pertenencia e imagen social. Puede desarrollar rigidez: defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
+    ❤️ 1 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar celo: más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",
+
+    "orientacion":"""    
     🎯 Vocación base
     
     Derecho / justicia
@@ -485,18 +480,21 @@ def result():
     
     Aprender trabajos donde haya margen de error y creatividad.""",        
     "mejorar": """Tener presente que "SIEMPRE no es realmente siempre y NUNCA no son todas las veces".
-    Desarrollando tareas creativas, que te incentiven. 
-    Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
-    Focalizarte en un ideal de vida. Poner las formas en función del fondo.
-    Recordar que todos somos uno y perfectos tal como somos.
-    Comprender que hay más de una manera correcta de hacer las cosas.
-    Practicar el perdón con uno mismo y los demás. Tratarte con menos rigor.
-    Parar, darse tiempos. Soltarse y soltar.
-    Dejarse llevar por la corriente.
-    Confiar en las buenas intenciones de los demás.
-    Apreciar a las demás personas, atender a los deseos de los demás genuinamente,
-    ayudar a los demás a tomar decisiones.
-    El objetivo de la vida es ser humano, no perfecto.""",        
+
+    • Desarrollar tareas creativas que te incentiven.
+    • Darte tiempo libre para el placer y la relajación, sintiendo el disfrute.
+    • Focalizarte en un ideal de vida: poner las formas en función del fondo.
+    • Recordar que todos somos uno y perfectos tal como somos.
+    • Comprender que hay más de una manera correcta de hacer las cosas.
+    • Practicar el perdón con uno mismo y con los demás. Tratarte con menos rigor.
+    • Parar y darte tiempos. Soltarte y soltar.
+    • Dejarte llevar por la corriente.
+    • Confiar en las buenas intenciones de los demás.
+    • Apreciar a las demás personas y atender sus deseos genuinamente.
+    • Ayudar a los demás a tomar decisiones.
+    
+    El objetivo de la vida es ser humano, no perfecto.""",
+      
 },       
 2: {
     "titulo": "🔵 Tipo 2 — El Ayudador",
