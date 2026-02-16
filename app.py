@@ -653,23 +653,21 @@ def result():
 
     En su lado luz es inspirador, productivo y ejemplo de superación. Sin embargo, en su lado sombra puede basar su identidad exclusivamente en la imagen y los resultados.
 
-    
-    
+    Las actitudes que potencian su evolución son: dejar de competir y colaborar, aprender a trabajar en equipo, permitirse mostrar inseguridades, conectar con valores reales, actuar con compromiso, lealtad y coherencia. En contraposición, las actitudes que debe evitar son: dejar proyectos a medias por miedo a fracasar, desconectarse, postergar, evitar conflictos, la apatía. Las cualidades que lo equilibran son exteriorizar su sensibilidad, apertura y empatía, aspiraciones al servicio del otro, pensar en los anhelos de su alma, dar sentido profundo a lo que hace, encontrar valores más allá de ganar, poner interés a lo que es verdaderamente importante. Cuando logra incorporar estas actitudes se vuelve una persona sensible, auténtica y madura. 
+
+    Cuando estas actitudes no se desarrollan se siente imprescindible, adoptando una actitud de soberdia y superioridad, comienza a compararse y ser competitivo, y ganar a cualquier precio. 
     
     Necesidad central: reconocimiento y validación. Vive en el pasado. Pertenece a la tríada emocional (imagen).
 
-    Punto ciego: no tiene claro un orden de prioridades. Para comprender esto, imagina tu propio funeral: ¿qué escribirían tus afectos en la lápida?
+    Otra de las áreas de expansión es su punto ciego: no tiene claro un orden de prioridades. Para comprender esto, la persona podría imaginar su propio funeral: ¿qué escribirían sus afectos en la lápida?. El eneatipo 3 pertenece a la triada de la emoción, vive en el pasado y tiene una fuerte necesidad de relación
 
     Cabe destacar que existen 3 subtipos:
 
-    🏠 3 Conservación (Seguridad)
-    Trabajador incansable. Se enfoca en resultados concretos.
+    🏠 3 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar seguridad. Trabajador incansable. Se enfoca en resultados concretos.
 
-    👥 3 Social (Prestigio)
-    Muy pendiente de imagen y estatus. Quiere destacar públicamente.
+    👥 3 Social: busca grupo, pertenencia e imagen social. Puede desarrollar prestigio. Muy pendiente de imagen y estatus. Quiere destacar públicamente.
 
-    ❤️ 3 Sexual (Atractivo)
-    Encantador y competitivo en relaciones. Busca admiración personal.""",
+    ❤️ 3 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede ser atractivo. Encantador y competitivo en relaciones. Busca admiración personal.""",
 
     "orientacion": """    
     🎯 Vocación base
