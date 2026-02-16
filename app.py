@@ -574,9 +574,9 @@ def result():
 
     En su lado luz representa amor genuino y servicio desinteresado. Sin embargo, en su lado sombra desarrolla un dar para recibir e invasión emocional.
 
-    El desarrollo consciente implica aprender a reconocer sus propias necesidades sin culpa y equilibrar el dar con el recibir.
+    Para lograr su evolución es aconsejable incorporar autenticidad emocional, implica aprender a reconocer sus propias necesidades sin culpa, sin manipulación, equilibrar el dar con el recibir, desarrollar una identidad propia más allá de ser “el que ayuda”. Se permite sentir sin actuar para agradar, amar sin invadir, decir "hoy yo necesito".  Debe evitar actitudes de control, enojo o agresividad, reclamar reconocimiento, endurecerse emocionalmente, manipular, exigir afecto o imponer ayuda.
 
-    Cuando estas cualidades no se desarrollan, puede caer en la sobreentrega, el resentimiento silencioso y la sensación de no ser valorado.
+    Las actitudes que lo equilibran son la honestidad, aceptar las cosas como son, sin adular, sin endulzar; el orden, la claridad, la acción y la concreción, aprende a manejar lo material y el dinero, con lo cual se vuelve una persona práctica, concreta que dice las cosas con firmeza y claridad. Cuando estas cualidades no se desarrollan, puede caer en la sobreentrega, el resentimiento silencioso y la sensación de no ser valorado. La persona se vuelve rígida moralmente, marcando los defectos de los demás, con una actitud crítica al mundo, puede engañar tratando de ganarse al otro vendiendole una imagen y diciendo lo que le conviene para lograr lo que quiere. 
 
     Otra de las áreas de expansión es su punto ciego: tomar distancia, dejando que otros ocupen sus roles, cambiar la vista de observador a tercera persona, imparcial, sin involucrarse. El eneatipo 2 pertenece a la triada de la emoción, vive en el pasado y tiene una fuerte necesidad de relación. La esencia 2 se encuentra dentro de la tríada emocional (área del sentimiento y la vinculación).
 
