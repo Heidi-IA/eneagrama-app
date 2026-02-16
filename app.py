@@ -309,14 +309,21 @@ def result():
                     virtudes_desafio.append(v)
 
 
-    # virtudes principales
     virtudes_principales = []
     ejes_principales_nombres = []
-    for x in ejes_virtud:
-        ejes_principales_nombres.append(x["eje"])
-        for v in x["virtudes"]:
-            if v not in virtudes_principales:
-                virtudes_principales.append(v)
+    
+    for x in ejes:
+        # desarrollados = >= media (incluye equilibrado)
+        if es_desarrollado(x["valor"]) and x["estado"] in ("equilibrado", "alto_leve"):
+            ejes_principales_nombres.append(x["eje"])
+    
+        # ✅ virtudes por TIPO desarrollado (no por eje)
+        for t in x["tipos"]:
+            if es_desarrollado(porcentaje_scores[t]):
+                v = VIRTUDES_POR_TIPO[t]
+                if v not in virtudes_principales:
+                    virtudes_principales.append(v)
+
 
     # moderación
     antidotos_moderar = []
