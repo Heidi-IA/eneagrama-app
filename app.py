@@ -438,10 +438,43 @@ def result():
     # Eneatipo principal
     max_score = max(scores.values()) if scores else 0
     top_types = [t for t, s in scores.items() if s == max_score and max_score > 0]
-
+    
     sorted_scores = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     sorted_porcentajes = [(t, porcentaje_scores[t]) for (t, _) in sorted_scores]
 
+    # -----------------------------
+    # Ala (Wing) del tipo principal
+    # -----------------------------
+    ala_textos = []
+    
+    if top_types:
+        principal = top_types[0]
+    
+        izq, der = ALAS[principal]
+        pct_izq = porcentaje_scores.get(izq, 0)
+        pct_der = porcentaje_scores.get(der, 0)
+    
+        if pct_izq > pct_der:
+            clave = f"{principal}w{izq}"
+            txt = DESCRIPCION_ALAS.get(clave)
+            if txt:
+                ala_textos = [txt]
+        elif pct_der > pct_izq:
+            clave = f"{principal}w{der}"
+            txt = DESCRIPCION_ALAS.get(clave)
+            if txt:
+                ala_textos = [txt]
+        else:
+            # empate -> mostrar ambas descripciones (una por línea)
+            clave1 = f"{principal}w{izq}"
+            clave2 = f"{principal}w{der}"
+            txt1 = DESCRIPCION_ALAS.get(clave1)
+            txt2 = DESCRIPCION_ALAS.get(clave2)
+            ala_textos = [t for t in (txt1, txt2) if t]
+
+
+
+    
     eneatipo_textos = {
     1: {
         "titulo": "🟡 Tipo 1 — El Reformador",
