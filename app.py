@@ -568,13 +568,11 @@ def result():
 
     Sus conductas recurrentes pueden ser agradar, ayudar, adular y buscar. Desarrolla hábitos como el descuido de las propias necesidades y la dificultad para poner límites. El resultado de estas conductas y hábitos es sentirse usado, vacío y frustrado.
 
-    La creencia arraigada en su interior es: "el mundo es un lugar donde es necesario dar para recibir". El miedo básico es no ser amado o necesario.
+    La creencia arraigada en su interior es: "el mundo es un lugar donde es necesario dar para recibir". El miedo básico es no ser amado o necesario. El miedo constitutivo es al rechazo, esto le genera una necesidad de aceptación que satisface dando, lo que lo lleva a desarrollar una adicción por los otros. 
 
-    Sus principales fortalezas son ser generoso, empático y afectuoso. Sus áreas de mejora radican en la dependencia, la complacencia y la manipulación sutil. Puede crear una atmósfera negativa, manipular y estar orientado a los conflictos.
+    Sus principales fortalezas son ser generoso, empático y afectuoso. Sus áreas de mejora radican en la dependencia, la complacencia y la manipulación sutil. Puede crear una atmósfera negativa, manipular y estar orientado a los conflictos. El pecado capital del eneatipo 2 es la soberbia u orgullo.
 
-    El pecado capital del eneatipo 2 es la soberbia u orgullo.
-
-    En su lado luz representa amor genuino y servicio desinteresado. En su lado sombra desarrolla un dar para recibir e invasión emocional.
+    En su lado luz representa amor genuino y servicio desinteresado. Sin embargo, en su lado sombra desarrolla un dar para recibir e invasión emocional.
 
     El desarrollo consciente implica aprender a reconocer sus propias necesidades sin culpa y equilibrar el dar con el recibir.
 
@@ -632,32 +630,89 @@ def result():
     • Permitir que te ayuden.
     • Aprender que existe un orden del cual eres parte.
     • Conseguir grandes cosas atendiendo proyectos propios.
+    • Realizando actividades creativas para encontrarse a sí mismo (retiros, libros, rompecabezas).
     
     Dejar de estar excesivamente pendiente de las necesidades ajenas.""",
 },
   
 3: {
     "titulo": "🟢 Tipo 3 — El Triunfador",
-    "descripcion": """Energéticos, adaptables y orientados al éxito. 
-    Se enfocan en metas, logros y reconocimiento. 
+    "descripcion": """Energéticos, adaptables y orientados al éxito.
+    Se enfocan en metas, logros y reconocimiento.
     Suelen inspirar a otros con su energía, aunque pueden priorizar imagen y resultados.""",
-    "caracteristicas": """Miedo básico: Ser un fracaso o no valer.
-    Fortalezas: Eficiente, adaptable, motivador.
-    Debilidades: Vanidoso, competitivo, desconectado emocionalmente.
-    Pecado capital: Vanidad.
-    En su lado luz es inspirador, productivo y ejemplo de superación.
-    En su lado sombra puede basar su identidad en la imagen.
-    Cabe destacar las alas:
-    🟢 3 con ala 2: Más sociable y enfocado en relaciones.
-    🟢 3 con ala 4: Más creativo y expresivo.""",
-    "mejorar": """¿Cómo puedes sentirte mejor?:
-    Centrando tu atención en tus valores internos en lugar de la imagen.
-    Practicando la autenticidad sobre la apariencia.
-    Valorando tus logros sin depender de la aprobación externa.
-    Fomentando la empatía y la conexión genuina.
-    Permitirte descansar sin sentir culpa.
-    Equilibrar productividad con presencia y gratitud.""",
+
+    "caracteristicas": """El valor del eneatipo 3 radica en el LOGRO y la EFICIENCIA. Hacer visible el éxito. Es un IMPULSOR hacia el TRIUNFO. 
+
+    Su mayor contribución es su capacidad de adaptación, productividad y motivación. Es eficiente, dinámico y orientado a resultados concretos. Inspira a otros con su energía y ejemplo de superación. Es retador, trabaja bien bajo presión, tiene iniciativa y coraje para superar obstáculos. Puede ser muy exigente con el equipo, no reconocer sus debilidades y no asumir fracasos. 
+
+    Sus conductas recurrentes pueden centrarse en el rendimiento trabajando compulsivamente, la competencia, buscar el éxito y la imagen. Puede ocultar su sensibilidad para no quedar expuesto, priorizando la apariencia por sobre la autenticidad. Los hábitos que tiene son desconexión emocional y negación del error que como resultado derivan en un vacío existencial y desvitalización de vínculos. 
+
+    La creencia arraigada en su interior es que el valor personal depende de lo que se logra. "El mundo es un lugar de ganadores, se premia al exitoso". El miedo básico es ser un fracaso o no valer. El miedo constitutivo es al rechazo, lo que genera una necesidad de aceptación que se cubre logrando y puede derivar en una adicción al éxito.
+
+    Sus principales fortalezas son ser eficiente, adaptable y motivador. Sus áreas de mejora radican en la vanidad, la competitividad excesiva y la desconexión emocional. El pecado capital del eneatipo 3 es la vanidad.
+
+    En su lado luz es inspirador, productivo y ejemplo de superación. Sin embargo, en su lado sombra puede basar su identidad exclusivamente en la imagen y los resultados.
+
+    
+    
+    
+    Necesidad central: reconocimiento y validación. Vive en el pasado. Pertenece a la tríada emocional (imagen).
+
+    Punto ciego: no tiene claro un orden de prioridades. Para comprender esto, imagina tu propio funeral: ¿qué escribirían tus afectos en la lápida?
+
+    Cabe destacar que existen 3 subtipos:
+
+    🏠 3 Conservación (Seguridad)
+    Trabajador incansable. Se enfoca en resultados concretos.
+
+    👥 3 Social (Prestigio)
+    Muy pendiente de imagen y estatus. Quiere destacar públicamente.
+
+    ❤️ 3 Sexual (Atractivo)
+    Encantador y competitivo en relaciones. Busca admiración personal.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Marketing
+    Dirección empresarial
+    Ventas
+    Emprendimiento
+    Comunicación estratégica
+
+    🔁 Según subtipo
+
+    🟢 Conservación (trabajador eficiente)
+    – Gestión de proyectos
+    – Administración
+
+    🔵 Social (imagen pública)
+    – Política
+    – Comunicación
+    – Influencer / marca personal
+
+    🔴 Sexual (competidor carismático)
+    – Liderazgo comercial
+    – Representación
+    – Startups disruptivas
+
+    🌱 Clave evolutiva
+
+    Trabajos donde el éxito no sea solo externo.""",
+
+    "mejorar": """"Ninguna persona puede silbar una sinfonía, se necesita una ORQUESTA para poder interpretarla".
+
+    • Centrando tu atención en tus valores internos en lugar de la imagen.
+    • Practicando la autenticidad sobre la apariencia.
+    • Valorando tus logros sin depender de la aprobación externa.
+    • Fomentando la empatía y la conexión genuina.
+    • Permitirte descansar sin sentir culpa.
+    • Equilibrar productividad con presencia y gratitud.
+    • Realizando tareas cooperativas que fomenten la sensación de pertenencia en el equipo. 
+    • Equilibrar productividad con presencia y gratitud.
+    • Permitir que las personas te abracen y demuestren el afecto por lo que eres, comprendiendo que no debes ganártelo.""",
 },
+
         
 4: {
     "titulo": "🔴 Tipo 4 — El Individualista",
