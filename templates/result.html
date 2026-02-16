@@ -23,7 +23,21 @@
             <p class="card-text">{{ txt.descripcion }}</p>
           </div>
         </div>
-      
+
+      {% if ala_textos %}
+        <div class="card border-info mb-3 text-start">
+          <div class="card-header bg-info text-white">
+            🪽 Tu Ala
+          </div>
+          <div class="card-body">
+            {% for t in ala_textos %}
+              <p class="{% if not loop.last %}mb-2{% else %}mb-0{% endif %}">{{ t }}</p>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+     
         <!-- Recuadro: Características principales -->
         <div class="card border-secondary mb-3">
           <div class="card-header bg-secondary text-white">
