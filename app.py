@@ -777,6 +777,7 @@ def result():
         max_score=max_score,
         total_marked=total_marked,
         eneatipo_textos=eneatipo_textos,
+        ala_textos=ala_textos,
         labels=labels,
         values=values,
         camino_evolucion=camino_evolucion,
