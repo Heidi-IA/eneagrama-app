@@ -366,7 +366,7 @@ def result():
     virtudes_desafio = []
     antidotos_desafio = []
     ejes_desafio_nombres = []
-    
+
     for x in ejes_bajos:
         ejes_desafio_nombres.append(x["eje"])
         antidotos_desafio.append(x["antidoto"])
