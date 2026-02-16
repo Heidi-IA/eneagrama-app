@@ -33,6 +33,18 @@
             <p class="card-text">{{ txt.caracteristicas }}</p>
           </div>
         </div>
+
+        <!-- Recuadro: Orientación vocacional -->
+        {% if txt.orientacion %}
+          <div class="card border-warning mb-3">
+            <div class="card-header bg-warning text-dark">
+              🎯 Orientación vocacional
+            </div>
+            <div class="card-body">
+              <p class="card-text" style="white-space: pre-line;">{{ txt.orientacion }}</p>
+            </div>
+          </div>
+        {% endif %}
       
         <!-- Recuadro: Cómo puedes sentirte mejor -->
         <div class="card border-success mb-3">
