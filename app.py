@@ -561,23 +561,31 @@ def result():
     "descripcion": """Empáticos, cálidos y orientados a servir a otros. 
     Encuentran satisfacción ayudando y siendo necesarios para quienes quieren. 
     Pueden descuidar sus propias necesidades al priorizar las de otros.""",
+
     "caracteristicas": """El valor del eneatipo 2 radica en la CONEXIÓN EMOCIONAL. Dar.
-    Su mayor contribución es identificar el talento, delegar eficazmente, y entregar feedback. Es un COORDINADOR. 
-    Puede crear una atmósfera negativa, manipular y estar orientado a los conflictos. 
-    Sus conductas recurrentes pueden ser agradar, ayudar, adular y buscar. 
-    Desarrolla hábitos como descuido de las propias necesidades y dificultad para poner límites. 
-    El resultado de estas conductas y hábitos es sentirse usado, vacío y frustrado. 
-    La creencia arraigada en su interior es "el mundo es un lugar donde es necesario dar para recibir".
-    El miedo básico es no ser amado o necesario.
-    Sus principales fortalezas son generoso, empático, afectuoso. Y sus áreas de mejora radican en 
-    dependiencia, complacencia y la manipulación sutil.
-    El pecado capital del eneatipo 2 es la soberbia u orgullo. 
-    En su lado luz representa amor genuino y servicio desinteresado.
-    En su lado sombra desarrolla un dar para recibir e invasión emocional.
-    Cabe destacar que existen 3 sub-tipos:
-    🏠 2 Conservación, busca seguridad, recursos y estabilidad. Puede desarrollar privilegio. Busca ser indispensable. Ayuda para asegurarse amor y protección.
-    👥 2 Social, busca grupo, pertenencia e imagen social. Puede desarrollar ambición. Quiere ser querido y reconocido socialmente. Seductor social.
-    ❤️ 2 Sexual, busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar conquista. Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.""",
+
+    Su mayor contribución es identificar el talento, delegar eficazmente y entregar feedback. Es un COORDINADOR.
+
+    Sus conductas recurrentes pueden ser agradar, ayudar, adular y buscar. Desarrolla hábitos como el descuido de las propias necesidades y la dificultad para poner límites. El resultado de estas conductas y hábitos es sentirse usado, vacío y frustrado.
+
+    La creencia arraigada en su interior es: "el mundo es un lugar donde es necesario dar para recibir". El miedo básico es no ser amado o necesario.
+
+    Sus principales fortalezas son ser generoso, empático y afectuoso. Sus áreas de mejora radican en la dependencia, la complacencia y la manipulación sutil. Puede crear una atmósfera negativa, manipular y estar orientado a los conflictos.
+
+    El pecado capital del eneatipo 2 es la soberbia u orgullo.
+
+    En su lado luz representa amor genuino y servicio desinteresado. En su lado sombra desarrolla un dar para recibir e invasión emocional.
+
+    El desarrollo consciente implica aprender a reconocer sus propias necesidades sin culpa y equilibrar el dar con el recibir.
+
+    Cuando estas cualidades no se desarrollan, puede caer en la sobreentrega, el resentimiento silencioso y la sensación de no ser valorado.
+
+    La esencia 2 se encuentra dentro de la tríada emocional (área del sentimiento y la vinculación).
+
+    Cabe destacar que existen 3 subtipos:
+    🏠 2 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar privilegio. Busca ser indispensable. Ayuda para asegurarse amor y protección.
+    👥 2 Social: busca grupo, pertenencia e imagen social. Puede desarrollar ambición. Quiere ser querido y reconocido socialmente. Seductor social.
+    ❤️ 2 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar conquista. Más intenso y posesivo. Seduce para asegurar vínculo exclusivo.""",
     "orientacion":"""    
     🎯 Vocación base
     
@@ -614,16 +622,17 @@ def result():
     
     Profesiones donde aprendan a poner límites.""",
     "mejorar": """Aprender a decir que NO con asertividad. 
-    Comprendiendo que todos somos amados por lo que somos, no por lo que damos y
-    que en último término las personas siempre satisfacen sus necesidades. 
-    Comprendiendo que ser amado no depende de cambiar para complacer a los demás. 
-    Mantener claro quién eres realmente. 
-    Prestar atención a tus deseos y necesidades y atenderlos. 
-    Reconocer que no eres indispensable y que eso está bien.
-    No ayudar cuando la persona no lo pide.
-    Permitir que te ayuden.
-    Aprender que existe un orden del cual eres parte.
-    Conseguir grandes cosas atendiendo proyectos propios. 
+    
+    • Comprendiendo que todos somos amados por lo que somos, no por lo que damos y que en último término las personas siempre satisfacen sus necesidades.
+    • Comprendiendo que ser amado no depende de cambiar para complacer a los demás.
+    • Mantener claro quién eres realmente.
+    • Prestar atención a tus deseos y necesidades y atenderlos.
+    • Reconocer que no eres indispensable y que eso está bien.
+    • No ayudar cuando la persona no lo pide.
+    • Permitir que te ayuden.
+    • Aprender que existe un orden del cual eres parte.
+    • Conseguir grandes cosas atendiendo proyectos propios.
+    
     Dejar de estar excesivamente pendiente de las necesidades ajenas.""",
 },
   
