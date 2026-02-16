@@ -445,6 +445,45 @@ def result():
     🏠 1 Conservación, busca seguridad, recursos, estabilidad. Puede desarrollar ansiedad: preocupado por hacerlo todo correctamente. Muy autoexigente. Controla detalles, orden y responsabilidad personal.
     👥 1 Social, busca grupo, pertenencia, imagen social. Puede desarrollar rigidez: defiende reglas y principios. Moralista, crítico con el entorno. Siente que debe mejorar el mundo.
     ❤️ 1 Sexual, busca intensidad, conexión profunda, sus relaciones son uno a uno, es selectivo. Puede desarrollar celo: más intenso y emocional. Puede ser crítico pero también apasionado. Busca “corregir” al otro.""",         
+    "orientacion":"""
+    🎯 Vocación base
+    
+    Derecho / justicia
+    
+    Ingeniería de procesos / calidad
+    
+    Docencia
+    
+    Gestión institucional
+    
+    Medio ambiente
+    
+    Auditoría
+    
+    Trabajos donde puedan mejorar sistemas.
+    
+    🔁 Según subtipo
+    
+    🟢 Conservación (perfeccionista silencioso)
+    – Contabilidad
+    – Ingeniería industrial
+    – Normativas / compliance
+    – Medicina clínica
+    
+    🔵 Social (idealista moral)
+    – Política pública
+    – ONG
+    – Educación
+    – Dirección institucional
+    
+    🔴 Sexual (intenso reformador)
+    – Activismo
+    – Liderazgo de cambios
+    – Coaching transformacional
+    
+    🌱 Clave evolutiva
+    
+    Aprender trabajos donde haya margen de error y creatividad.""",        
     "mejorar": """Tener presente que "SIEMPRE no es realmente siempre y NUNCA no son todas las veces".
     Desarrollando tareas creativas, que te incentiven. 
     Dándote tiempo libre para el placer y la relajación. Sintiendo el disfrute.
