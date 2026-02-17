@@ -925,67 +925,251 @@ def result():
     • Apuntalando fuertemente su autoestima.""",
 },
         
- 7: {
+7: {
     "titulo": "🟤 Tipo 7 — El Entusiasta",
-    "descripcion": """Activos, optimistas, espontáneos y con deseos de experiencias nuevas. 
-    Ayudan a otros ver el lado positivo de la vida. A veces evitan el dolor y buscan diversión constante.""",
-    "caracteristicas": """Miedo básico: Sentir dolor o quedar atrapado en el sufrimiento.
-    Fortalezas: Optimista, creativo, versátil.
-    Debilidades: Disperso, impulsivo, evasivo.
-    Pecado capital: Gula (deseo de experiencias).
-    En su lado luz se expresa con alegría y entusiasmo.
-    En su sombra puede evadir el dolor y superficializar experiencias.
-    Alas:
-    🟤 7 con ala 6: Más responsable y comunitario.
-    🟤 7 con ala 8: Más decidido y firme.""",
-    "mejorar": """¿Cómo puedes sentirte mejor?:
-    Cultivando enfoque y presencia emocional.
-    Aceptando el dolor como parte de la vida.
-    Desarrollando rutinas que equilibren diversión y responsabilidad.
-    Profundizando experiencias en lugar de dispersarlas.""",
+    "descripcion": """Activos, optimistas, espontáneos y con deseos de experiencias nuevas.
+    Ayudan a otros ver el lado positivo de la vida.
+    A veces evitan el dolor y buscan diversión constante.""",
+
+    "caracteristicas": """El valor del eneatipo 7 radica en la ALEGRÍA y la FELICIDAD.
+
+    Su mayor contribución es aportar entusiasmo, creatividad y visión de posibilidades. Es un INVESTIGADOR DE RESURSOS. Es comunicativo, busca oportunidades y desarrolla contactos. Puede desarrollar un optimismo poco realista, no cerrar tareas y no profundizar. Genera energía, ideas y dinamismo en los entornos donde participa.
+
+    Sus conductas recurrentes pueden incluir búsqueda constante de estímulos, dificultad para sostener procesos largos y tendencia a evitar el malestar. Puede dispersarse entre múltiples proyectos. Sus hábitos incluyen negación al dolor, excesos y gula por la vida. El síndrome que desarrolla es el de Peter Pan, todólogos. 
+
+    La creencia arraigada en su interior es que la vida debe ser disfrutada y que el dolor debe evitarse. "El mundo está lleno de opciones, y no me quiero perder ninguna". El miedo básico es sentir dolor o quedar atrapado en el sufrimiento. El miedo constitutivo es quedarse limitado o privado de experiencias, lo que genera una necesidad de libertad y variedad. Miedo a la realidad, le genera una necesidad de seguridad que cubre evadiendo la realidad (es dolorosa), lo cual lo hace adicto al placer. 
+    
+    Sus principales fortalezas son ser optimista, creativo y versátil. Sus áreas de mejora radican en la dispersión, la impulsividad y la evasión emocional. El pecado capital del eneatipo 7 es la gula (deseo excesivo de experiencias).
+
+    En su lado luz se expresa con alegría genuina, entusiasmo y capacidad de inspirar. En su lado sombra puede evadir el dolor, superficializar experiencias o escapar del compromiso.
+
+    Cuando evoluciona, desarrolla profundidad, foco y capacidad de introspección, aprende a quedarse en una experiencia sin huir, canaliza su energía en conocimiento y concentración. Cuando se pierde a sí mismo, en estrés puede volverse rígido, crítico e irritable, intenta controlar el entorno cuando siente que pierde libertad, puede volverse excesivamente exigente consigo mismo y con los demás.
+    Las actitudes que lo equilibran son ser más responsable y comunitario y más decidido y firme. Debe aprender la responsabilidad, la perseverancia, la fidelidad y enfrentar y aprender del dolor, cuestionarse ¿de qué estoy huyendo?, ¿de qué estoy asustado?, aprender a tomar decisiones con firmeza y cumplir sus compromisos. 
+    Si desarrolla estas actitudes obtiene la capacidad de ser fiel, perseverante y asumir sus responsabilidades, de tomar decisiones consistentes para enfrentar suss problemas sin diluirlos ni postergarlos. Es consistente, maduro. En cambio, si no las desarrolla, es impulsivo, disperso, le cuesta asumir compromisos y responsabilidades. 
+
+    Otra área de evolución es el punto ciego, es aprender a tener paz, estar presente en el aquí y ahora. Pertenece a la tríada mental (pensamiento) , posee una mente abierta en abanico, es curioso y disperso. Su necesidad central es de seguridad, libertad y experiencias positivas. Vive en el futuro.
+
+    Cabe destacar que existen 3 subtipos:
+    🏠 7 Conservación: busca seguridad, recursos y estabilidad. Busca la familia. Busca seguridad en círculo cercano. Más responsable.
+
+    👥 7 Social: busca grupo, pertenencia e imagen social. Busca sacrificio. Puede parecer más idealista y comprometido socialmente.
+
+    ❤️ 7 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Busca sugestión. Seductor, carismático, busca intensidad y novedad.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Turismo
+    Publicidad
+    Comunicación
+    Eventos
+    Emprendimientos creativos
+
+    🔁 Según subtipo
+
+    🟢 Conservación (estratégico práctico)
+    – Negocios digitales
+    – Marketing online
+
+    🔵 Social (animador grupal)
+    – Oratoria
+    – Formación
+
+    🔴 Sexual (apasionado intenso)
+    – Producción artística
+    – Startups creativas
+
+    🌱 Clave evolutiva
+
+    Proyectos a largo plazo.""",
+
+    "mejorar": """Dónde está la energía, estás vos.
+
+    • Cultivando enfoque y presencia emocional.
+    • Aceptando el dolor como parte de la vida.
+    • Desarrollando rutinas que equilibren diversión y responsabilidad.
+    • Profundizando experiencias en lugar de dispersarlas.
+    • Centrarse corporalemente en artes marciales.
+    • Ejercicios de respiración llevados a la vida diaria.""",
 },
         
 8: {
     "titulo": "🔶 Tipo 8 — El Desafiador",
-    "descripcion": """Directos, fuertes, protectores y decididos. 
-    Buscan controlar su entorno y no temen enfrentar conflictos. 
+    "descripcion": """Directos, fuertes, protectores y decididos.
+    Buscan controlar su entorno y no temen enfrentar conflictos.
     Son líderes naturales, enfocados en la justicia y la acción.""",
-    "caracteristicas": """Miedo básico: Ser vulnerable o controlado.
-    Fortalezas: Fuerte, protector, líder natural.
-    Debilidades: Dominante, confrontativo, excesivo.
-    Pecado capital: Lujuria (intensidad).
-    En su lado luz se expresa con justicia y liderazgo valiente.
-    En su sombra puede volverse autoritario o agresivo.
+
+    "caracteristicas": """El valor del eneatipo 8 radica en la FUERZA y la PROTECCIÓN.
+
+    Su mayor contribución es liderar, proteger y defender lo que considera justo.
+    Tiene capacidad de acción inmediata, toma decisiones con rapidez y asume responsabilidades en momentos críticos.
+
+    Sus conductas recurrentes pueden incluir confrontar, imponer, controlar y proteger.
+    Tiende a ir de frente, evitando mostrar debilidad.
+
+    La creencia arraigada en su interior es que el mundo es un lugar donde el fuerte sobrevive y el débil es dominado.
+    El miedo básico es ser vulnerable o controlado.
+    El miedo constitutivo es perder poder o quedar a merced de otros, lo que genera una necesidad intensa de autonomía y dominio.
+
+    Sus principales fortalezas son ser valiente, protector, decidido y líder natural.
+    Sus áreas de mejora radican en la dominancia excesiva, la impulsividad y la dificultad para mostrar vulnerabilidad.
+
+    El pecado capital del eneatipo 8 es la lujuria (exceso de intensidad y energía).
+
+    En su lado luz se expresa con justicia, liderazgo valiente y protección genuina.
+    En su lado sombra puede volverse autoritario, agresivo o insensible.
+
+    🔼 Integración (hacia el Tipo 2)
+    Cuando evoluciona, desarrolla sensibilidad, empatía y capacidad de cuidado.
+    Aprende a proteger sin invadir.
+    Integra la ternura como fortaleza.
+
+    🔽 Desintegración (hacia el Tipo 5)
+    En estrés puede aislarse emocionalmente.
+    Se vuelve más desconfiado, frío o retraído.
+    Puede cerrarse y desconectarse para no sentirse expuesto.
+
     Alas:
-    🔶 8 con ala 7: Más entusiasta.
-    🔶 8 con ala 9: Más conciliador.""",
-    "mejorar": """¿Cómo puedes sentirte mejor?:
-    Practicando empatía sin perder firmeza.
-    Abrazando vulnerabilidad como fuerza interna.
-    Equilibrando poder con compasión.
-    Construyendo confianza sin confrontación innecesaria.""",
-},
+    🔶 8 con ala 7: Más enérgico, expansivo y emprendedor.
+    🔶 8 con ala 9: Más calmado, protector y estable.
+
+    Punto ciego:
+    Creer que mostrar vulnerabilidad es sinónimo de debilidad.
+
+    Necesidad central: autonomía y control.
+    Pertenece a la tríada instintiva (acción).
+
+    Cabe destacar que existen 3 subtipos:
+
+    🏠 8 Conservación (Satisfacción)
+    Protector de recursos y territorio. Fuerte y directo.
+
+    👥 8 Social (Solidaridad)
+    Defiende al grupo. Líder protector.
+
+    ❤️ 8 Sexual (Posesión)
+    Muy intenso, dominante en relaciones.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Dirección empresarial
+    Abogacía
+    Emprendimiento
+    Política
+    Deportes
+
+    🔁 Según subtipo
+
+    🟢 Conservación (protector territorial)
+    – Empresa familiar
+    – Seguridad
+
+    🔵 Social (líder comunitario)
+    – Política
+    – Dirección institucional
+
+    🔴 Sexual (intenso dominante)
+    – Negociación
+    – Liderazgo de alto impacto
+
+    🌱 Clave evolutiva
+
+    Aprender liderazgo consciente.""",
+
         
 9: {
     "titulo": "🔷 Tipo 9 — El Pacificador",
-    "descripcion": """Calmados, tranquilos, atentos y conciliadores. 
-    Valoran la paz y evitan confrontaciones. 
+    "descripcion": """Calmados, tranquilos, atentos y conciliadores.
+    Valoran la paz y evitan confrontaciones.
     Pueden perder su propia agenda personal para mantener la armonía.""",
-    "caracteristicas": """Miedo básico: Pérdida de conexión y conflicto.
-    Fortalezas: Mediador, paciente, estable.
-    Debilidades: Indeciso, pasivo, evasivo.
-    Pecado capital: Pereza (inercia interior).
-    En su lado luz se expresa con armonía y serenidad.
-    En su sombra puede desconectarse de sí mismo.
+
+    "caracteristicas": """El valor del eneatipo 9 radica en la ARMONÍA y la PRESENCIA.
+
+    Su mayor contribución es mediar, integrar y generar paz en los entornos.
+    Tiene capacidad de escuchar, contener y equilibrar posiciones opuestas.
+
+    Sus conductas recurrentes pueden incluir postergación, evitación del conflicto y adaptación excesiva.
+    Tiende a minimizar sus propias necesidades para mantener la calma externa.
+
+    La creencia arraigada en su interior es que el conflicto rompe el vínculo y debe evitarse.
+    El miedo básico es la pérdida de conexión y el conflicto.
+    El miedo constitutivo es quedar excluido o desconectado, lo que genera una necesidad profunda de pertenencia y estabilidad.
+
+    Sus principales fortalezas son ser mediador, paciente, estable y conciliador.
+    Sus áreas de mejora radican en la indecisión, la pasividad y la evasión de confrontaciones necesarias.
+
+    El pecado capital del eneatipo 9 es la pereza (inercia interior o adormecimiento de sí mismo).
+
+    En su lado luz se expresa con armonía, serenidad y presencia equilibrada.
+    En su lado sombra puede desconectarse de sí mismo, anestesiar sus deseos o diluir su identidad.
+
+    🔼 Integración (hacia el Tipo 3)
+    Cuando evoluciona, desarrolla determinación, foco y acción.
+    Aprende a priorizar sus metas personales.
+    Integra dinamismo sin perder serenidad.
+
+    🔽 Desintegración (hacia el Tipo 6)
+    En estrés puede volverse ansioso, desconfiado o temeroso.
+    Puede anticipar problemas y perder su calma característica.
+
     Alas:
-    🔷 9 con ala 8: Más firme.
-    🔷 9 con ala 1: Más estructurado.""",
+    🔷 9 con ala 8: Más firme, protector y práctico.
+    🔷 9 con ala 1: Más idealista, organizado y correcto.
+
+    Punto ciego:
+    Creer que para ser amado debe desaparecer o adaptarse totalmente.
+
+    Necesidad central: armonía y estabilidad.
+    Pertenece a la tríada instintiva (acción).
+
+    Cabe destacar que existen 3 subtipos:
+
+    🏠 9 Conservación (Apetito)
+    Busca comodidad y bienestar físico. Evita conflicto.
+
+    👥 9 Social (Participación)
+    Se adapta al grupo y busca armonía colectiva.
+
+    ❤️ 9 Sexual (Fusión)
+    Tiende a perderse en el otro. Fuerte necesidad de conexión.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Mediación
+    Terapias
+    Recursos Humanos
+    Educación
+    Actividades holísticas
+
+    🔁 Según subtipo
+
+    🟢 Conservación (fusionado cómodo)
+    – Administración
+    – Trabajo estable
+
+    🔵 Social (armonizador grupal)
+    – RRHH
+    – Coordinación comunitaria
+
+    🔴 Sexual (fusionador intenso)
+    – Terapias de pareja
+    – Coaching relacional
+
+    🌱 Clave evolutiva
+
+    Trabajos donde tengan voz y decisión.""",
+
     "mejorar": """¿Cómo puedes sentirte mejor?:
-    Practicando afirmación personal sin necesidad de evitar confrontaciones.
-    Cultivando claridad y enfoque.
-    Ejercitando toma de decisiones conscientes.
-    Integrando presencia activa con serenidad interior.""",
-}
+
+    • Practicando afirmación personal sin necesidad de evitar confrontaciones.
+    • Cultivando claridad y enfoque.
+    • Ejercitando toma de decisiones conscientes.
+    • Integrando presencia activa con serenidad interior.
+    • Aprendiendo a expresar lo que deseas sin minimizarlo.""",
+},
+
 }
     creencias_limitantes = {
         1: "Miedo a PERDER LA LIBERTAD por quedar atrapado en estructuras o situaciones que me asfixian (trabajo, pareja, etc).",
