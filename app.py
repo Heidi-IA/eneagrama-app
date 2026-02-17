@@ -773,36 +773,111 @@ def result():
 
     Estructura y disciplina profesional.""",
 
-    "mejorar": """¿Cómo puedes sentirte mejor?:
+    "mejorar": """ No soy una persona importante, soy importante como persona, que es distinto.
 
     • Cultivando la disciplina personal y la estructura.
     • Aprendiendo a aceptar tus emociones sin quedarte atrapado en ellas.
     • Fomentando la creatividad con propósito.
     • Practicando gratitud y conexión con otros.
-    • Explorando logros tangibles además del mundo interior.""",
+    • Explorando logros tangibles además del mundo interior.
+    • Centrarse físicamente, bioenergía, danza. Focalizarse en un ideal de vida ya que es un fluir de sensaciones en abanico.
+    • Animarme a mantener la atención en lo positivo del presente.""",
 },
 
 
 5: {
     "titulo": "🟣 Tipo 5 — El Investigador",
-    "descripcion": """Curiosos, observadores y analíticos. Buscan conocimiento, comprensión y autonomía. 
+    "descripcion": """Curiosos, observadores y analíticos.
+    Buscan conocimiento, comprensión y autonomía.
     Prefieren observar antes que participar y disfrutan de profundizar en temas complejos.""",
-    "caracteristicas": """Miedo básico: Ser incompetente o incapaz.
-    Fortalezas: Analítico, observador, independiente.
-    Debilidades: Aislado, distante, retraído.
-    Pecado capital: Avaricia.
-    En su lado luz se expresa con sabiduría y claridad mental.
-    En su sombra puede caer en retraimiento extremo o frialdad.
-    Cabe destacar alas:
+
+    "caracteristicas": """El valor del eneatipo 5 radica en el CONOCIMIENTO y la COMPRENSIÓN.
+
+    Su mayor contribución es aportar análisis, claridad mental y profundidad conceptual. 
+    Posee una gran capacidad de concentración y pensamiento estratégico.
+
+    Sus conductas recurrentes pueden incluir la observación distante, el aislamiento y la acumulación de información antes de actuar. Prefiere observar antes que participar.
+
+    La creencia arraigada en su interior es que el mundo puede invadirlo o demandarle demasiado.
+    El miedo básico es ser incompetente o incapaz.
+    El miedo constitutivo es quedarse sin recursos internos (energía, tiempo, conocimiento), lo que genera una necesidad de autonomía y autosuficiencia.
+
+    Sus principales fortalezas son ser analítico, observador e independiente.
+    Sus áreas de mejora radican en el aislamiento, la distancia emocional y el retraimiento.
+
+    El pecado capital del eneatipo 5 es la avaricia (retención).
+
+    En su lado luz se expresa con sabiduría, claridad mental y objetividad.
+    En su lado sombra puede caer en retraimiento extremo, frialdad o desconexión emocional.
+
+    🔼 Integración (hacia el Tipo 8)
+    Cuando evoluciona, desarrolla fuerza, decisión y capacidad de acción.
+    Pasa del análisis a la ejecución.
+    Se vuelve más presente, directo y comprometido con la realidad.
+
+    🔽 Desintegración (hacia el Tipo 7)
+    En estrés puede dispersarse mentalmente.
+    Salta de idea en idea sin profundidad.
+    Busca distracción para evitar el vacío interno.
+
+    Alas:
     🟣 5 con ala 4: Más creativo.
     🟣 5 con ala 6: Más precavido y leal.
-    futuro, seguridad, mental""",
+
+    Punto ciego:
+    Creer que saber es suficiente y que no necesita involucrarse emocionalmente.
+
+    Necesidad central: seguridad a través del conocimiento.
+    Pertenece a la tríada mental (pensamiento).
+    Orientación interna hacia el futuro y la seguridad.
+    
+    
+    🏠 5 Conservación (Refugio)
+    Muy reservado. Crea espacios privados y autosuficientes.
+
+    👥 5 Social (Tótem)
+    Comparte conocimiento en grupos específicos. Busca pertenecer intelectualmente.
+
+    ❤️ 5 Sexual (Confidente)
+    Intenso en vínculos selectivos. Se abre solo con pocos.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Investigación
+    Ciencia
+    Tecnología
+    Programación
+    Análisis de datos
+    Docencia universitaria
+
+    🔁 Según subtipo
+
+    🟢 Conservación (observador aislado)
+    – Programación
+    – Investigación técnica
+
+    🔵 Social (teórico experto)
+    – Profesor universitario
+    – Think tank
+
+    🔴 Sexual (visionario especializado)
+    – Innovación tecnológica
+    – Neurociencia
+
+    🌱 Clave evolutiva
+
+    Profesiones donde compartan su conocimiento.""",
+
     "mejorar": """¿Cómo puedes sentirte mejor?:
-    Integrando acción deliberada y participación social.
-    Cultivando conexiones con otros sin perder tu independencia.
-    Practicando compartir tu conocimiento con humildad.
-    Balanceando reflexión con experiencia directa.""",
+
+    • Integrando acción deliberada y participación social.
+    • Cultivando conexiones con otros sin perder tu independencia.
+    • Practicando compartir tu conocimiento con humildad.
+    • Balanceando reflexión con experiencia directa.""",
+
 },
+
         
 6: {
     "titulo": "🟠 Tipo 6 — El Leal",
