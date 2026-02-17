@@ -773,7 +773,7 @@ def result():
 
     Estructura y disciplina profesional.""",
 
-    "mejorar": """ No soy una persona importante, soy importante como persona, que es distinto.
+    "mejorar": """No soy una persona importante, soy importante como persona, que es distinto.
 
     • Cultivando la disciplina personal y la estructura.
     • Aprendiendo a aceptar tus emociones sin quedarte atrapado en ellas.
@@ -858,24 +858,74 @@ def result():
         
 6: {
     "titulo": "🟠 Tipo 6 — El Leal",
-    "descripcion": """Personas leales, responsables, cautelosas y con gran sentido de comunidad. 
-    Valoran la seguridad, la confianza y la previsibilidad. 
+    "descripcion": """Personas leales, responsables, cautelosas y con gran sentido de comunidad.
+    Valoran la seguridad, la confianza y la previsibilidad.
     Pueden preocuparse por posibles riesgos, pero son muy comprometidos.""",
-    "caracteristicas": """Miedo básico: No tener seguridad ni apoyo.
-    Fortalezas: Leal, responsable, comprometido.
-    Debilidades: Ansioso, desconfiado, dubitativo.
-    Pecado capital: Miedo.
-    En su lado luz se expresa con valentía y compromiso con la comunidad.
-    En su sombra puede caer en parálisis por miedo.
-    Cabe destacar alas:
-    🟠 6 con ala 5: Más analítico e introspectivo.
-    🟠 6 con ala 7: Más social y adaptable.""",
-    "mejorar": """¿Cómo puedes sentirte mejor?:
-    Practicando confianza en ti mismo.
-    Cultivando cooperación y apertura.
-    Aprendiendo a discernir riesgos reales de miedos imaginarios.
-    Practicando calma antes que reacción.
-    Construyendo seguridad desde el interior.""",
+
+    "caracteristicas": """El valor del eneatipo 6 radica en la CONFIANZA y la LEALTAD.
+
+    Su mayor contribución es ser un EVALUADOR, COLABORADOR, generar estabilidad, previsión y compromiso dentro de los sistemas y vínculos. Es responsable, confiable y protector. Es estratega, percibe todas las opciones y es hábil en el pensamiento crítico. Puede ser influenciables, contradictorio y pesimista. 
+
+    Sus conductas recurrentes pueden incluir anticipación de riesgos, cuestionamiento constante, búsqueda de garantías y validación externa. Puede oscilar entre la prudencia y la reacción defensiva. Puede tener dificultad para cambiar, desconfiar, dudar y ser negativo. Los hábitos que puede desarrollar son ansiedad, hiperintencionalidad supervigilante,
+    orientación teórica, amistad congraciadora, rigidez, acusación de sí mismos y de los demás, ambivalencia y titubeo. Como resultado forman guetos, sostienen vínculos aunque a veces no sean los más sanos. 
+
+    La creencia arraigada en su interior es que el mundo es incierto y potencialmente peligroso. El miedo básico es no tener seguridad ni apoyo. El miedo constitutivo es quedar desamparado o traicionado, lo que genera una necesidad de protección y pertenencia. Tiene miedo a la realidad, por lo que busca seguridad, se cierra en sus vínculos, y su adicción es a la familia (familiariza vínculos).
+
+    Sus principales fortalezas son ser leal, responsable y comprometido. Sus áreas de mejora radican en la ansiedad, la desconfianza y la duda excesiva. El pecado capital del eneatipo 6 es el miedo.
+
+    En su lado luz se expresa con valentía, compromiso y construcción de comunidad. Por el contrario, en su lado sombra puede caer en parálisis por miedo, sospecha constante o reacción defensiva.
+
+    Cuando evoluciona, desarrolla serenidad y confianza interna, aprende a relajarse y a confiar en el flujo de la vida, disminuye la ansiedad y gana estabilidad emocional. Cuando cae en estrés, puede volverse competitivo y obsesionado con el rendimiento, busca validación a través del logro y puede desconectarse emocionalmente para sostener imagen de eficacia.
+    Las cualidades que lo mantienen en equilibrio son ser más analítico e introspectivo y más social y adaptable. Equilibrar estas características le otorgan la capacidad de observación objetiva, relajada y optimista de la realidad, pudiendo desplegar mejor sus capacidades sin temor ni cuestionamientos. No se siente a cargo de todo, sale de la mente laberíntica y del cumplimiento. 
+    Sin embargo, si no desarrolla estas cualidades, está siempre cuestionándose y cuestionando todo; no tiene paz mental y siente que vino a cumplir y a sostener hasta las situaciones más duras. 
+
+    Otro punto que ayuda a la evolución del eneatipo 6 es reconocer su punto ciego:tiene que vencer el miedo, fortalecerse, confiar en sí mismo, y arriesgar. Pertenece a la tríada mental (pensamiento). Vive en el futuro y su necesidad es la seguridad.  
+
+    Cabe destacar que existen 3 subtipos:
+
+    🏠 6 Conservación (Calor)
+    Busca seguridad en vínculos cercanos. Protector y precavido.
+
+    👥 6 Social (Deber)
+    Cumple normas del grupo. Muy responsable y leal.
+
+    ❤️ 6 Sexual (Fuerza)
+    Contrafóbico. Enfrenta el miedo con valentía aparente.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Derecho
+    Seguridad
+    Gestión
+    Administración pública
+    Logística
+
+    🔁 Según subtipo
+
+    🟢 Conservación (protector familiar)
+    – Administración
+    – Salud pública
+
+    🔵 Social (leal institucional)
+    – Fuerzas armadas
+    – Gobierno
+
+    🔴 Sexual (contrafóbico)
+    – Emprendimientos de riesgo
+    – Abogacía litigante
+
+    🌱 Clave evolutiva
+
+    Roles con autonomía progresiva.""",
+
+    "mejorar": """Comprendiendo que el miedo termina cuando percibo que mi mente lo creo. 
+    
+    • Practicando confianza en ti mismo.
+    • Cultivando cooperación y apertura.
+    • Aprendiendo a discernir riesgos reales de miedos imaginarios.
+    • Practicando calma antes que reacción.
+    • Construyendo seguridad desde el interior.""",
 },
         
  7: {
