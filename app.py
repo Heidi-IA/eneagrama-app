@@ -714,26 +714,97 @@ def result():
         
 4: {
     "titulo": "🔴 Tipo 4 — El Individualista",
-    "descripcion": """Creativos, sensibles y emocionalmente profundos. 
-    Se sienten únicos e intensos, valoran la autenticidad. 
+    "descripcion": """Creativos, sensibles y emocionalmente profundos.
+    Se sienten únicos e intensos, valoran la autenticidad.
     Tienden a ser introspectivos y a explorar su mundo interior con profundidad.""",
-    "caracteristicas": """Miedo básico: No tener identidad o significado.
-    Fortalezas: Creativo, sensible, profundo.
-    Debilidades: Melancólico, comparativo, dramático.
-    Pecado capital: Envidia.
+
+    "caracteristicas": """El valor del eneatipo 4 radica en la IDENTIDAD y la PROFUNDIDAD EMOCIONAL.
+
+    Su mayor contribución es aportar sensibilidad, creatividad y capacidad de expresar lo que otros no logran nombrar. Posee una conexión profunda con la emoción y la estética.
+
+    Sus conductas recurrentes pueden incluir la comparación constante, la intensidad emocional y la tendencia a dramatizar experiencias. Puede oscilar entre sentirse especial o defectuoso.
+
+    La creencia arraigada en su interior es que algo esencial le falta o que es diferente.
+    El miedo básico es no tener identidad o significado.
+    El miedo constitutivo es a la insignificancia, lo que genera una necesidad de ser único y especial.
+
+    Sus principales fortalezas son ser creativo, sensible y profundo.
+    Sus áreas de mejora radican en la melancolía, la comparación y el dramatismo.
+
+    El pecado capital del eneatipo 4 es la envidia.
+
     En su lado luz se expresa con autenticidad emocional profunda.
-    En su sombra puede caer en victimismo o aislamiento.
-    Alcanzan equilibrio entre estructura y expresión personal.
+    En su lado sombra puede caer en victimismo o aislamiento.
+
+    🔼 Integración (hacia el Tipo 1)
+    Cuando evoluciona, incorpora disciplina, orden y objetividad.
+    Canaliza su sensibilidad en acción concreta y estructura.
+    Transforma emoción en propósito.
+
+    🔽 Desintegración (hacia el Tipo 2)
+    En estrés puede volverse dependiente emocionalmente.
+    Busca validación afectiva intensa.
+    Puede volverse demandante o manipulador desde la herida emocional.
+
     Alas:
     🔴 4 con ala 3: Más orientado al logro.
-    🔴 4 con ala 5: Más introspectivo y cerebral.""",
+    🔴 4 con ala 5: Más introspectivo y cerebral.
+
+    Punto ciego:
+    Creer que la intensidad emocional es más verdadera que la serenidad.
+
+    Necesidad central: identidad y profundidad emocional.
+    Pertenece a la tríada emocional (sentimiento).
+
+    Cabe destacar que existen 3 subtipos:
+
+    🏠 4 Conservación (Tenacidad)
+    Sufre en silencio. Resistente, aguanta dolor sin mostrarse débil.
+
+    👥 4 Social (Vergüenza)
+    Se siente diferente y expuesto. Comparación constante.
+
+    ❤️ 4 Sexual (Competencia)
+    Intenso, celoso, apasionado. Busca intensidad emocional.""",
+
+    "orientacion": """    
+    🎯 Vocación base
+
+    Arte
+    Escritura
+    Diseño
+    Música
+    Terapias expresivas
+
+    🔁 Según subtipo
+
+    🟢 Conservación (sufridor resiliente)
+    – Arte terapéutico
+    – Psicología profunda
+
+    🔵 Social (comparativo creativo)
+    – Diseño de marca
+    – Moda
+    – Imagen pública
+
+    🔴 Sexual (intenso romántico)
+    – Cine
+    – Dirección artística
+    – Literatura pasional
+
+    🌱 Clave evolutiva
+
+    Estructura y disciplina profesional.""",
+
     "mejorar": """¿Cómo puedes sentirte mejor?:
-    Cultivando la disciplina personal y la estructura.
-    Aprendiendo a aceptar tus emociones sin quedarte atrapado en ellas.
-    Fomentando la creatividad con propósito.
-    Practicando gratitud y conexión con otros.
-    Explorando logros tangibles además del mundo interior.""",
+
+    • Cultivando la disciplina personal y la estructura.
+    • Aprendiendo a aceptar tus emociones sin quedarte atrapado en ellas.
+    • Fomentando la creatividad con propósito.
+    • Practicando gratitud y conexión con otros.
+    • Explorando logros tangibles además del mundo interior.""",
 },
+
 
 5: {
     "titulo": "🟣 Tipo 5 — El Investigador",
