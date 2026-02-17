@@ -791,56 +791,31 @@ def result():
     Buscan conocimiento, comprensión y autonomía.
     Prefieren observar antes que participar y disfrutan de profundizar en temas complejos.""",
 
-    "caracteristicas": """El valor del eneatipo 5 radica en el CONOCIMIENTO y la COMPRENSIÓN.
+    "caracteristicas": """El valor del eneatipo 5 radica en la PRIVACIDAD, el CONOCIMIENTO y la COMPRENSIÓN.
 
-    Su mayor contribución es aportar análisis, claridad mental y profundidad conceptual. 
-    Posee una gran capacidad de concentración y pensamiento estratégico.
+    Su mayor contribución es ser ESPECIALISTA, aportar análisis, claridad mental y profundidad conceptual. Posee una gran capacidad de concentración y pensamiento estratégico. Es independiente y aporta conocimientos específicos. Puede aislarse de los otros miembros, tener información excesiva y ser individualista.
 
-    Sus conductas recurrentes pueden incluir la observación distante, el aislamiento y la acumulación de información antes de actuar. Prefiere observar antes que participar.
+    Sus conductas recurrentes pueden incluir la observación distante, el aislamiento y la acumulación de información antes de actuar. Prefiere observar antes que participar. Puede aislarse y ser hiper anañítico. Entre sus hábitos está no pedir para que no le pidan, intolerancia a la invasión, esto resulta en soledad, dificultad para relacionarse. 
 
-    La creencia arraigada en su interior es que el mundo puede invadirlo o demandarle demasiado.
-    El miedo básico es ser incompetente o incapaz.
-    El miedo constitutivo es quedarse sin recursos internos (energía, tiempo, conocimiento), lo que genera una necesidad de autonomía y autosuficiencia.
+    La creencia arraigada en su interior es que el mundo puede invadirlo o demandarle demasiado. "El mundo es una jungla que me agobia". El miedo básico es ser incompetente o incapaz, quedarse sin recursos internos (energía, tiempo, conocimiento), lo que genera una necesidad de autonomía y autosuficiencia. El miedo constitutivo es a la realidad, lo que le genera una necesidad de seguridad, por lo que se aisla de la realidad (la considera problemática), y esto puede generarle una adicción a la soledad. 
 
-    Sus principales fortalezas son ser analítico, observador e independiente.
-    Sus áreas de mejora radican en el aislamiento, la distancia emocional y el retraimiento.
+    Sus principales fortalezas son ser analítico, observador e independiente. Sus áreas de mejora radican en el aislamiento, la distancia emocional y el retraimiento. El pecado capital del eneatipo 5 es la avaricia (retención).
 
-    El pecado capital del eneatipo 5 es la avaricia (retención).
+    En su lado luz se expresa con sabiduría, claridad mental y objetividad. Sin embargo, en su lado sombra puede caer en retraimiento extremo, frialdad o desconexión emocional.
 
-    En su lado luz se expresa con sabiduría, claridad mental y objetividad.
-    En su lado sombra puede caer en retraimiento extremo, frialdad o desconexión emocional.
+    Las aptitudes que lo evolucionan son desarrollar fuerza, decisión y capacidad de acción. Pasar del análisis a la ejecución. Se vuelve más presente, directo y comprometido con la realidad. Por el contrario, debe evitar dispersarse mentalmente, salta de idea en idea sin profundidad y busca distracción para evitar el vacío interno.
+    Las cualidades que lo equilibran son ser más creativo y más precavido y leal. Desarrollar estas cualidades en luz le otorga calidez, acercamiento, presencia, expresión y sensibilidad que lo ayudan a salir de la cueva y compartir con los demás. Es responsable,a bierto, original y sensible.
+    Si no las desarrolla o las desarrolla en sombra (negativamente), se cierra en su mente, en sus teorías, le cuesta compartir, es pesimista, se carga de drama, sostiene que la alegría es vulgar, es indeciso, se carga de miedos y cuestionamientos que lo cierran más en si mismo. 
 
-    🔼 Integración (hacia el Tipo 8)
-    Cuando evoluciona, desarrolla fuerza, decisión y capacidad de acción.
-    Pasa del análisis a la ejecución.
-    Se vuelve más presente, directo y comprometido con la realidad.
+    Otro punto de evolución es su punto ciego: tomar acción decisiva. Pertenece a la triada de la intelectualidad o la mente (percepción), vive en el futuro, su necesidad es de seguridad. Tiene una mente focalizada, dirigida. 
 
-    🔽 Desintegración (hacia el Tipo 7)
-    En estrés puede dispersarse mentalmente.
-    Salta de idea en idea sin profundidad.
-    Busca distracción para evitar el vacío interno.
+    Cabe destacar que existen tres sub-tipos: 
+    🏠 5 Conservación: busca seguridad, recursos y estabilidad. Busca refugio. Muy reservado. Crea espacios privados y autosuficientes.
 
-    Alas:
-    🟣 5 con ala 4: Más creativo.
-    🟣 5 con ala 6: Más precavido y leal.
+    👥 5 Social: busca grupo, pertenencia e imagen social. Busca tótem. Comparte conocimiento en grupos específicos. Busca pertenecer intelectualmente.
 
-    Punto ciego:
-    Creer que saber es suficiente y que no necesita involucrarse emocionalmente.
-
-    Necesidad central: seguridad a través del conocimiento.
-    Pertenece a la tríada mental (pensamiento).
-    Orientación interna hacia el futuro y la seguridad.
+    ❤️ 5 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Es confidente. Intenso en vínculos selectivos. Se abre solo con pocos.""",
     
-    
-    🏠 5 Conservación (Refugio)
-    Muy reservado. Crea espacios privados y autosuficientes.
-
-    👥 5 Social (Tótem)
-    Comparte conocimiento en grupos específicos. Busca pertenecer intelectualmente.
-
-    ❤️ 5 Sexual (Confidente)
-    Intenso en vínculos selectivos. Se abre solo con pocos.""",
-
     "orientacion": """    
     🎯 Vocación base
 
@@ -869,12 +844,14 @@ def result():
 
     Profesiones donde compartan su conocimiento.""",
 
-    "mejorar": """¿Cómo puedes sentirte mejor?:
+    "mejorar": """
 
     • Integrando acción deliberada y participación social.
     • Cultivando conexiones con otros sin perder tu independencia.
     • Practicando compartir tu conocimiento con humildad.
-    • Balanceando reflexión con experiencia directa.""",
+    • Balanceando reflexión con experiencia directa.
+    • Conectarse con la vida que es el mejor libro. 
+    • Salir a la naturaleza.""",
 
 },
 
