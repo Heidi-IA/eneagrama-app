@@ -844,7 +844,7 @@ def result():
 
     Profesiones donde compartan su conocimiento.""",
 
-    "mejorar": """La soledad es un buen lugar para encontrarse, pero uno malo para quedarse".
+    "mejorar": """La soledad es un buen lugar para encontrarse, pero uno malo para quedarse.
 
     • Integrando acción deliberada y participación social.
     • Cultivando conexiones con otros sin perder tu independencia.
