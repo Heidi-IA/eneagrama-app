@@ -882,16 +882,11 @@ def result():
     Otro punto que ayuda a la evolución del eneatipo 6 es reconocer su punto ciego:tiene que vencer el miedo, fortalecerse, confiar en sí mismo, y arriesgar. Pertenece a la tríada mental (pensamiento). Vive en el futuro y su necesidad es la seguridad.  
 
     Cabe destacar que existen 3 subtipos:
+    🏠 6 Conservación: busca seguridad, recursos y estabilidad. Busca calor. Busca seguridad en vínculos cercanos. Protector y precavido.
 
-    🏠 6 Conservación (Calor)
-    Busca seguridad en vínculos cercanos. Protector y precavido.
+    👥 6 Social: busca grupo, pertenencia e imagen social. Busca deber. Cumple normas del grupo. Muy responsable y leal.
 
-    👥 6 Social (Deber)
-    Cumple normas del grupo. Muy responsable y leal.
-
-    ❤️ 6 Sexual (Fuerza)
-    Contrafóbico. Enfrenta el miedo con valentía aparente.""",
-
+    ❤️ 6 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Busca fuerza. Contrafóbico. Enfrenta el miedo con valentía aparente.""",
     "orientacion": """    
     🎯 Vocación base
 
@@ -925,7 +920,9 @@ def result():
     • Cultivando cooperación y apertura.
     • Aprendiendo a discernir riesgos reales de miedos imaginarios.
     • Practicando calma antes que reacción.
-    • Construyendo seguridad desde el interior.""",
+    • Construyendo seguridad desde el interior.
+    • Demostrándole que puede confiar. 
+    • Apuntalando fuertemente su autoestima.""",
 },
         
  7: {
