@@ -718,54 +718,31 @@ def result():
     Se sienten únicos e intensos, valoran la autenticidad.
     Tienden a ser introspectivos y a explorar su mundo interior con profundidad.""",
 
-    "caracteristicas": """El valor del eneatipo 4 radica en la IDENTIDAD y la PROFUNDIDAD EMOCIONAL.
+    "caracteristicas": """El valor del eneatipo 4 radica en la AUTENTICIDAD, IDENTIDAD y la PROFUNDIDAD EMOCIONAL.
 
-    Su mayor contribución es aportar sensibilidad, creatividad y capacidad de expresar lo que otros no logran nombrar. Posee una conexión profunda con la emoción y la estética.
+    Su mayor contribución es aportar sensibilidad, creatividad y capacidad de expresar lo que otros no logran nombrar. Posee una conexión profunda con la emoción y la estética. Es imaginativo y un librepensador. Es el CEREBRO. Se siente diferente al resto, puede ser impredecible e individualista. 
 
-    Sus conductas recurrentes pueden incluir la comparación constante, la intensidad emocional y la tendencia a dramatizar experiencias. Puede oscilar entre sentirse especial o defectuoso.
+    Sus conductas recurrentes pueden incluir la comparación constante, la intensidad emocional y la tendencia a dramatizar experiencias, quejarse y victimizarse. Puede oscilar entre sentirse especial o defectuoso. Los hábitos en los que cae son buscar salvadores, enfermarse para llamar la atención, y como resultado puede quedarse aislado, ser rechazado o sentirse diferente. 
 
-    La creencia arraigada en su interior es que algo esencial le falta o que es diferente.
-    El miedo básico es no tener identidad o significado.
-    El miedo constitutivo es a la insignificancia, lo que genera una necesidad de ser único y especial.
+    La creencia arraigada en su interior es que algo esencial le falta o que es diferente. Algo que los demás tienen y él no. El miedo básico es no tener identidad o significado. El miedo constitutivo es al rechazo, lo que le genera una necesidad de aceptación que la cubre necesitando que lo valoren por lo que es, es decir, creando y haciendo cosas exéntricas. Esto lo lleva a una adicción a sí mismo.
 
-    Sus principales fortalezas son ser creativo, sensible y profundo.
-    Sus áreas de mejora radican en la melancolía, la comparación y el dramatismo.
+    Sus principales fortalezas son ser creativo, sensible y profundo. Sus áreas de mejora radican en la melancolía, la comparación y el dramatismo. El pecado capital del eneatipo 4 es la envidia.
 
-    El pecado capital del eneatipo 4 es la envidia.
+    En su lado luz se expresa con autenticidad emocional profunda.Sin embargo, en su lado sombra puede caer en victimismo o aislamiento.
 
-    En su lado luz se expresa con autenticidad emocional profunda.
-    En su lado sombra puede caer en victimismo o aislamiento.
+    Las cualidades que le permiten evolucionar son: incorporar disciplina, orden y objetividad. Canalizar su sensibilidad en acción concreta y estructura. Transformar emoción en propósito. Por el contrario, las actitudes que lo llevan a una involución son: volverse dependiente emocionalmente, buscar validación afectiva intensa, volverse demandante o manipulador desde la herida emocional. Lo que lo mantiene equilibrado es estar más orientado al logro, tener una necesidad de una base económica y de activarse para desplegar su creatividad, bajar a la realidad, a lo concreto y práctico y ser más introspectivo y cerebral, percibir la realidad sin adornos ni dramatismo, buscar objetividad.
 
-    🔼 Integración (hacia el Tipo 1)
-    Cuando evoluciona, incorpora disciplina, orden y objetividad.
-    Canaliza su sensibilidad en acción concreta y estructura.
-    Transforma emoción en propósito.
-
-    🔽 Desintegración (hacia el Tipo 2)
-    En estrés puede volverse dependiente emocionalmente.
-    Busca validación afectiva intensa.
-    Puede volverse demandante o manipulador desde la herida emocional.
-
-    Alas:
-    🔴 4 con ala 3: Más orientado al logro.
-    🔴 4 con ala 5: Más introspectivo y cerebral.
-
-    Punto ciego:
-    Creer que la intensidad emocional es más verdadera que la serenidad.
-
-    Necesidad central: identidad y profundidad emocional.
-    Pertenece a la tríada emocional (sentimiento).
+    Cuando estas características no se desarrollan la persona cae en una bipolaridad entre soy el mejor y soy el peor. La imagen (apariencia) y el drama.  
+    
+    Otro de las oportunidades de evolución es el punto ciego: ver lo que sí tiene. Pertenece a la tríada emocional (sentimiento). Vive en el pasado y su necesidad es vincularse. 
 
     Cabe destacar que existen 3 subtipos:
 
-    🏠 4 Conservación (Tenacidad)
-    Sufre en silencio. Resistente, aguanta dolor sin mostrarse débil.
+    🏠 4 Conservación: busca seguridad, recursos y estabilidad. Puede desarrollar tenacidad. Sufre en silencio. Resistente, aguanta dolor sin mostrarse débil.
 
-    👥 4 Social (Vergüenza)
-    Se siente diferente y expuesto. Comparación constante.
+    👥 4 Social: busca grupo, pertenencia e imagen social. Puede desarrollar vergüenza. Se siente diferente y expuesto. Comparación constante.
 
-    ❤️ 4 Sexual (Competencia)
-    Intenso, celoso, apasionado. Busca intensidad emocional.""",
+    ❤️ 4 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Puede desarrollar competencia. Intenso, celoso, apasionado. Busca intensidad emocional.""",
 
     "orientacion": """    
     🎯 Vocación base
@@ -818,7 +795,8 @@ def result():
     En su sombra puede caer en retraimiento extremo o frialdad.
     Cabe destacar alas:
     🟣 5 con ala 4: Más creativo.
-    🟣 5 con ala 6: Más precavido y leal.""",
+    🟣 5 con ala 6: Más precavido y leal.
+    futuro, seguridad, mental""",
     "mejorar": """¿Cómo puedes sentirte mejor?:
     Integrando acción deliberada y participación social.
     Cultivando conexiones con otros sin perder tu independencia.
