@@ -277,12 +277,14 @@ def result():
     
         afinidades.append({
             "eje": eje,
+            "tipos": tipos,   # ✅ AGREGAR ESTA LÍNEA
             "valor": prom,
             "estado": estado,
             "descripcion": cfg["descripcion"],
             "perfil_alto": cfg["perfil_alto"],
             "perfil_bajo": cfg["perfil_bajo"],
         })
+
 
     
     # -----------------------------
