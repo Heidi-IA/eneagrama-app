@@ -92,6 +92,33 @@ DESCRIPCION_AFINIDAD = {
     "LIBERTAD": "El eje de LIBERTAD describe la búsqueda de experiencia y autenticidad. Uno de los atributos busca libertad emocional y expresión auténtica, el otro libertad de opciones y experiencias.",
     "INTEGRADOR": "El eje de INTEGRADOR funciona como punto de integración y armonización: mediación, síntesis y capacidad de unir extremos.",
 }
+EJES_AFINIDAD = [
+    {
+        "eje": "RESPONSABILIDAD",
+        "perfil_alto": "En lo personal, sueles sostenerte en la coherencia, el deber y la confiabilidad. Te cuesta relajarte o soltar el control. En lo profesional, destacas por responsabilidad, seguimiento, cumplimiento y mirada preventiva. Riesgo: rigidez o exceso de carga.",
+        "perfil_bajo": "En lo personal, puede costarte sostener hábitos, disciplina o compromisos sin sentir presión o culpa. En lo profesional, el desafío es sostener consistencia, procesos y acuerdos, evitando postergar o improvisar.",
+    },
+    {
+        "eje": "DISTANCIA",
+        "perfil_alto": "En lo personal, regulas la intimidad con claridad: sabes cuándo acercarte y cuándo tomar distancia. Riesgo: irte a extremos. En lo profesional, puedes vincularte con empatía sin perder foco, o sostener límites sanos y autonomía intelectual.",
+        "perfil_bajo": "En lo personal, puede haber confusión en límites: o te sobreinvolucras, o te aíslas sin darte cuenta. En lo profesional, el desafío es manejar cercanía con clientes/equipo sin agotarte ni desconectarte.",
+    },
+    {
+        "eje": "PODER",
+        "perfil_alto": "En lo personal, tiendes a tomar el mando, avanzar y proteger lo tuyo. Riesgo: dureza o exceso de control. En lo profesional, destacas en ejecución, liderazgo, negociación y logro de objetivos. Riesgo: intensidad o intolerancia al error.",
+        "perfil_bajo": "En lo personal, puede costarte tomar tu lugar, poner límites o sostener decisiones con firmeza. En lo profesional, el desafío es el liderazgo, la asertividad y la ejecución consistente.",
+    },
+    {
+        "eje": "LIBERTAD",
+        "perfil_alto": "En lo personal, necesitas espacio interno para sentir y elegir. Riesgo: dispersión o dramatización. En lo profesional, destacas en creatividad, ideas y expansión. Riesgo: falta de estructura o constancia.",
+        "perfil_bajo": "En lo personal, puede costarte conectar con deseo propio, autenticidad o disfrute sin culpa. En lo profesional, el desafío es innovar, permitir creatividad y sostener motivación.",
+    },
+    {
+        "eje": "INTEGRADOR",
+        "perfil_alto": "En lo personal, tiendes a armonizar, bajar tensiones y sostener paz interna/externa. Riesgo: postergarte. En lo profesional, destacas como mediador, facilitador, integrador de equipos y climas.",
+        "perfil_bajo": "En lo personal, el desafío es presencia, decisión y sostener tu agenda sin diluirte. En lo profesional, el desafío es tomar postura, decidir y priorizar sin evitar el conflicto.",
+    },
+]
 
 # ✅ palabras/virtudes para la síntesis (como pediste)
 PALABRAS_AFINIDAD_POR_TIPO = {
@@ -278,12 +305,24 @@ def result():
         # 2) estado del eje (por encima / equilibrado / por debajo)
         if es_bajo(v):
             txt += "Este eje aparece por debajo de la media, lo que indica que es un área a desarrollar."
+            perfil_cfg = next((x for x in EJES_AFINIDAD if x["eje"] == eje), None)
+            if perfil_cfg:
+                txt += "\n\n" + perfil_cfg["perfil_bajo"]
+    
         elif abs(v - 11.1) <= 0.1:
             txt += "Este eje aparece equilibrado, lo que indica que estas cualidades están presentes de forma estable."
+            perfil_cfg = next((x for x in EJES_AFINIDAD if x["eje"] == eje), None)
+            if perfil_cfg:
+                txt += "\n\n" + perfil_cfg["perfil_alto"]
+    
         else:
             txt += "Este eje aparece por encima de la media, lo que indica que posees estas características."
+            perfil_cfg = next((x for x in EJES_AFINIDAD if x["eje"] == eje), None)
+            if perfil_cfg:
+                txt += "\n\n" + perfil_cfg["perfil_alto"]
     
         afinidades_parrafos.append(txt)
+
     
     # -----------------------------
     # Síntesis de Afinidades (mismo formato que tu síntesis)
