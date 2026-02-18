@@ -77,6 +77,58 @@ def load_questions():
     questions = [q for q in questions if q.get("type") in range(1, 10)]
     return questions
 
+EJES_AFINIDAD = [
+    {
+        "eje": "RESPONSABILIDAD",
+        "tipos": [1, 6],
+        "descripcion": "Comparten deber, compromiso, ética y lealtad. Buscan seguridad a través del cumplimiento y la coherencia.",
+        "palabras": {1: "responsabilidad moral (hacer lo correcto)", 6: "responsabilidad hacia el grupo (seguridad y compromiso)"},
+        "perfil_personal_alto": "En lo personal, sueles sostenerte en la coherencia, el deber y la confiabilidad. Te cuesta relajarte o soltar el control.",
+        "perfil_profesional_alto": "En lo profesional, destacas por responsabilidad, seguimiento, cumplimiento y mirada preventiva. Riesgo: rigidez o exceso de carga.",
+        "perfil_personal_bajo": "En lo personal, puede costarte sostener hábitos, disciplina o compromisos sin sentir presión o culpa.",
+        "perfil_profesional_bajo": "En lo profesional, el desafío es sostener consistencia, procesos y acuerdos, evitando postergar o improvisar.",
+    },
+    {
+        "eje": "DISTANCIA",
+        "tipos": [2, 5],
+        "descripcion": "Comparten manejo del vínculo desde la regulación de la cercanía. Uno se acerca cuidando y el otro se aleja para proteger su energía.",
+        "palabras": {2: "acercamiento/cuidado (cercanía)", 5: "distancia/autonomía (protección de energía)"},
+        "perfil_personal_alto": "En lo personal, regulas la intimidad con claridad: sabes cuándo acercarte y cuándo tomar distancia. Riesgo: irte a extremos.",
+        "perfil_profesional_alto": "En lo profesional, puedes vincularte con empatía sin perder foco, o sostener límites sanos y autonomía intelectual.",
+        "perfil_personal_bajo": "En lo personal, puede haber confusión en límites: o te sobreinvolucras, o te aíslas sin darte cuenta.",
+        "perfil_profesional_bajo": "En lo profesional, el desafío es manejar cercanía con clientes/equipo sin agotarte ni desconectarte.",
+    },
+    {
+        "eje": "PODER",
+        "tipos": [3, 8],
+        "descripcion": "Comparten fuerza, impacto y orientación a resultados. Uno es adaptativo (imagen/logro) y el otro confrontativo (control/liderazgo directo).",
+        "palabras": {3: "poder por logro/imagen", 8: "poder directo (liderazgo/control)"},
+        "perfil_personal_alto": "En lo personal, tiendes a tomar el mando, avanzar y proteger lo tuyo. Riesgo: dureza o exceso de control.",
+        "perfil_profesional_alto": "En lo profesional, destacas en ejecución, liderazgo, negociación y logro de objetivos. Riesgo: intensidad o intolerancia al error.",
+        "perfil_personal_bajo": "En lo personal, puede costarte tomar tu lugar, poner límites o sostener decisiones con firmeza.",
+        "perfil_profesional_bajo": "En lo profesional, el desafío es el liderazgo, la asertividad y la ejecución consistente.",
+    },
+    {
+        "eje": "LIBERTAD",
+        "tipos": [4, 7],
+        "descripcion": "Comparten búsqueda de experiencia y autenticidad. Uno busca libertad emocional y expresión auténtica, el otro libertad de opciones y experiencias.",
+        "palabras": {4: "libertad emocional (expresión auténtica)", 7: "libertad de opciones/experiencias"},
+        "perfil_personal_alto": "En lo personal, necesitas espacio interno para sentir y elegir. Riesgo: dispersión o dramatización.",
+        "perfil_profesional_alto": "En lo profesional, destacas en creatividad, ideas y expansión. Riesgo: falta de estructura o constancia.",
+        "perfil_personal_bajo": "En lo personal, puede costarte conectar con deseo propio, autenticidad o disfrute sin culpa.",
+        "perfil_profesional_bajo": "En lo profesional, el desafío es innovar, permitir creatividad y sostener motivación.",
+    },
+    {
+        "eje": "INTEGRADOR",
+        "tipos": [9],
+        "descripcion": "El 9 funciona como punto de integración y armonización: mediación, síntesis y capacidad de unir extremos.",
+        "palabras": {9: "integración/armonía (mediación natural)"},
+        "perfil_personal_alto": "En lo personal, tiendes a armonizar, bajar tensiones y sostener paz interna/externa. Riesgo: postergarte.",
+        "perfil_profesional_alto": "En lo profesional, destacas como mediador, facilitador, integrador de equipos y climas.",
+        "perfil_personal_bajo": "En lo personal, el desafío es presencia, decisión y sostener tu agenda sin diluirte.",
+        "perfil_profesional_bajo": "En lo profesional, el desafío es tomar postura, decidir y priorizar sin evitar el conflicto.",
+    },
+]
 
 @app.get("/")
 def index():
@@ -216,7 +268,7 @@ def result():
     labels = [str(i) for i in range(1, 10)]
     values = [porcentaje_scores[i] for i in range(1, 10)]
 
-        # -----------------------------
+    # -----------------------------
     # Ejes de equilibrio (promedio)
     # -----------------------------
     ejes = []
