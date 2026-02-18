@@ -251,105 +251,105 @@ def result():
         est = item["estado"]
         antidoto = item["antidoto"]
 
-    if eje == "HACER":
-        if es_bajo(v):
-            base = (
-                "El eje del HACER aparece por debajo de la media, lo que indica que "
-                "hay algo urgente que necesita ponerse en acción. En esta etapa, el desafío es "
-                "dejar de evaluar o postergar y hacer lo que debas hacer para avanzar."
-                f" Antídoto: {antidoto}."
-            )
-        else:
-            base = (
-                "El eje del HACER se encuentra por encima de la media, indicando una marcada orientación "
-                "a la acción, ejecución y control. En su luz, esto implica claridad sobre tu ideal de vida "
-                "y capacidad de concretar; en su sombra, puede traducirse en controlarte y controlar el entorno "
-                "de forma permanente."
-            )
-            if est in ("elevado", "excesivo"):
-                base += f" Si esta energía se intensifica, conviene moderarla. Antídoto: {antidoto}."
-        analisis_ejes_parrafos.append(base)
-        continue
-
-    if eje == "COMUNICAR":
-        if es_bajo(v):
-            base = (
-              "El eje del COMUNICAR aparece por debajo de la media, lo que indica que "
-              "hay algo importante que no estás diciendo o expresando. Esto se vincula con tu mundo interno: "
-              "aunque tema las consecuencias, comunicar lo esencial es parte de tu sanación."
-              f" Antídoto: {antidoto}."
-            )
-        else:
-            base = (
-              "El eje del COMUNICAR se encuentra por encima de la media. En su luz, "
-              "indica una buena capacidad de comunicación: saber escuchar, llegar al otro y conectar con empatía; "
-              "en su sombra, puede aparecer hablar mucho sin decir lo esencial."
-            )
-            # si está muy alto, sugerimos moderar
-            if item["estado"] in ("elevado", "excesivo"):
-                base += f" Antídoto: {antidoto}."
-        analisis_ejes_parrafos.append(base)
-        continue
-
-
-    if eje == "TENER":
-        if es_bajo(v):
-            base = (
-                "El eje del TENER aparece por debajo de la media, lo que sugiere una carencia en la forma "
-                "de sostener recursos, seguridad y valoración interna. Esto puede expresarse como dificultad "
-                "para reconocer tu propio valor, ordenar prioridades, poner precio/cobrar, administrar o pedir lo "
-                "que necesitás sin culpa."
-                f" Antídoto: {antidoto}."
-            )
-        else:
-            base = (
-                "El eje del TENER se encuentra por encima de la media. En su luz, indica capacidad para trabajar, "
-                "lograr y alcanzar lo que querés, con decisión y empuje; en su sombra, puede llevar a desatender lo "
-                "afectivo, lo físico o lo espiritual por una preocupación excesiva por el tener."
-            )
-            if est in ("elevado", "excesivo"):
-                base += f" Si se intensifica, practicá moderación. Antídoto: {antidoto}."
-        analisis_ejes_parrafos.append(base)
-        continue
-
-
-    if eje == "SER":
-        if es_bajo(v):
-            base = (
-                "El eje del SER aparece por debajo de la media, indicando que hay un llamado a profundizar: "
-                "mirarte a vos misma y a tu realidad con más honestidad y reflexión. No se trata de aislarse, "
-                "sino de hacer un trabajo de introspección que te devuelva claridad y sentido."
-                f" Antídoto: {antidoto}."
-            )
-        else:
-            base = (
-                "El eje del SER se encuentra por encima de la media. En su luz, indica profundidad y reflexión, "
-                "una buena mirada de la vida y de vos misma; en su sombra, puede traducirse en encerrarte, "
-                "aislarte o esconderte, evitando mirar una parte de tu realidad que no te gusta."
-            )
-            if est in ("elevado", "excesivo"):
-                base += f" Si se intensifica, cuidá no aislarte. Antídoto: {antidoto}."
-        analisis_ejes_parrafos.append(base)
-        continue
-
-    if eje == "ESTAR":
-        if es_bajo(v):
-            base = (
-                "El eje del ESTAR aparece por debajo de la media, indicando dificultad para habitar el presente: "
-                "podés estar pendiente del pasado o del futuro, o viviendo con tensión. El desafío evolutivo es "
-                "aprender a estar aquí y ahora, sosteniendo tu centro."
-                f" Antídoto: {antidoto}."
-            )
-        else:
-            base = (
-                "El eje del ESTAR se encuentra por encima de la media. En su luz, indica presencia y capacidad de "
-                "vivir el presente con intensidad; en su sombra, puede aparecer una forma de 'estar sin estar': "
-                "se evita el conflicto o se busca que no haya problemas, pero internamente no hay presencia real."
-            )
-            if est in ("elevado", "excesivo"):
-                base += f" Si se intensifica, buscá presencia genuina. Antídoto: {antidoto}."
-        analisis_ejes_parrafos.append(base)
-        continue
+        if eje == "HACER":
+            if es_bajo(v):
+                base = (
+                    "El eje del HACER aparece por debajo de la media, lo que indica que "
+                    "hay algo urgente que necesita ponerse en acción. En esta etapa, el desafío es "
+                    "dejar de evaluar o postergar y hacer lo que debas hacer para avanzar."
+                    f" Antídoto: {antidoto}."
+                )
+            else:
+                base = (
+                    "El eje del HACER se encuentra por encima de la media, indicando una marcada orientación "
+                    "a la acción, ejecución y control. En su luz, esto implica claridad sobre tu ideal de vida "
+                    "y capacidad de concretar; en su sombra, puede traducirse en controlarte y controlar el entorno "
+                    "de forma permanente."
+                )
+                if est in ("elevado", "excesivo"):
+                    base += f" Si esta energía se intensifica, conviene moderarla. Antídoto: {antidoto}."
+            analisis_ejes_parrafos.append(base)
+            continue
+    
+        if eje == "COMUNICAR":
+            if es_bajo(v):
+                base = (
+                  "El eje del COMUNICAR aparece por debajo de la media, lo que indica que "
+                  "hay algo importante que no estás diciendo o expresando. Esto se vincula con tu mundo interno: "
+                  "aunque tema las consecuencias, comunicar lo esencial es parte de tu sanación."
+                  f" Antídoto: {antidoto}."
+                )
+            else:
+                base = (
+                  "El eje del COMUNICAR se encuentra por encima de la media. En su luz, "
+                  "indica una buena capacidad de comunicación: saber escuchar, llegar al otro y conectar con empatía; "
+                  "en su sombra, puede aparecer hablar mucho sin decir lo esencial."
+                )
+                # si está muy alto, sugerimos moderar
+                if item["estado"] in ("elevado", "excesivo"):
+                    base += f" Antídoto: {antidoto}."
+            analisis_ejes_parrafos.append(base)
+            continue
+    
+    
+        if eje == "TENER":
+            if es_bajo(v):
+                base = (
+                    "El eje del TENER aparece por debajo de la media, lo que sugiere una carencia en la forma "
+                    "de sostener recursos, seguridad y valoración interna. Esto puede expresarse como dificultad "
+                    "para reconocer tu propio valor, ordenar prioridades, poner precio/cobrar, administrar o pedir lo "
+                    "que necesitás sin culpa."
+                    f" Antídoto: {antidoto}."
+                )
+            else:
+                base = (
+                    "El eje del TENER se encuentra por encima de la media. En su luz, indica capacidad para trabajar, "
+                    "lograr y alcanzar lo que querés, con decisión y empuje; en su sombra, puede llevar a desatender lo "
+                    "afectivo, lo físico o lo espiritual por una preocupación excesiva por el tener."
+                )
+                if est in ("elevado", "excesivo"):
+                    base += f" Si se intensifica, practicá moderación. Antídoto: {antidoto}."
+            analisis_ejes_parrafos.append(base)
+            continue
+    
+    
+        if eje == "SER":
+            if es_bajo(v):
+                base = (
+                    "El eje del SER aparece por debajo de la media, indicando que hay un llamado a profundizar: "
+                    "mirarte a vos misma y a tu realidad con más honestidad y reflexión. No se trata de aislarse, "
+                    "sino de hacer un trabajo de introspección que te devuelva claridad y sentido."
+                    f" Antídoto: {antidoto}."
+                )
+            else:
+                base = (
+                    "El eje del SER se encuentra por encima de la media. En su luz, indica profundidad y reflexión, "
+                    "una buena mirada de la vida y de vos misma; en su sombra, puede traducirse en encerrarte, "
+                    "aislarte o esconderte, evitando mirar una parte de tu realidad que no te gusta."
+                )
+                if est in ("elevado", "excesivo"):
+                    base += f" Si se intensifica, cuidá no aislarte. Antídoto: {antidoto}."
+            analisis_ejes_parrafos.append(base)
+            continue
+    
+        if eje == "ESTAR":
+            if es_bajo(v):
+                base = (
+                    "El eje del ESTAR aparece por debajo de la media, indicando dificultad para habitar el presente: "
+                    "podés estar pendiente del pasado o del futuro, o viviendo con tensión. El desafío evolutivo es "
+                    "aprender a estar aquí y ahora, sosteniendo tu centro."
+                    f" Antídoto: {antidoto}."
+                )
+            else:
+                base = (
+                    "El eje del ESTAR se encuentra por encima de la media. En su luz, indica presencia y capacidad de "
+                    "vivir el presente con intensidad; en su sombra, puede aparecer una forma de 'estar sin estar': "
+                    "se evita el conflicto o se busca que no haya problemas, pero internamente no hay presencia real."
+                )
+                if est in ("elevado", "excesivo"):
+                    base += f" Si se intensifica, buscá presencia genuina. Antídoto: {antidoto}."
+            analisis_ejes_parrafos.append(base)
+            continue
 
 
     # -----------------------------
@@ -698,7 +698,7 @@ def result():
 
     Trabajos donde el éxito no sea solo externo.""",
 
-    "mejorar": """"Ninguna persona puede silbar una sinfonía, se necesita una ORQUESTA para poder interpretarla".
+    "mejorar": """Ninguna persona puede silbar una sinfonía, se necesita una ORQUESTA para poder interpretarla.
 
     • Centrando tu atención en tus valores internos en lugar de la imagen.
     • Practicando la autenticidad sobre la apariencia.
@@ -795,7 +795,7 @@ def result():
 
     Su mayor contribución es ser ESPECIALISTA, aportar análisis, claridad mental y profundidad conceptual. Posee una gran capacidad de concentración y pensamiento estratégico. Es independiente y aporta conocimientos específicos. Puede aislarse de los otros miembros, tener información excesiva y ser individualista.
 
-    Sus conductas recurrentes pueden incluir la observación distante, el aislamiento y la acumulación de información antes de actuar. Prefiere observar antes que participar. Puede aislarse y ser hiper anañítico. Entre sus hábitos está no pedir para que no le pidan, intolerancia a la invasión, esto resulta en soledad, dificultad para relacionarse. 
+    Sus conductas recurrentes pueden incluir la observación distante, el aislamiento y la acumulación de información antes de actuar. Prefiere observar antes que participar. Puede aislarse y ser hiper analítico. Entre sus hábitos está no pedir para que no le pidan, intolerancia a la invasión, esto resulta en soledad, dificultad para relacionarse. 
 
     La creencia arraigada en su interior es que el mundo puede invadirlo o demandarle demasiado. "El mundo es una jungla que me agobia". El miedo básico es ser incompetente o incapaz, quedarse sin recursos internos (energía, tiempo, conocimiento), lo que genera una necesidad de autonomía y autosuficiencia. El miedo constitutivo es a la realidad, lo que le genera una necesidad de seguridad, por lo que se aisla de la realidad (la considera problemática), y esto puede generarle una adicción a la soledad. 
 
