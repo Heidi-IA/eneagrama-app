@@ -503,17 +503,12 @@ def result():
     "orientacion":"""    
     🎯 Vocación base
     
-    Derecho / justicia
-    
-    Ingeniería de procesos / calidad
-    
-    Docencia
-    
-    Gestión institucional
-    
-    Medio ambiente
-    
-    Auditoría
+    - Derecho / justicia
+    - Ingeniería de procesos / calidad
+    - Docencia
+    - Gestión institucional
+    - Medio ambiente
+    - Auditoría
     
     Trabajos donde puedan mejorar sistemas.
     
@@ -587,17 +582,12 @@ def result():
     "orientacion":"""    
     🎯 Vocación base
     
-    Psicología
-    
-    Enfermería
-    
-    Recursos Humanos
-    
-    Coaching
-    
-    Organización de eventos
-    
-    Trabajo social
+    - Psicología
+    - Enfermería
+    - Recursos Humanos
+    - Coaching
+    - Organización de eventos
+    - Trabajo social
     
     🔁 Según subtipo
     
@@ -672,11 +662,11 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Marketing
-    Dirección empresarial
-    Ventas
-    Emprendimiento
-    Comunicación estratégica
+    - Marketing
+    - Dirección empresarial
+    - Ventas
+    - Emprendimiento
+    - Comunicación estratégica
 
     🔁 Según subtipo
 
@@ -747,11 +737,11 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Arte
-    Escritura
-    Diseño
-    Música
-    Terapias expresivas
+    - Arte
+    - Escritura
+    - Diseño
+    - Música
+    - Terapias expresivas
 
     🔁 Según subtipo
 
@@ -819,12 +809,12 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Investigación
-    Ciencia
-    Tecnología
-    Programación
-    Análisis de datos
-    Docencia universitaria
+    - Investigación
+    - Ciencia
+    - Tecnología
+    - Programación
+    - Análisis de datos
+    - Docencia universitaria
 
     🔁 Según subtipo
 
@@ -890,11 +880,11 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Derecho
-    Seguridad
-    Gestión
-    Administración pública
-    Logística
+    - Derecho
+    - Seguridad
+    - Gestión
+    - Administración pública
+    - Logística
 
     🔁 Según subtipo
 
@@ -959,11 +949,11 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Turismo
-    Publicidad
-    Comunicación
-    Eventos
-    Emprendimientos creativos
+    - Turismo
+    - Publicidad
+    - Comunicación
+    - Eventos
+    - Emprendimientos creativos
 
     🔁 Según subtipo
 
@@ -1026,11 +1016,11 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Dirección empresarial
-    Abogacía
-    Emprendimiento
-    Política
-    Deportes
+    - Dirección empresarial
+    - Abogacía
+    - Emprendimiento
+    - Política
+    - Deportes
 
     🔁 Según subtipo
 
@@ -1093,11 +1083,11 @@ def result():
     "orientacion": """    
     🎯 Vocación base
 
-    Mediación
-    Terapias
-    Recursos Humanos
-    Educación
-    Actividades holísticas
+    - Mediación
+    - Terapias
+    - Recursos Humanos
+    - Educación
+    - Actividades holísticas
 
     🔁 Según subtipo
 
