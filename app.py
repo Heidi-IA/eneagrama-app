@@ -1068,53 +1068,27 @@ def result():
 
     "caracteristicas": """El valor del eneatipo 9 radica en la ARMONÍA y la PRESENCIA.
 
-    Su mayor contribución es ser COHESIONADOR, mediar, integrar y generar paz en los entornos.
-    Tiene capacidad de escuchar, contener y equilibrar posiciones opuestas.
+    Su mayor contribución es ser COHESIONADOR, mediar, integrar y generar paz en los entornos. Tiene capacidad de escuchar, contener y equilibrar posiciones opuestas. Es cooperador, perceptivo y diplomático. Escucha e impide los enfrentamientos.
 
-    Sus conductas recurrentes pueden incluir postergación, evitación del conflicto y adaptación excesiva.
-    Tiende a minimizar sus propias necesidades para mantener la calma externa.
+    Sus conductas recurrentes pueden incluir postergación, evitación del conflicto y adaptación excesiva. Tiende a minimizar sus propias necesidades para mantener la calma externa, volviendose indeciso. Busca pasar inadvertido, no adquiere compromiso. Puede tener hábitos como la inercia psicológica, sobreadaptación, resignación, poco interés
+    por sobresalir, propensión a hábitos robóticos, distracción, amistosa sociabilización y como resultado, desarrolla el síndrome del buen tipo, con una actitud pasiva que se relega. 
 
-    La creencia arraigada en su interior es que el conflicto rompe el vínculo y debe evitarse.
-    El miedo básico es la pérdida de conexión y el conflicto.
-    El miedo constitutivo es quedar excluido o desconectado, lo que genera una necesidad profunda de pertenencia y estabilidad.
+    La creencia arraigada en su interior es que el conflicto rompe el vínculo y debe evitarse. "El mundo no me toma en cuenta, es mejor pasar inadvertido". El miedo básico es la pérdida de conexión y el conflicto. El miedo constitutivo es quedar excluido o desconectado, lo que genera una necesidad profunda de pertenencia y estabilidad.
 
-    Sus principales fortalezas son ser mediador, paciente, estable y conciliador.
-    Sus áreas de mejora radican en la indecisión, la pasividad y la evasión de confrontaciones necesarias.
+    Sus principales fortalezas son ser mediador, paciente, estable y conciliador. Sus áreas de mejora radican en la indecisión, la pasividad y la evasión de confrontaciones necesarias. El pecado capital del eneatipo 9 es la pereza (inercia interior o adormecimiento de sí mismo).
 
-    El pecado capital del eneatipo 9 es la pereza (inercia interior o adormecimiento de sí mismo).
+    En su lado luz se expresa con armonía, serenidad y presencia equilibrada. En su lado sombra puede desconectarse de sí mismo, anestesiar sus deseos o diluir su identidad. Cuando evoluciona, desarrolla determinación, foco y acción, aprende a priorizar sus metas personales, integra dinamismo sin perder serenidad. En estrés puede volverse ansioso, desconfiado o temeroso, puede anticipar problemas y perder su calma característica.
+    Las actitudes que lo equilibran son ser más firme, protector y práctico y ser más idealista, organizado y correcto.
 
-    En su lado luz se expresa con armonía, serenidad y presencia equilibrada.
-    En su lado sombra puede desconectarse de sí mismo, anestesiar sus deseos o diluir su identidad.
-
-    🔼 Integración (hacia el Tipo 3)
-    Cuando evoluciona, desarrolla determinación, foco y acción.
-    Aprende a priorizar sus metas personales.
-    Integra dinamismo sin perder serenidad.
-
-    🔽 Desintegración (hacia el Tipo 6)
-    En estrés puede volverse ansioso, desconfiado o temeroso.
-    Puede anticipar problemas y perder su calma característica.
-
-    Alas:
-    🔷 9 con ala 8: Más firme, protector y práctico.
-    🔷 9 con ala 1: Más idealista, organizado y correcto.
-
-    Punto ciego:
-    Creer que para ser amado debe desaparecer o adaptarse totalmente.
-
-    Necesidad central: armonía y estabilidad.
-    Pertenece a la tríada instintiva (acción).
+    Punto ciego: creer que para ser amado debe desaparecer o adaptarse totalmente. Necesidad central: armonía y estabilidad. Adicción: . Vive en el presente. Pertenece a la tríada instintiva (acción).
 
     Cabe destacar que existen 3 subtipos:
 
-    🏠 9 Conservación (Apetito)
-    Busca comodidad y bienestar físico. Evita conflicto.
+    🏠 9 Conservación (Apetito): busca comodidad y bienestar físico. Evita conflicto.
 
-    👥 9 Social (Participación)
-    Se adapta al grupo y busca armonía colectiva.
+    👥 9 Social (Participación): se adapta al grupo y busca armonía colectiva.
 
-    ❤️ 9 Sexual (Fusión)
-    Tiende a perderse en el otro. Fuerte necesidad de conexión.""",
+    ❤️ 9 Sexual (Fusión): tiende a perderse en el otro. Fuerte necesidad de conexión.""",
 
     "orientacion": """    
     🎯 Vocación base
@@ -1143,7 +1117,7 @@ def result():
 
     Trabajos donde tengan voz y decisión.""",
 
-    "mejorar": """¿Cómo puedes sentirte mejor?:
+    "mejorar": """No dices nada para evitar conflictos, y vives en conflicto por no decir nada.
 
     • Practicando afirmación personal sin necesidad de evitar confrontaciones.
     • Cultivando claridad y enfoque.
