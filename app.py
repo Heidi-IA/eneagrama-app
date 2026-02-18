@@ -1265,7 +1265,7 @@ def result():
         camino_evolucion=camino_evolucion,
         analisis_ejes_parrafos=analisis_ejes_parrafos,
         sintesis_parrafos=sintesis_parrafos,
-        afinidad_parrafos=afinidad_parrafos,
-        afinidad_sintesis=afinidad_sintesis,
+        afinidades_parrafos=afinidades_parrafos,
+        afinidades_sintesis=afinidades_sintesis,
 
     )
