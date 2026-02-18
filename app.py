@@ -268,6 +268,76 @@ def result():
     labels = [str(i) for i in range(1, 10)]
     values = [porcentaje_scores[i] for i in range(1, 10)]
 
+# -----------------------------
+# Ejes de afinidad (análisis + síntesis)
+# -----------------------------
+afinidad_parrafos = []
+afinidad_sintesis = []
+
+for cfg in EJES_AFINIDAD:
+    eje = cfg["eje"]
+    tipos = cfg["tipos"]
+
+    # promedio del eje
+    prom = round(sum(porcentaje_scores[t] for t in tipos) / len(tipos), 1)
+
+    # estado según tu media
+    if prom > MEDIA_TEO:
+        estado = "alto"
+    elif abs(prom - MEDIA_TEO) <= TOL:
+        estado = "equilibrado"
+    else:
+        estado = "bajo"
+
+    # --- Párrafo (descripcion + estado + perfil personal/profesional) ---
+    base = f"El eje de {eje} describe lo siguiente: {cfg['descripcion']} "
+
+    if estado == "alto":
+        base += "Este eje aparece por encima de la media, lo que indica que posees estas características. "
+        base += cfg.get("perfil_personal_alto", "") + " "
+        base += cfg.get("perfil_profesional_alto", "")
+    elif estado == "equilibrado":
+        base += "Este eje aparece equilibrado, lo que indica que posees estas características de forma estable. "
+        base += cfg.get("perfil_personal_alto", "") + " "
+        base += cfg.get("perfil_profesional_alto", "")
+    else:
+        base += "Este eje aparece por debajo de la media, lo que indica que es un área a desarrollar. "
+        base += cfg.get("perfil_personal_bajo", "") + " "
+        base += cfg.get("perfil_profesional_bajo", "")
+
+    afinidad_parrafos.append(base.strip())
+
+    # --- Síntesis (virtudes vs desafíos usando palabras por tipo) ---
+    virtudes = []
+    desafios = []
+
+    for t in tipos:
+        etiqueta = cfg.get("palabras", {}).get(t, f"Tipo {t}")
+        if es_desarrollado(porcentaje_scores[t]):
+            if etiqueta not in virtudes:
+                virtudes.append(etiqueta)
+        else:
+            if etiqueta not in desafios:
+                desafios.append(etiqueta)
+
+    # armar frase síntesis por eje
+    if virtudes and desafios:
+        afinidad_sintesis.append(
+            f"En {eje}, tus virtudes desarrolladas son {juntar_lista_humana(virtudes)}; "
+            f"y tus desafíos a integrar son {juntar_lista_humana(desafios)}."
+        )
+    elif virtudes and not desafios:
+        afinidad_sintesis.append(
+            f"En {eje}, el eje aparece muy desarrollado: {juntar_lista_humana(virtudes)}."
+        )
+    elif desafios and not virtudes:
+        afinidad_sintesis.append(
+            f"En {eje}, el eje aparece como desafío principal: {juntar_lista_humana(desafios)}."
+        )
+
+
+
+    
     # -----------------------------
     # Ejes de equilibrio (promedio)
     # -----------------------------
@@ -1204,5 +1274,7 @@ def result():
         camino_evolucion=camino_evolucion,
         analisis_ejes_parrafos=analisis_ejes_parrafos,
         sintesis_parrafos=sintesis_parrafos,
+        afinidad_parrafos=afinidad_parrafos,
+        afinidad_sintesis=afinidad_sintesis,
 
     )
