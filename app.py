@@ -1001,54 +1001,27 @@ def result():
 
     "caracteristicas": """El valor del eneatipo 8 radica en la FUERZA y la PROTECCIÓN.
 
-    Su mayor contribución es liderar, proteger y defender lo que considera justo.
-    Tiene capacidad de acción inmediata, toma decisiones con rapidez y asume responsabilidades en momentos críticos.
+    Su mayor contribución es liderar, proteger y defender lo que considera justo. Es un IMPLEMENTADOR. Tiene capacidad de acción inmediata, toma decisiones con rapidez y asume responsabilidades en momentos críticos. Transforma las ideas en acciones y organiza el trabajo que debe hacerse. Puede ser inflexible, tener comunicación dura y está orientado a la acción. 
 
-    Sus conductas recurrentes pueden incluir confrontar, imponer, controlar y proteger.
-    Tiende a ir de frente, evitando mostrar debilidad.
+    Sus conductas recurrentes pueden incluir confrontar, imponer, controlar, proteger, dominar, liderar, blanco-negro, "soy el rey/reina". Puede caer en hábitos como acosar, amedrentar, desconfiar y como resultado genera miedo, es un salvador y se siente todopoderoso. Tiende a ir de frente, evitando mostrar debilidad.
 
-    La creencia arraigada en su interior es que el mundo es un lugar donde el fuerte sobrevive y el débil es dominado.
-    El miedo básico es ser vulnerable o controlado.
-    El miedo constitutivo es perder poder o quedar a merced de otros, lo que genera una necesidad intensa de autonomía y dominio.
+    La creencia arraigada en su interior es que el mundo es un lugar donde el fuerte sobrevive y el débil es dominado. El miedo básico es ser vulnerable o controlado. El miedo constitutivo es perder poder o quedar a merced de otros, lo que genera una necesidad intensa de autonomía y dominio y una adicción al poder.
 
-    Sus principales fortalezas son ser valiente, protector, decidido y líder natural.
-    Sus áreas de mejora radican en la dominancia excesiva, la impulsividad y la dificultad para mostrar vulnerabilidad.
+    Sus principales fortalezas son ser valiente, protector, decidido y líder natural. Sus áreas de mejora radican en la dominancia excesiva, la impulsividad y la dificultad para mostrar vulnerabilidad. El pecado capital del eneatipo 8 es la lujuria (exceso de intensidad y energía).
 
-    El pecado capital del eneatipo 8 es la lujuria (exceso de intensidad y energía).
+    En su lado luz se expresa con justicia, liderazgo valiente y protección genuina. En su lado sombra puede volverse autoritario, agresivo o insensible. 
 
-    En su lado luz se expresa con justicia, liderazgo valiente y protección genuina.
-    En su lado sombra puede volverse autoritario, agresivo o insensible.
+    Cuando evoluciona, desarrolla sensibilidad, empatía y capacidad de cuidado, aprende a proteger sin invadir, integra la ternura como fortaleza. Por el contrario, cuando se pierde, en estrés, puede aislarse emocionalmente, se vuelve más desconfiado, frío o retraído y puede cerrarse y desconectarse para no sentirse expuesto.
+    Las cualidades que lo equilibran son ser más enérgico, expansivo y emprendedor y ser más calmado, protector y estable. Cuando se desarrollan incorpora comprensión, tolerancia, paciencia y alegría, simpatía, sin severidad, se relaja y modera su energía, es distendido, ecúanime, y de buen humor. Por el contrario, cuando no se desarrolla, cae en la superficialidad y la terquedad, es agresivo, no razona, discute por discutir, busca motivos para confrontar, es intolerante, impaciente, serio y con poco sentido del humor. 
 
-    🔼 Integración (hacia el Tipo 2)
-    Cuando evoluciona, desarrolla sensibilidad, empatía y capacidad de cuidado.
-    Aprende a proteger sin invadir.
-    Integra la ternura como fortaleza.
-
-    🔽 Desintegración (hacia el Tipo 5)
-    En estrés puede aislarse emocionalmente.
-    Se vuelve más desconfiado, frío o retraído.
-    Puede cerrarse y desconectarse para no sentirse expuesto.
-
-    Alas:
-    🔶 8 con ala 7: Más enérgico, expansivo y emprendedor.
-    🔶 8 con ala 9: Más calmado, protector y estable.
-
-    Punto ciego:
-    Creer que mostrar vulnerabilidad es sinónimo de debilidad.
-
-    Necesidad central: autonomía y control.
-    Pertenece a la tríada instintiva (acción).
+    Otro punto de evolución es el punto ciego, es el compartir, trabajar las formas, consensuar, medir las consecuencias de sus palabras, reflexionar y trabajar en equipo. Debe dejar de creer que mostrar vulnerabilidad es sinónimo de debilidad. Pertenece a la triada de la acción, vive en el presente y su necesidad es de autonomía. 
 
     Cabe destacar que existen 3 subtipos:
+    🏠 8 Conservación: busca seguridad, recursos y estabilidad. Busca satisfacción. Protector de recursos y territorio. Fuerte y directo.
 
-    🏠 8 Conservación (Satisfacción)
-    Protector de recursos y territorio. Fuerte y directo.
+    👥 8 Social: busca grupo, pertenencia e imagen social. Es solidario. Defiende al grupo. Líder protector.
 
-    👥 8 Social (Solidaridad)
-    Defiende al grupo. Líder protector.
-
-    ❤️ 8 Sexual (Posesión)
-    Muy intenso, dominante en relaciones.""",
+    ❤️ 8 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Busca posesión. Muy intenso, dominante en relaciones.""",
 
     "orientacion": """    
     🎯 Vocación base
@@ -1076,7 +1049,16 @@ def result():
     🌱 Clave evolutiva
 
     Aprender liderazgo consciente.""",
-
+    
+    "mejorar": """No digas todo lo que piensas, pero piensa TODO lo que DICES. 
+    
+     • Practicando empatía sin perder firmeza. 
+     • Abrazando vulnerabilidad como fuerza interna. 
+     • Equilibrando poder con compasión. 
+     • Construyendo confianza sin confrontación innecesaria.
+     • Descargar energía físicamente. 
+     • Orientar su energía, darle que haga algo.""",
+},
         
 9: {
     "titulo": "🔷 Tipo 9 — El Pacificador",
@@ -1086,7 +1068,7 @@ def result():
 
     "caracteristicas": """El valor del eneatipo 9 radica en la ARMONÍA y la PRESENCIA.
 
-    Su mayor contribución es mediar, integrar y generar paz en los entornos.
+    Su mayor contribución es ser COHESIONADOR, mediar, integrar y generar paz en los entornos.
     Tiene capacidad de escuchar, contener y equilibrar posiciones opuestas.
 
     Sus conductas recurrentes pueden incluir postergación, evitación del conflicto y adaptación excesiva.
