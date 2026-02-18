@@ -77,58 +77,35 @@ def load_questions():
     questions = [q for q in questions if q.get("type") in range(1, 10)]
     return questions
 
-EJES_AFINIDAD = [
-    {
-        "eje": "RESPONSABILIDAD",
-        "tipos": [1, 6],
-        "descripcion": "Comparten deber, compromiso, ética y lealtad. Buscan seguridad a través del cumplimiento y la coherencia.",
-        "palabras": {1: "responsabilidad moral (hacer lo correcto)", 6: "responsabilidad hacia el grupo (seguridad y compromiso)"},
-        "perfil_personal_alto": "En lo personal, sueles sostenerte en la coherencia, el deber y la confiabilidad. Te cuesta relajarte o soltar el control.",
-        "perfil_profesional_alto": "En lo profesional, destacas por responsabilidad, seguimiento, cumplimiento y mirada preventiva. Riesgo: rigidez o exceso de carga.",
-        "perfil_personal_bajo": "En lo personal, puede costarte sostener hábitos, disciplina o compromisos sin sentir presión o culpa.",
-        "perfil_profesional_bajo": "En lo profesional, el desafío es sostener consistencia, procesos y acuerdos, evitando postergar o improvisar.",
-    },
-    {
-        "eje": "DISTANCIA",
-        "tipos": [2, 5],
-        "descripcion": "Comparten manejo del vínculo desde la regulación de la cercanía. Uno se acerca cuidando y el otro se aleja para proteger su energía.",
-        "palabras": {2: "acercamiento/cuidado (cercanía)", 5: "distancia/autonomía (protección de energía)"},
-        "perfil_personal_alto": "En lo personal, regulas la intimidad con claridad: sabes cuándo acercarte y cuándo tomar distancia. Riesgo: irte a extremos.",
-        "perfil_profesional_alto": "En lo profesional, puedes vincularte con empatía sin perder foco, o sostener límites sanos y autonomía intelectual.",
-        "perfil_personal_bajo": "En lo personal, puede haber confusión en límites: o te sobreinvolucras, o te aíslas sin darte cuenta.",
-        "perfil_profesional_bajo": "En lo profesional, el desafío es manejar cercanía con clientes/equipo sin agotarte ni desconectarte.",
-    },
-    {
-        "eje": "PODER",
-        "tipos": [3, 8],
-        "descripcion": "Comparten fuerza, impacto y orientación a resultados. Uno es adaptativo (imagen/logro) y el otro confrontativo (control/liderazgo directo).",
-        "palabras": {3: "poder por logro/imagen", 8: "poder directo (liderazgo/control)"},
-        "perfil_personal_alto": "En lo personal, tiendes a tomar el mando, avanzar y proteger lo tuyo. Riesgo: dureza o exceso de control.",
-        "perfil_profesional_alto": "En lo profesional, destacas en ejecución, liderazgo, negociación y logro de objetivos. Riesgo: intensidad o intolerancia al error.",
-        "perfil_personal_bajo": "En lo personal, puede costarte tomar tu lugar, poner límites o sostener decisiones con firmeza.",
-        "perfil_profesional_bajo": "En lo profesional, el desafío es el liderazgo, la asertividad y la ejecución consistente.",
-    },
-    {
-        "eje": "LIBERTAD",
-        "tipos": [4, 7],
-        "descripcion": "Comparten búsqueda de experiencia y autenticidad. Uno busca libertad emocional y expresión auténtica, el otro libertad de opciones y experiencias.",
-        "palabras": {4: "libertad emocional (expresión auténtica)", 7: "libertad de opciones/experiencias"},
-        "perfil_personal_alto": "En lo personal, necesitas espacio interno para sentir y elegir. Riesgo: dispersión o dramatización.",
-        "perfil_profesional_alto": "En lo profesional, destacas en creatividad, ideas y expansión. Riesgo: falta de estructura o constancia.",
-        "perfil_personal_bajo": "En lo personal, puede costarte conectar con deseo propio, autenticidad o disfrute sin culpa.",
-        "perfil_profesional_bajo": "En lo profesional, el desafío es innovar, permitir creatividad y sostener motivación.",
-    },
-    {
-        "eje": "INTEGRADOR",
-        "tipos": [9],
-        "descripcion": "El 9 funciona como punto de integración y armonización: mediación, síntesis y capacidad de unir extremos.",
-        "palabras": {9: "integración/armonía (mediación natural)"},
-        "perfil_personal_alto": "En lo personal, tiendes a armonizar, bajar tensiones y sostener paz interna/externa. Riesgo: postergarte.",
-        "perfil_profesional_alto": "En lo profesional, destacas como mediador, facilitador, integrador de equipos y climas.",
-        "perfil_personal_bajo": "En lo personal, el desafío es presencia, decisión y sostener tu agenda sin diluirte.",
-        "perfil_profesional_bajo": "En lo profesional, el desafío es tomar postura, decidir y priorizar sin evitar el conflicto.",
-    },
-]
+EJES_AFINIDAD = {
+    "RESPONSABILIDAD": {"tipos": [1, 6]},
+    "DISTANCIA": {"tipos": [2, 5]},
+    "PODER": {"tipos": [3, 8]},
+    "LIBERTAD": {"tipos": [4, 7]},
+    "INTEGRADOR": {"tipos": [9]},
+}
+
+DESCRIPCION_AFINIDAD = {
+    "RESPONSABILIDAD": "El eje de RESPONSABILIDAD describe el sentido del deber, compromiso, ética y lealtad. Se busca seguridad a través del cumplimiento y la coherencia.",
+    "DISTANCIA": "El eje de DISTANCIA describe el manejo del vínculo desde la regulación de la cercanía. Uno de los atributos se acerca cuidando y el otro se aleja para proteger su energía.",
+    "PODER": "El eje de PODER describe la fuerza, el impacto y la orientación a resultados. Uno de los atributos expresa poder a través del logro y la imagen; el otro, mediante liderazgo directo y control del entorno.",
+    "LIBERTAD": "El eje de LIBERTAD describe la búsqueda de experiencia y autenticidad. Uno de los atributos busca libertad emocional y expresión auténtica, el otro libertad de opciones y experiencias.",
+    "INTEGRADOR": "El eje de INTEGRADOR funciona como punto de integración y armonización: mediación, síntesis y capacidad de unir extremos.",
+}
+
+# ✅ palabras/virtudes para la síntesis (como pediste)
+PALABRAS_AFINIDAD_POR_TIPO = {
+    1: "responsabilidad moral (hacer lo correcto)",
+    6: "responsabilidad hacia el grupo (seguridad y compromiso)",
+    2: "acercamiento/cuidado (cercanía)",
+    5: "distancia/autonomía (protección de energía)",
+    3: "poder por logro/imagen",
+    8: "poder directo (liderazgo/control)",
+    4: "libertad emocional (expresión auténtica)",
+    7: "libertad de opciones/experiencias",
+    9: "integración/armonía (mediación natural)",
+}
+
 
 @app.get("/")
 def index():
@@ -268,73 +245,87 @@ def result():
     labels = [str(i) for i in range(1, 10)]
     values = [porcentaje_scores[i] for i in range(1, 10)]
     
-    # -----------------------------
-    # Ejes de afinidad (análisis + síntesis)
-    # -----------------------------
-    afinidad_parrafos = []
-    afinidad_sintesis = []
-    
-    for cfg in EJES_AFINIDAD:
-        eje = cfg["eje"]
-        tipos = cfg["tipos"]
-    
-        # promedio del eje
-        prom = round(sum(porcentaje_scores[t] for t in tipos) / len(tipos), 1)
-    
-        # estado según tu media
-        if prom > MEDIA_TEO:
-            estado = "alto"
-        elif abs(prom - MEDIA_TEO) <= TOL:
-            estado = "equilibrado"
-        else:
-            estado = "bajo"
-    
-        # --- Párrafo (descripcion + estado + perfil personal/profesional) ---
-        base = f"El eje de {eje} describe lo siguiente: {cfg['descripcion']} "
-    
-        if estado == "alto":
-            base += "Este eje aparece por encima de la media, lo que indica que posees estas características. "
-            base += cfg.get("perfil_personal_alto", "") + " "
-            base += cfg.get("perfil_profesional_alto", "")
-        elif estado == "equilibrado":
-            base += "Este eje aparece equilibrado, lo que indica que posees estas características de forma estable. "
-            base += cfg.get("perfil_personal_alto", "") + " "
-            base += cfg.get("perfil_profesional_alto", "")
-        else:
-            base += "Este eje aparece por debajo de la media, lo que indica que es un área a desarrollar. "
-            base += cfg.get("perfil_personal_bajo", "") + " "
-            base += cfg.get("perfil_profesional_bajo", "")
-    
-        afinidad_parrafos.append(base.strip())
-    
-        # --- Síntesis (virtudes vs desafíos usando palabras por tipo) ---
-        virtudes = []
-        desafios = []
-    
-        for t in tipos:
-            etiqueta = cfg.get("palabras", {}).get(t, f"Tipo {t}")
-            if es_desarrollado(porcentaje_scores[t]):
-                if etiqueta not in virtudes:
-                    virtudes.append(etiqueta)
-            else:
-                if etiqueta not in desafios:
-                    desafios.append(etiqueta)
-    
-        # armar frase síntesis por eje
-        if virtudes and desafios:
-            afinidad_sintesis.append(
-                f"En {eje}, tus virtudes desarrolladas son {juntar_lista_humana(virtudes)}; "
-                f"y tus desafíos a integrar son {juntar_lista_humana(desafios)}."
-            )
-        elif virtudes and not desafios:
-            afinidad_sintesis.append(
-                f"En {eje}, el eje aparece muy desarrollado: {juntar_lista_humana(virtudes)}."
-            )
-        elif desafios and not virtudes:
-            afinidad_sintesis.append(
-                f"En {eje}, el eje aparece como desafío principal: {juntar_lista_humana(desafios)}."
-            )
 
+    # -----------------------------
+    # Ejes de Afinidad
+    # -----------------------------
+    afinidades = []
+    for eje, cfg in EJES_AFINIDAD.items():
+        tipos = cfg["tipos"]
+        prom = round(sum(porcentaje_scores[t] for t in tipos) / len(tipos), 1)
+        estado = clasificar_eje(prom)
+    
+        afinidades.append({
+            "eje": eje,
+            "tipos": tipos,
+            "valor": prom,
+            "estado": estado,
+            "descripcion": DESCRIPCION_AFINIDAD[eje],
+        })
+    
+    # -----------------------------
+    # Texto: Ejes de Afinidad (como lo indicaste)
+    # -----------------------------
+    afinidades_parrafos = []
+    
+    for a in afinidades:
+        eje = a["eje"]
+        v = a["valor"]
+    
+        # 1) descripción EXACTA (tu frase)
+        txt = a["descripcion"] + "\n\n"
+    
+        # 2) estado del eje (por encima / equilibrado / por debajo)
+        if es_bajo(v):
+            txt += "Este eje aparece por debajo de la media, lo que indica que es un área a desarrollar."
+        elif abs(v - 11.1) <= 0.1:
+            txt += "Este eje aparece equilibrado, lo que indica que estas cualidades están presentes de forma estable."
+        else:
+            txt += "Este eje aparece por encima de la media, lo que indica que posees estas características."
+    
+        afinidades_parrafos.append(txt)
+    
+    # -----------------------------
+    # Síntesis de Afinidades (mismo formato que tu síntesis)
+    # -----------------------------
+    ejes_afinidad_bajos = [a for a in afinidades if es_bajo(a["valor"])]
+    ejes_afinidad_ok = [a for a in afinidades if not es_bajo(a["valor"])]
+    
+    # palabras por tipos bajo / ok
+    palabras_desafio = []
+    for a in ejes_afinidad_bajos:
+        for t in a["tipos"]:
+            p = PALABRAS_AFINIDAD_POR_TIPO.get(t)
+            if p and p not in palabras_desafio:
+                palabras_desafio.append(p)
+    
+    palabras_virtudes = []
+    for a in ejes_afinidad_ok:
+        for t in a["tipos"]:
+            p = PALABRAS_AFINIDAD_POR_TIPO.get(t)
+            if p and p not in palabras_virtudes:
+                palabras_virtudes.append(p)
+    
+    sintesis_afinidades_parrafos = []
+    
+    if ejes_afinidad_bajos:
+        nombres_bajos = [a["eje"] for a in ejes_afinidad_bajos]
+        p1 = (
+            f"Aquí se encuentra tu principal desafío evolutivo en los ejes del "
+            f"{juntar_lista_humana(nombres_bajos)}. "
+            f"Las virtudes a desarrollar son {juntar_lista_humana(palabras_desafio)}."
+        )
+        sintesis_afinidades_parrafos.append(p1)
+    
+    if ejes_afinidad_ok:
+        p2 = f"Tus principales virtudes son {juntar_lista_humana(palabras_virtudes)}."
+        sintesis_afinidades_parrafos.append(p2)
+    
+    # tal como lo pediste (frase fija)
+    sintesis_afinidades_parrafos.append(
+        "Estas cualidades constituyen pilares de tu estructura personal, aunque será importante moderarlas cuando se intensifiquen en exceso."
+    )
+    
 
 
     
