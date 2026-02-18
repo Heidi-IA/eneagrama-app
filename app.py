@@ -76,49 +76,41 @@ def load_questions():
     # nos quedamos solo con las que tienen type 1..9
     questions = [q for q in questions if q.get("type") in range(1, 10)]
     return questions
-
+    
 EJES_AFINIDAD = {
-    "RESPONSABILIDAD": {"tipos": [1, 6]},
-    "DISTANCIA": {"tipos": [2, 5]},
-    "PODER": {"tipos": [3, 8]},
-    "LIBERTAD": {"tipos": [4, 7]},
-    "INTEGRADOR": {"tipos": [9]},
-}
-
-DESCRIPCION_AFINIDAD = {
-    "RESPONSABILIDAD": "El eje de RESPONSABILIDAD describe el sentido del deber, compromiso, ética y lealtad. Se busca seguridad a través del cumplimiento y la coherencia.",
-    "DISTANCIA": "El eje de DISTANCIA describe el manejo del vínculo desde la regulación de la cercanía. Uno de los atributos se acerca cuidando y el otro se aleja para proteger su energía.",
-    "PODER": "El eje de PODER describe la fuerza, el impacto y la orientación a resultados. Uno de los atributos expresa poder a través del logro y la imagen; el otro, mediante liderazgo directo y control del entorno.",
-    "LIBERTAD": "El eje de LIBERTAD describe la búsqueda de experiencia y autenticidad. Uno de los atributos busca libertad emocional y expresión auténtica, el otro libertad de opciones y experiencias.",
-    "INTEGRADOR": "El eje de INTEGRADOR funciona como punto de integración y armonización: mediación, síntesis y capacidad de unir extremos.",
-}
-EJES_AFINIDAD = [
-    {
-        "eje": "RESPONSABILIDAD",
+    
+    "RESPONSABILIDAD": {
+        "tipos": [1, 6],
+        "descripcion": "El eje de RESPONSABILIDAD describe el sentido del deber, compromiso, ética y lealtad. Se busca seguridad a través del cumplimiento y la coherencia.",
         "perfil_alto": "En lo personal, sueles sostenerte en la coherencia, el deber y la confiabilidad. Te cuesta relajarte o soltar el control. En lo profesional, destacas por responsabilidad, seguimiento, cumplimiento y mirada preventiva. Riesgo: rigidez o exceso de carga.",
         "perfil_bajo": "En lo personal, puede costarte sostener hábitos, disciplina o compromisos sin sentir presión o culpa. En lo profesional, el desafío es sostener consistencia, procesos y acuerdos, evitando postergar o improvisar.",
     },
-    {
-        "eje": "DISTANCIA",
+    "DISTANCIA": {
+        "tipos": [2, 5],
+        "descripcion": "El eje de DISTANCIA describe el manejo del vínculo desde la regulación de la cercanía. Uno de los atributos se acerca cuidando y el otro se aleja para proteger su energía.",
         "perfil_alto": "En lo personal, regulas la intimidad con claridad: sabes cuándo acercarte y cuándo tomar distancia. Riesgo: irte a extremos. En lo profesional, puedes vincularte con empatía sin perder foco, o sostener límites sanos y autonomía intelectual.",
         "perfil_bajo": "En lo personal, puede haber confusión en límites: o te sobreinvolucras, o te aíslas sin darte cuenta. En lo profesional, el desafío es manejar cercanía con clientes/equipo sin agotarte ni desconectarte.",
     },
-    {
-        "eje": "PODER",
+    "PODER": {
+        "tipos": [3, 8],
+        "descripcion": "El eje de PODER describe la fuerza, el impacto y la orientación a resultados. Uno expresa poder por logro e imagen; el otro por liderazgo directo y control.",
         "perfil_alto": "En lo personal, tiendes a tomar el mando, avanzar y proteger lo tuyo. Riesgo: dureza o exceso de control. En lo profesional, destacas en ejecución, liderazgo, negociación y logro de objetivos. Riesgo: intensidad o intolerancia al error.",
-        "perfil_bajo": "En lo personal, puede costarte tomar tu lugar, poner límites o sostener decisiones con firmeza. En lo profesional, el desafío es el liderazgo, la asertividad y la ejecución consistente.",
+        "perfil_bajo": "En lo personal, puede costarte tomar tu lugar, poner límites o sostener decisiones con firmeza. En lo profesional, el desafío es liderazgo, asertividad y ejecución consistente.",
     },
-    {
-        "eje": "LIBERTAD",
+    "LIBERTAD": {
+        "tipos": [4, 7],
+        "descripcion": "El eje de LIBERTAD describe la búsqueda de experiencia y autenticidad. Uno busca libertad emocional y expresión auténtica; el otro libertad de opciones y experiencias.",
         "perfil_alto": "En lo personal, necesitas espacio interno para sentir y elegir. Riesgo: dispersión o dramatización. En lo profesional, destacas en creatividad, ideas y expansión. Riesgo: falta de estructura o constancia.",
         "perfil_bajo": "En lo personal, puede costarte conectar con deseo propio, autenticidad o disfrute sin culpa. En lo profesional, el desafío es innovar, permitir creatividad y sostener motivación.",
     },
-    {
-        "eje": "INTEGRADOR",
-        "perfil_alto": "En lo personal, tiendes a armonizar, bajar tensiones y sostener paz interna/externa. Riesgo: postergarte. En lo profesional, destacas como mediador, facilitador, integrador de equipos y climas.",
+    "INTEGRADOR": {
+        "tipos": [9],
+        "descripcion": "El eje de INTEGRADOR funciona como punto de integración y armonización: mediación, síntesis y capacidad de unir extremos.",
+        "perfil_alto": "En lo personal, tiendes a armonizar, bajar tensiones y sostener paz interna/externa. Riesgo: postergarte. En lo profesional, destacas como mediador, facilitador, integrador de equipos.",
         "perfil_bajo": "En lo personal, el desafío es presencia, decisión y sostener tu agenda sin diluirte. En lo profesional, el desafío es tomar postura, decidir y priorizar sin evitar el conflicto.",
     },
-]
+}
+
 
 # ✅ palabras/virtudes para la síntesis (como pediste)
 PALABRAS_AFINIDAD_POR_TIPO = {
@@ -277,6 +269,7 @@ def result():
     # Ejes de Afinidad
     # -----------------------------
     afinidades = []
+
     for eje, cfg in EJES_AFINIDAD.items():
         tipos = cfg["tipos"]
         prom = round(sum(porcentaje_scores[t] for t in tipos) / len(tipos), 1)
@@ -284,11 +277,13 @@ def result():
     
         afinidades.append({
             "eje": eje,
-            "tipos": tipos,
             "valor": prom,
             "estado": estado,
-            "descripcion": DESCRIPCION_AFINIDAD[eje],
+            "descripcion": cfg["descripcion"],
+            "perfil_alto": cfg["perfil_alto"],
+            "perfil_bajo": cfg["perfil_bajo"],
         })
+
     
     # -----------------------------
     # Texto: Ejes de Afinidad (como lo indicaste)
