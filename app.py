@@ -311,7 +311,7 @@ def result():
     if ejes_afinidad_bajos:
         nombres_bajos = [a["eje"] for a in ejes_afinidad_bajos]
         p1 = (
-            f"Aquí se encuentra tu principal desafío evolutivo en los ejes del "
+            f"Aquí se encuentra tu principal desafío evolutivo en los ejes de "
             f"{juntar_lista_humana(nombres_bajos)}. "
             f"Las virtudes a desarrollar son {juntar_lista_humana(palabras_desafio)}."
         )
@@ -1266,6 +1266,5 @@ def result():
         analisis_ejes_parrafos=analisis_ejes_parrafos,
         sintesis_parrafos=sintesis_parrafos,
         afinidades_parrafos=afinidades_parrafos,
-        afinidades_sintesis=afinidades_sintesis,
-
+        sintesis_afinidades_parrafos=sintesis_afinidades_parrafos,
     )
