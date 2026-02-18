@@ -294,29 +294,28 @@ def result():
         eje = a["eje"]
         v = a["valor"]
     
-        # 1) descripción EXACTA (tu frase)
         txt = a["descripcion"] + "\n\n"
     
-        # 2) estado del eje (por encima / equilibrado / por debajo)
+        # estado
         if es_bajo(v):
             txt += "Este eje aparece por debajo de la media, lo que indica que es un área a desarrollar."
-            perfil_cfg = next((x for x in EJES_AFINIDAD if x["eje"] == eje), None)
-            if perfil_cfg:
-                txt += "\n\n" + perfil_cfg["perfil_bajo"]
-    
         elif abs(v - 11.1) <= 0.1:
             txt += "Este eje aparece equilibrado, lo que indica que estas cualidades están presentes de forma estable."
-            perfil_cfg = next((x for x in EJES_AFINIDAD if x["eje"] == eje), None)
-            if perfil_cfg:
-                txt += "\n\n" + perfil_cfg["perfil_alto"]
-    
         else:
             txt += "Este eje aparece por encima de la media, lo que indica que posees estas características."
-            perfil_cfg = next((x for x in EJES_AFINIDAD if x["eje"] == eje), None)
-            if perfil_cfg:
-                txt += "\n\n" + perfil_cfg["perfil_alto"]
+    
+        # ✅ NUEVO: perfiles (sin tocar nada de arriba)
+        perfil_cfg = EJES_AFINIDAD.get(eje, {})
+        if es_bajo(v):
+            perfil = perfil_cfg.get("perfil_bajo", "")
+        else:
+            perfil = perfil_cfg.get("perfil_alto", "")
+    
+        if perfil:
+            txt += "\n\n" + perfil
     
         afinidades_parrafos.append(txt)
+
 
     
     # -----------------------------
@@ -1220,12 +1219,11 @@ def result():
     Punto ciego: creer que para ser amado debe desaparecer o adaptarse totalmente. Necesidad central: armonía y estabilidad. Adicción: . Vive en el presente. Pertenece a la tríada instintiva (acción).
 
     Cabe destacar que existen 3 subtipos:
+    🏠 9 Conservación: busca seguridad, recursos y estabilidad. Desarrolla apetito. Busca comodidad y bienestar físico. Evita conflicto.
 
-    🏠 9 Conservación (Apetito): busca comodidad y bienestar físico. Evita conflicto.
+    👥 9 Social: busca grupo, pertenencia e imagen social. Busca participación. se adapta al grupo y busca armonía colectiva.
 
-    👥 9 Social (Participación): se adapta al grupo y busca armonía colectiva.
-
-    ❤️ 9 Sexual (Fusión): tiende a perderse en el otro. Fuerte necesidad de conexión.""",
+    ❤️ 9 Sexual: busca intensidad y conexión profunda. Sus relaciones son uno a uno, es selectivo. Busca fusión. Tiende a perderse en el otro. Fuerte necesidad de conexión.""",
 
     "orientacion": """    
     🎯 Vocación base
