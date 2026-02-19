@@ -256,6 +256,51 @@
       
         </div>
       </div>
+
+      <!-- BONUS: 🧠 Estructura del pensamiento -->
+      <div class="card border-secondary mb-3">
+        <div class="card-header bg-secondary text-white">
+          BONUS: Estructura del pensamiento
+        </div>
+      
+        <div class="card-body text-start">
+      
+          {% set b = bonus_estructura %}
+      
+          <h6 class="fw-bold mb-2">{{ b.pensamiento.titulo }}</h6>
+          <p class="mb-2">{{ b.pensamiento.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.inteligencia.titulo }}</h6>
+          <p class="mb-2">{{ b.inteligencia.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.polaridad.titulo }}</h6>
+          <p class="mb-2">{{ b.polaridad.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.triadas.titulo }}</h6>
+          <p class="mb-2">{{ b.triadas.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.expresion.titulo }}</h6>
+          <p class="mb-2">{{ b.expresion.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.vincularidad.titulo }}</h6>
+          <p class="mb-2">{{ b.vincularidad.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.conflictos_internos.titulo }}</h6>
+          <p class="mb-2">{{ b.conflictos_internos.parrafo }}</p>
+      
+          <h6 class="fw-bold mt-3 mb-2">{{ b.reaccion_problemas.titulo }}</h6>
+          <p class="mb-2">{{ b.reaccion_problemas.parrafo }}</p>
+      
+          <hr class="my-3">
+      
+          <h6 class="fw-bold mb-2">Síntesis</h6>
+          {% for p in b.sintesis %}
+            <p class="mb-2">{{ p }}</p>
+          {% endfor %}
+      
+        </div>
+      </div>
+
      
       <div class="mt-4">
         <a href="{{ url_for('reset') }}" class="btn btn-secondary">
