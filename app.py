@@ -182,6 +182,273 @@ OPUESTOS_COMPLEMENTARIOS = {
     },
 }
 
+# -----------------------------
+# BONUS: Estructura del pensamiento
+# -----------------------------
+
+def _rank_3(values: dict) -> dict:
+    """
+    values: {"nombre": valor_float, ...} (3 items)
+    retorna: dict con ranking MAYOR/MEDIO/MENOR, porcentaje y dominante
+    """
+    items = list(values.items())
+    total = sum(v for _, v in items) or 1.0
+
+    # orden por valor desc
+    ordered = sorted(items, key=lambda x: x[1], reverse=True)
+
+    ranking = {}
+    for i, (k, v) in enumerate(ordered):
+        pos = "MAYOR" if i == 0 else ("MENOR" if i == 2 else "MEDIO")
+        ranking[k] = {
+            "valor": round(v, 1),
+            "porcentaje": round((v / total) * 100, 1),
+            "posicion": pos,
+        }
+
+    dominante = ordered[0][0]
+    return {"dominante": dominante, "detalle": ranking}
+
+
+def bonus_pensamiento(porcentaje_scores: dict) -> dict:
+    # Inductivo: 2-3-4 | Deductivo: 5-6-7 | Analógico: 8-9-1
+    inductivo = sum(porcentaje_scores[t] for t in (2, 3, 4))
+    deductivo = sum(porcentaje_scores[t] for t in (5, 6, 7))
+    analogico = sum(porcentaje_scores[t] for t in (8, 9, 1))
+
+    r = _rank_3({"Inductivo": inductivo, "Deductivo": deductivo, "Analógico": analogico})
+    dom = r["dominante"]
+
+    if dom == "Inductivo":
+        parrafo = (
+            "Tu pensamiento es predominantemente INDUCTIVO. Procesas la realidad desde la experiencia "
+            "relacional y emocional. Captas matices humanos antes que estructuras lógicas."
+        )
+    elif dom == "Deductivo":
+        parrafo = (
+            "Tu pensamiento es predominantemente DEDUCTIVO. Analizas escenarios, evalúas riesgos y "
+            "construyes decisiones desde la lógica y la previsión."
+        )
+    else:
+        parrafo = (
+            "Tu pensamiento es predominantemente ANALÓGICO. Integras información de manera global, "
+            "estratégica e intuitiva, detectando patrones con rapidez."
+        )
+
+    return {"titulo": "Pensamiento", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_inteligencia(porcentaje_scores: dict) -> dict:
+    # Práctica: 1-3-7 | Analítica: 2-5-9 | Emocional: 4-6-8
+    practica = sum(porcentaje_scores[t] for t in (1, 3, 7))
+    analitica = sum(porcentaje_scores[t] for t in (2, 5, 9))
+    emocional = sum(porcentaje_scores[t] for t in (4, 6, 8))
+
+    r = _rank_3({"Práctica": practica, "Analítica": analitica, "Emocional": emocional})
+    dom = r["dominante"]
+
+    if dom == "Práctica":
+        parrafo = (
+            "Predomina la inteligencia PRÁCTICA. Te orientas a resolver y accionar, priorizando "
+            "resultados y ejecución sobre la teoría."
+        )
+    elif dom == "Analítica":
+        parrafo = (
+            "Predomina la inteligencia ANALÍTICA. Buscas comprender, ordenar y dar sentido antes "
+            "de actuar, sosteniendo una mirada racional y estructurada."
+        )
+    else:
+        parrafo = (
+            "Predomina la inteligencia EMOCIONAL. Percibes con intensidad el entorno, el vínculo y "
+            "las tensiones interpersonales; tu lectura humana guía decisiones."
+        )
+
+    return {"titulo": "Inteligencia", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_polaridad(porcentaje_scores: dict) -> dict:
+    # Activo: 1-2-3-8 | Receptivo: 4-5-6-7 | Neutro: 9
+    activo = sum(porcentaje_scores[t] for t in (1, 2, 3, 8))
+    receptivo = sum(porcentaje_scores[t] for t in (4, 5, 6, 7))
+    neutro = sum(porcentaje_scores[t] for t in (9,))
+
+    r = _rank_3({"Activo (+)": activo, "Receptivo (-)": receptivo, "Neutro (0)": neutro})
+    dom = r["dominante"]
+
+    if dom.startswith("Activo"):
+        parrafo = (
+            "Predomina la polaridad ACTIVA. Tiendes a iniciar, decidir y moverte hacia la acción "
+            "antes que esperar. El desafío es regular intensidad y sostener pausas."
+        )
+    elif dom.startswith("Receptivo"):
+        parrafo = (
+            "Predomina la polaridad RECEPTIVA. Tiendes a observar, procesar y responder con cautela. "
+            "El desafío es sostener iniciativa y no postergar decisiones."
+        )
+    else:
+        parrafo = (
+            "Predomina la polaridad NEUTRA. Tiendes a integrar, estabilizar y sostener equilibrio. "
+            "El desafío es no diluir tu agenda por evitar fricción."
+        )
+
+    return {"titulo": "Polaridad", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_triadas(porcentaje_scores: dict) -> dict:
+    TRIADAS = {
+        "Instintiva": [1, 8, 9],
+        "Emocional": [2, 3, 4],
+        "Mental": [5, 6, 7],
+    }
+    vals = {k: sum(porcentaje_scores[t] for t in v) / len(v) for k, v in TRIADAS.items()}
+    r = _rank_3(vals)
+    dom = r["dominante"]
+
+    if dom == "Instintiva":
+        parrafo = (
+            "Tu estructura predominante es INSTINTIVA. Tiendes a decidir desde la acción y la reacción corporal. "
+            "Percibes el entorno de manera visceral y priorizas autonomía."
+        )
+    elif dom == "Emocional":
+        parrafo = (
+            "Tu estructura predominante es EMOCIONAL. Tu pensamiento está atravesado por la imagen, "
+            "la validación y el vínculo. Evalúas desde el impacto relacional."
+        )
+    else:
+        parrafo = (
+            "Tu estructura predominante es MENTAL. Tu mente anticipa escenarios, analiza riesgos "
+            "y busca comprender antes de actuar."
+        )
+
+    return {"titulo": "Tríadas", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_expresion(porcentaje_scores: dict) -> dict:
+    # Operatividad (como tu tabla)
+    # Manifiesto: Acción 8-9-1 | Sensibilidad 2-3-4 | Pensamiento 5-6-7 (pero en tu tabla se usa 8,2,5; 9,3,6; 1,4,7)
+    manifest = porcentaje_scores[8] + porcentaje_scores[2] + porcentaje_scores[5]
+    oculto = porcentaje_scores[9] + porcentaje_scores[3] + porcentaje_scores[6]
+    diversif = porcentaje_scores[1] + porcentaje_scores[4] + porcentaje_scores[7]
+
+    r = _rank_3({"Manifiesto": manifest, "Oculto": oculto, "Diversificado": diversif})
+    dom = r["dominante"]
+
+    if dom == "Manifiesto":
+        parrafo = (
+            "Tu expresión tiende a ser MANIFIESTA. Lo predominante en tu estructura se percibe con claridad "
+            "en tus decisiones, energía y forma de actuar."
+        )
+    elif dom == "Oculto":
+        parrafo = (
+            "Tu expresión tiende a ser OCULTA. Parte importante de tu estructura opera internamente y "
+            "no siempre se ve desde afuera con la misma intensidad."
+        )
+    else:
+        parrafo = (
+            "Tu expresión tiende a ser DIVERSIFICADA. Distribuyes tu energía en varios registros, lo que te "
+            "vuelve adaptable, aunque puede dificultar priorizar."
+        )
+
+    return {"titulo": "Expresión", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_vincularidad(porcentaje_scores: dict) -> dict:
+    # Enfrentar: 1-3-8 | Acercar: 2-6-7 | Alejar: 4-5-9
+    enfrentar = sum(porcentaje_scores[t] for t in (1, 3, 8))
+    acercar = sum(porcentaje_scores[t] for t in (2, 6, 7))
+    alejar = sum(porcentaje_scores[t] for t in (4, 5, 9))
+
+    r = _rank_3({"Enfrentar": enfrentar, "Acercar": acercar, "Alejar": alejar})
+    dom = r["dominante"]
+
+    if dom == "Enfrentar":
+        parrafo = "En vínculos predomina ENFRENTAR. Tiendes a abordar tensiones de forma directa antes que evitarlas."
+    elif dom == "Acercar":
+        parrafo = "En vínculos predomina ACERCAR. Tiendes a generar puente, cuidar el clima y buscar encuentro."
+    else:
+        parrafo = "En vínculos predomina ALEJAR. Tiendes a tomar distancia para regularte y proteger tu energía."
+
+    return {"titulo": "Vincularidad", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_conflictos_internos(porcentaje_scores: dict) -> dict:
+    # Combativos: 3-7-8 | Sumisos: 1-2-6 | Retirados: 4-5-9
+    comb = sum(porcentaje_scores[t] for t in (3, 7, 8))
+    sumis = sum(porcentaje_scores[t] for t in (1, 2, 6))
+    reti = sum(porcentaje_scores[t] for t in (4, 5, 9))
+
+    r = _rank_3({"Combativos": comb, "Sumisos": sumis, "Retirados": reti})
+    dom = r["dominante"]
+
+    if dom == "Combativos":
+        parrafo = "Ante conflictos internos predomina lo COMBATIVO: tiendes a intensificar energía y empujar resolución."
+    elif dom == "Sumisos":
+        parrafo = "Ante conflictos internos predomina lo SUMISO: tiendes a adaptarte y ceder para sostener estabilidad."
+    else:
+        parrafo = "Ante conflictos internos predomina lo RETIRADO: tiendes a desconectarte, observar y procesar en silencio."
+
+    return {"titulo": "Conflictos internos", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def bonus_reaccion_problemas(porcentaje_scores: dict) -> dict:
+    # Reactivos: 6-4-8 | Eficaces: 3-1-5 | Optimistas: 9-2-7
+    react = sum(porcentaje_scores[t] for t in (6, 4, 8))
+    eficaz = sum(porcentaje_scores[t] for t in (3, 1, 5))
+    optim = sum(porcentaje_scores[t] for t in (9, 2, 7))
+
+    r = _rank_3({"Reactivos": react, "Eficaces": eficaz, "Optimistas": optim})
+    dom = r["dominante"]
+
+    if dom == "Reactivos":
+        parrafo = (
+            "Ante problemas predomina la REACTIVIDAD. Respondes rápido e intensamente; puede ser útil en urgencias, "
+            "pero requiere regulación para no sobrerreaccionar."
+        )
+    elif dom == "Eficaces":
+        parrafo = "Ante problemas predomina lo EFICAZ. Tiendes a resolver con foco práctico, priorizando solución y avance."
+    else:
+        parrafo = "Ante problemas predomina lo OPTIMISTA. Tiendes a alivianar, relativizar y buscar alternativas positivas."
+
+    return {"titulo": "Reacción ante problemas", "dominante": dom, "parrafo": parrafo, **r}
+
+
+def build_bonus_estructura_pensamiento(porcentaje_scores: dict) -> dict:
+    pensamiento = bonus_pensamiento(porcentaje_scores)
+    inteligencia = bonus_inteligencia(porcentaje_scores)
+    polaridad = bonus_polaridad(porcentaje_scores)
+    triadas = bonus_triadas(porcentaje_scores)
+    expresion = bonus_expresion(porcentaje_scores)
+    vincularidad = bonus_vincularidad(porcentaje_scores)
+    conflictos = bonus_conflictos_internos(porcentaje_scores)
+    reaccion = bonus_reaccion_problemas(porcentaje_scores)
+
+    sintesis = [
+        (
+            f"Tu estructura muestra un pensamiento {pensamiento['dominante']}, una inteligencia {inteligencia['dominante']} "
+            f"y una polaridad {polaridad['dominante']}."
+        ),
+        (
+            f"Tu tríada dominante es {triadas['dominante']}, y tu forma de expresión tiende a ser {expresion['dominante']}."
+        ),
+        (
+            f"En lo vincular predomina {vincularidad['dominante']}, en conflictos internos {conflictos['dominante']}, "
+            f"y frente a problemas {reaccion['dominante']}."
+        ),
+    ]
+
+    return {
+        "pensamiento": pensamiento,
+        "inteligencia": inteligencia,
+        "polaridad": polaridad,
+        "triadas": triadas,
+        "expresion": expresion,
+        "vincularidad": vincularidad,
+        "conflictos_internos": conflictos,
+        "reaccion_problemas": reaccion,
+        "sintesis": sintesis,
+    }
+
+
 
 @app.get("/")
 def index():
@@ -1406,6 +1673,8 @@ def result():
     camino_evolucion = [
         (tipo, pct, creencias_limitantes[tipo]) for tipo, pct in low3
     ]
+    
+bonus_estructura = build_bonus_estructura_pensamiento(porcentaje_scores)
 
     return render_template(
         "result.html",
@@ -1425,5 +1694,6 @@ def result():
         sintesis_afinidades_parrafos=sintesis_afinidades_parrafos,
         opuestos_parrafos=opuestos_parrafos,
         opuestos_sintesis=opuestos_sintesis,
+        bonus_estructura=bonus_estructura,
 
     )
