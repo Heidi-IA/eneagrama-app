@@ -418,7 +418,72 @@ def result():
         "Estas cualidades constituyen pilares de tu estructura personal, aunque será importante moderarlas cuando se intensifiquen en exceso."
     )
     
+    opuestos = []
+    opuestos_parrafos = []
+    
+    for eje, cfg in OPUESTOS_COMPLEMENTARIOS.items():
+        tipos = cfg["tipos"]
+        prom = round(sum(porcentaje_scores[t] for t in tipos) / len(tipos), 1)
+        estado = clasificar_eje(prom)
+    
+        opuestos.append({
+            "eje": eje,
+            "valor": prom,
+            "estado": estado,
+            "tipos": tipos,
+            "virtudes": cfg.get("virtudes", {}),
+        })
+    
+        txt = cfg["descripcion"] + "\n\n"
+    
+        if es_bajo(prom):
+            txt += cfg["msg_bajo"]
+        elif abs(prom - 11.1) <= 0.1:
+            txt += cfg["msg_equilibrado"]
+        else:
+            txt += cfg["msg_alto"]
+    
+        # Luz / sombra del eje (siempre visible)
+        txt += "\n\n" + cfg["luz"]
+        txt += "\n" + cfg["sombra"]
+    
+        opuestos_parrafos.append(txt)
 
+    ejes_bajo = [o["eje"] for o in opuestos if es_bajo(o["valor"])]
+    ejes_exceso = [o["eje"] for o in opuestos if o["estado"] in ("elevado", "excesivo")]
+    
+    virtudes_desafio = []
+    virtudes_ok = []
+    
+    for o in opuestos:
+        for t in o["tipos"]:
+            palabra = o["virtudes"].get(t)
+            if not palabra:
+                continue
+            if es_bajo(porcentaje_scores[t]):
+                if palabra not in virtudes_desafio:
+                    virtudes_desafio.append(palabra)
+            else:
+                if palabra not in virtudes_ok:
+                    virtudes_ok.append(palabra)
+    
+    opuestos_sintesis = []
+    
+    if ejes_bajo:
+        opuestos_sintesis.append(
+            f"Aquí se encuentra tu principal desafío evolutivo en los ejes del {juntar_lista_humana(ejes_bajo)}. "
+            f"Las virtudes a desarrollar son {juntar_lista_humana(virtudes_desafio)}."
+        )
+    
+    if virtudes_ok:
+        opuestos_sintesis.append(
+            f"Tus principales virtudes son {juntar_lista_humana(virtudes_ok)}."
+        )
+    
+    if ejes_exceso:
+        opuestos_sintesis.append(
+            "Estas cualidades constituyen pilares de tu estructura personal, aunque será importante moderarlas cuando se intensifiquen en exceso."
+        )
 
     
     # -----------------------------
@@ -1358,4 +1423,7 @@ def result():
         sintesis_parrafos=sintesis_parrafos,
         afinidades_parrafos=afinidades_parrafos,
         sintesis_afinidades_parrafos=sintesis_afinidades_parrafos,
+        opuestos_parrafos=opuestos_parrafos,
+        opuestos_sintesis=opuestos_sintesis,
+
     )
