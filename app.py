@@ -1674,7 +1674,7 @@ def result():
         (tipo, pct, creencias_limitantes[tipo]) for tipo, pct in low3
     ]
     
-bonus_estructura = build_bonus_estructura_pensamiento(porcentaje_scores)
+    bonus_estructura = build_bonus_estructura_pensamiento(porcentaje_scores)
 
     return render_template(
         "result.html",
