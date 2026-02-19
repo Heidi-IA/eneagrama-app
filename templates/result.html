@@ -10,6 +10,26 @@
 
       <h2 class="fw-bold">Tus resultados</h2>
 
+      {% set porcentaje_total = ((total_marked / 270) * 100) | round(1) %}
+      
+      <div class="mb-3 text-start">
+        <p class="fw-semibold">
+          Afirmaciones marcadas: <strong>{{ total_marked }}</strong> de 270
+          — <strong>{{ porcentaje_total }}%</strong>
+        </p>
+      
+        {% if porcentaje_total > 30 %}
+          <p class="text-success">
+            📣 <strong>No tienes problema en mostrarte.</strong>
+          </p>
+        {% else %}
+          <p class="text-warning">
+            🤫 <strong>Eres más bien reservado, te cuesta mostrarte.</strong>
+          </p>
+        {% endif %}
+      </div>
+
+      
       {% if top_types %}
         {% set principal = top_types[0] %}
         {% set txt = eneatipo_textos[principal] %}
@@ -70,97 +90,6 @@
           </div>
         </div>
       {% endif %}
-
-      {% set porcentaje_total = ((total_marked / 270) * 100) | round(1) %}
-      
-      <div class="mb-3 text-start">
-        <p class="fw-semibold">
-          Afirmaciones marcadas: <strong>{{ total_marked }}</strong> de 270
-          — <strong>{{ porcentaje_total }}%</strong>
-        </p>
-      
-        {% if porcentaje_total > 30 %}
-          <p class="text-success">
-            📣 <strong>No tienes problema en mostrarte.</strong>
-          </p>
-        {% else %}
-          <p class="text-warning">
-            🤫 <strong>Eres más bien reservado, te cuesta mostrarte.</strong>
-          </p>
-        {% endif %}
-      </div>
-
-
-      <!-- Gráfico -->
-      <canvas id="eneagramaChart"></canvas>
-      
-      <!-- Chart.js -->
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <!-- Plugin para mostrar labels (%) -->
-      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
-      
-      <script>
-        // Ejemplo: recibís desde Flask labels y values ya como porcentajes
-        const labels = {{ labels | tojson }};   // ["1","2","3","4","5","6","7","8","9"]
-        const values = {{ values | tojson }};   // [33.3, 11.1, 11.1, 0, 11.1, 11.1, 0, 22.2, 0]
-      
-        const ctx = document.getElementById('eneagramaChart');
-      
-        new Chart(ctx, {
-          type: 'radar',
-          data: {
-            labels: labels.map(x => `Tipo ${x}`),
-            datasets: [{
-              label: '% de respuestas',
-              data: values,
-              fill: true,
-              borderWidth: 2,
-              pointRadius: 3
-            }]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: { display: true },
-              tooltip: {
-                callbacks: {
-                  label: (context) => `${context.raw.toFixed(1)}%`
-                }
-              },
-              datalabels: {
-                formatter: (v) => `${v.toFixed(1)}%`,
-                anchor: 'end',
-                align: 'end'
-              }
-            },
-            scales: {
-              r: {
-                suggestedMin: 0,
-                suggestedMax: 100,
-                ticks: {
-                  callback: (v) => `${v}%`
-                }
-              }
-            }
-          },
-          plugins: [ChartDataLabels]
-        });
-      </script>
-
-
-      <div class="card mt-4">
-        <div class="card-header fw-bold">
-          Esencia – Total de afirmaciones
-        </div>
-        <ul class="list-group list-group-flush text-start">
-          {% for tipo, score in sorted_scores %}
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Tipo {{ tipo }}
-            <span class="badge bg-primary rounded-pill">{{ score }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
 
       <div class="card border-warning mt-4 text-start">
         <div class="card-header bg-warning fw-bold">
@@ -297,10 +226,81 @@
           {% for p in b.sintesis %}
             <p class="mb-2">{{ p }}</p>
           {% endfor %}
-      
+          
         </div>
       </div>
 
+      
+      <!-- Gráfico -->
+      <canvas id="eneagramaChart"></canvas>
+      
+      <!-- Chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Plugin para mostrar labels (%) -->
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+      
+      <script>
+        // Ejemplo: recibís desde Flask labels y values ya como porcentajes
+        const labels = {{ labels | tojson }};   // ["1","2","3","4","5","6","7","8","9"]
+        const values = {{ values | tojson }};   // [33.3, 11.1, 11.1, 0, 11.1, 11.1, 0, 22.2, 0]
+      
+        const ctx = document.getElementById('eneagramaChart');
+      
+        new Chart(ctx, {
+          type: 'radar',
+          data: {
+            labels: labels.map(x => `Tipo ${x}`),
+            datasets: [{
+              label: '% de respuestas',
+              data: values,
+              fill: true,
+              borderWidth: 2,
+              pointRadius: 3
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { display: true },
+              tooltip: {
+                callbacks: {
+                  label: (context) => `${context.raw.toFixed(1)}%`
+                }
+              },
+              datalabels: {
+                formatter: (v) => `${v.toFixed(1)}%`,
+                anchor: 'end',
+                align: 'end'
+              }
+            },
+            scales: {
+              r: {
+                suggestedMin: 0,
+                suggestedMax: 100,
+                ticks: {
+                  callback: (v) => `${v}%`
+                }
+              }
+            }
+          },
+          plugins: [ChartDataLabels]
+        });
+      </script>
+
+
+      <div class="card mt-4">
+        <div class="card-header fw-bold">
+          Esencia – Total de afirmaciones
+        </div>
+        <ul class="list-group list-group-flush text-start">
+          {% for tipo, score in sorted_scores %}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Tipo {{ tipo }}
+            <span class="badge bg-primary rounded-pill">{{ score }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
      
       <div class="mt-4">
         <a href="{{ url_for('reset') }}" class="btn btn-secondary">
