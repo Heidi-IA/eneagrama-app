@@ -125,6 +125,63 @@ PALABRAS_AFINIDAD_POR_TIPO = {
     9: "integración/armonía (mediación natural)",
 }
 
+OPUESTOS_COMPLEMENTARIOS = {
+    "ORDEN – AIRE": {
+        "tipos": [1, 5],
+        "descripcion": "El eje ORDEN – AIRE describe la organización de la realidad desde la estructura. Uno ordena lo externo; el otro estructura lo interno.",
+        "virtudes": {1: "orden externo, controlar", 5: "orden interno, entender"},
+        "msg_bajo": "Este eje aparece por debajo de la media, lo que indica dificultad para ordenar lo externo o estructurar lo interno de forma consistente. La persona debe establecer un nuevo orden en su vida. Revisar seriamente dónde pone su tiempo y energía.",
+        "msg_equilibrado": "Este eje aparece equilibrado, lo que indica buena integración entre estructura externa y claridad interna.",
+        "msg_alto": "Este eje aparece por encima de la media, lo que indica una fuerte capacidad de ordenar, planificar y estructurar; en exceso puede rigidizarse.",
+        "luz": "En su luz: sensatez, coherencia, claridad, organización y profundidad.",
+        "sombra": "En su sombra: juicio, rigidez, control mental o exceso de perfeccionismo/aislamiento, autocrítica.",
+    },
+
+    "RELACIÓN – AGUA": {
+        "tipos": [2, 6],
+        "descripcion": "El eje RELACIÓN – AGUA describe el intercambio vincular. Uno expresa el vínculo a través del dar; el otro desde la lealtad y el recibir.",
+        "virtudes": {2: "dar, servir", 6: "recibir, sostener"},
+        "msg_bajo": "Este eje aparece por debajo de la media, lo que indica dificultad para dar sin perderte o para recibir sin desconfianza.",
+        "msg_equilibrado": "Este eje aparece equilibrado, lo que indica un intercambio vincular sano entre dar y recibir.",
+        "msg_alto": "Este eje aparece por encima de la media, lo que indica fuerte orientación al vínculo; en exceso puede generar dependencia o hipervigilancia.",
+        "luz": "En su luz: empatía, cooperación, sostén afectivo, compromiso y confianza.",
+        "sombra": "En su sombra: dependencia, sobreentrega, miedo, control emocional o dependencia del vínculo.",
+    },
+
+    "IMAGEN – TIERRA": {
+        "tipos": [3, 7],
+        "descripcion": "El eje IMAGEN – TIERRA describe la proyección al mundo. Uno busca lograr; el otro expandirse y mostrarse.",
+        "virtudes": {3: "lograr, emprender", 7: "relajar, disfrutar"},
+        "msg_bajo": "Este eje aparece por debajo de la media, lo que indica dificultad para sostener motivación, proyección o visibilidad. La persona no está logrando concretar algo en su vida. Tiene que materializar.",
+        "msg_equilibrado": "Este eje aparece equilibrado, lo que indica buena relación entre logro, presencia y expansión sin exceso de imagen.",
+        "msg_alto": "Este eje aparece por encima de la media, lo que indica alta proyección externa; en exceso puede volverse superficial o compulsivo.",
+        "luz": "En su luz: proactividad, ambición sana, entusiasmo, inspiración y concreción.",
+        "sombra": "En su sombra: apariencia, adicción al éxito, dispersión, postureo o desconexión emocional.",
+    },
+
+    "FUERZA – FUEGO": {
+        "tipos": [4, 8],
+        "descripcion": "El eje FUERZA – FUEGO describe la intensidad vital. Uno canaliza fuerza interna; el otro expresa fuerza externa.",
+        "virtudes": {4: "fuerza interna, crear, autoestima", 8: "fuerza externa, decidir"},
+        "msg_bajo": "Este eje aparece por debajo de la media, lo que indica dificultad para sostener intensidad, límites o decisión. La persona está consumiendo su propia energía de reserva. Es propicio que se recargue conectando con la naturaleza y su lado espiritual.",
+        "msg_equilibrado": "Este eje aparece equilibrado, lo que indica integración entre intensidad interna y acción externa.",
+        "msg_alto": "Este eje aparece por encima de la media, lo que indica potencia y presencia; en exceso puede intensificarse como control o dramatismo.",
+        "luz": "En su luz: firmeza, coraje, autenticidad, presencia y liderazgo con propósito.",
+        "sombra": "En su sombra: egocentrismo, reactividad, dureza, victimismo o intensidad desbordada.",
+    },
+
+    "LUZ": {
+        "tipos": [9],
+        "descripcion": "El eje LUZ representa la integración y la plenitud como síntesis de los demás ejes.",
+        "virtudes": {9: "plenitud"},
+        "msg_bajo": "Este eje aparece por debajo de la media, lo que indica dificultad para sostener presencia, armonía y decisión.",
+        "msg_equilibrado": "Este eje aparece equilibrado, lo que indica capacidad de integración, síntesis y serenidad activa.",
+        "msg_alto": "Este eje aparece por encima de la media, lo que indica alta capacidad integradora; en exceso puede ser evitación del conflicto o postergación.",
+        "luz": "En su luz: calma, integración, escucha, presencia y ecuanimidad.",
+        "sombra": "En su sombra: anestesia, postergación, dilución personal o evitación.",
+    },
+}
+
 
 @app.get("/")
 def index():
