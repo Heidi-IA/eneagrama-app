@@ -229,41 +229,33 @@
         </div>
       </div>      
 
-    <!-- Recuadro: Opuestos Complementarios -->
-    <div class="card border-secondary mb-3">
-      <div class="card-header bg-secondary text-white">
-       ⚖️  Opuestos complementarios
-      </div>
-      <div class="card-body">
-    
-        {% for eje in opuestos_cards %}
-          <div class="card mb-3 border-secondary">
-            <div class="card-header bg-light text-dark">
-              {{ eje.titulo }}
-            </div>
-            <div class="card-body">
-              {% for p in eje.parrafos %}
-                <p class="card-text mb-2">{{ p }}</p>
-              {% endfor %}
-            </div>
-          </div>
-        {% endfor %}
-    
-        <!-- Síntesis -->
-        <div class="card mt-3 border-dark">
-          <div class="card-header bg-dark text-white">
-           🧩 Síntesis
-          </div>
-          <div class="card-body">
-            {% for s in opuestos_sintesis %}
-              <p class="card-text mb-2">{{ s }}</p>
-            {% endfor %}
-          </div>
-        </div>
-    
-      </div>
+  <!-- Opuestos complementarios -->
+  <div class="card border-primary mb-3">
+    <div class="card-header bg-primary text-white">
+      ⚖️ Opuestos complementarios
     </div>
-
+    <div class="card-body">
+  
+      {% for p in opuestos_parrafos %}
+        <p class="card-text">{{ p }}</p>
+      {% endfor %}
+  
+    </div>
+  </div>
+  
+  <!-- Síntesis de Opuestos complementarios -->
+  <div class="card border-secondary mb-3">
+    <div class="card-header bg-secondary text-white">
+       🧩 Síntesis de Opuestos complementarios
+    </div>
+    <div class="card-body">
+  
+      {% for p in opuestos_sintesis %}
+        <p class="card-text">{{ p }}</p>
+      {% endfor %}
+  
+    </div>
+  </div>
      
       <div class="mt-4">
         <a href="{{ url_for('reset') }}" class="btn btn-secondary">
