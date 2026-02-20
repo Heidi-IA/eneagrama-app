@@ -489,9 +489,8 @@ def generar_radar_image(resultados: dict):
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(labels)
     mx = max(values) if values else 0
-    
     ax.set_ylim(0, mx + 5) 
-    ax.set_ylim(0, max(values) + 5)
+
 
     ax.set_title("Radar Eneagrama", pad=20)
 
