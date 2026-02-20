@@ -496,6 +496,7 @@ class Report(Base):
 
 if engine:
     Base.metadata.create_all(engine)
+    
 def build_pdf_from_payload(payload: dict) -> bytes:
     buffer = io.BytesIO()
     doc = SimpleDocTemplate(
@@ -1850,21 +1851,35 @@ report_payload = {
     "analista": "AZ Consultora @az_coaching.terapeutico / +542975203761",
     "propietario": usuario,
     "fecha_test": usuario.get("fecha_test"),
+
+    # -----------------------
+    # RESULTADOS
+    # -----------------------
+    "total_marked": total_marked,
     "resultados": {str(k): v for k, v in porcentaje_scores.items()},
+    "sorted_porcentajes": sorted_porcentajes,
     "top_types": top_types,
+    "ala_textos": ala_textos,
+    "camino_evolucion": camino_evolucion,
+
+    # -----------------------
+    # DESARROLLO COMPLETO
+    # -----------------------
     "desarrollo": {
+        "afinidades_parrafos": afinidades_parrafos,
+        "sintesis_afinidades": sintesis_afinidades_parrafos,
+        "opuestos_parrafos": opuestos_parrafos,
+        "opuestos_sintesis": opuestos_sintesis,
         "analisis_ejes": analisis_ejes_parrafos,
         "sintesis_evolutiva": sintesis_parrafos,
-        # si ya tenés afinidades/opuestos/bonus, también guardalos acá
-        # "afinidades_parrafos": afinidades_parrafos,
-        # "afinidades_sintesis": afinidades_sintesis,
-        # "opuestos_parrafos": opuestos_parrafos,
-        # "opuestos_sintesis": opuestos_sintesis,
-        # "pensamiento_parrafos": pensamiento_parrafos,
+        "bonus_estructura": bonus_estructura,
     },
-    "conclusiones": "Conclusiones finales.",  # placeholder (si querés lo armamos luego)
+
+    "conclusiones": "Conclusiones finales.",
     "mensaje_final": (
-        "Para una consulta personalizada o exploración de otras herramientas de autoconocimiento contactar a AZ Consultora @az_coaching.terapeutico o WhatsApp +54-2975203761."
+        "Para una consulta personalizada o exploración de otras herramientas "
+        "de autoconocimiento contactar a AZ Consultora @az_coaching.terapeutico "
+        "o WhatsApp +54-2975203761."
     ),
 }
 
