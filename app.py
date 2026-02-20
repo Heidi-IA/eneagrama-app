@@ -1891,7 +1891,7 @@ if DBSession:
     finally:
         db.close()
 
-    return render_template(
+return render_template(
         "result.html",
         sorted_scores=sorted_scores,
         sorted_porcentajes=sorted_porcentajes,
