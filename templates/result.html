@@ -290,75 +290,82 @@
         </div>
       </div>
       
-      <!-- Gráfico -->
-      <canvas id="eneagramaChart"></canvas>
+      <div class="card border-primary mt-4 text-start">
+        <div class="card-header bg-primary text-white fw-bold">
+          📊 Gráficos anexos
+        </div>
       
-      <!-- Chart.js -->
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <!-- Plugin para mostrar labels (%) -->
-      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+        <div class="card-body">
       
-      <script>
-        // Ejemplo: recibís desde Flask labels y values ya como porcentajes
-        const labels = {{ labels | tojson }};   // ["1","2","3","4","5","6","7","8","9"]
-        const values = {{ values | tojson }};   // [33.3, 11.1, 11.1, 0, 11.1, 11.1, 0, 22.2, 0]
+          <!-- Gráfico Radar -->
+          <canvas id="eneagramaChart"></canvas>
       
-        const ctx = document.getElementById('eneagramaChart');
+          <!-- Chart.js -->
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
       
-        new Chart(ctx, {
-          type: 'radar',
-          data: {
-            labels: labels.map(x => `Tipo ${x}`),
-            datasets: [{
-              label: '% de respuestas',
-              data: values,
-              fill: true,
-              borderWidth: 2,
-              pointRadius: 3
-            }]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: { display: true },
-              tooltip: {
-                callbacks: {
-                  label: (context) => `${context.raw.toFixed(1)}%`
+          <script>
+            const labels = {{ labels | tojson }};
+            const values = {{ values | tojson }};
+      
+            const ctx = document.getElementById('eneagramaChart');
+      
+            new Chart(ctx, {
+              type: 'radar',
+              data: {
+                labels: labels.map(x => `Tipo ${x}`),
+                datasets: [{
+                  label: '% de respuestas',
+                  data: values,
+                  fill: true,
+                  borderWidth: 2,
+                  pointRadius: 3
+                }]
+              },
+              options: {
+                responsive: true,
+                plugins: {
+                  legend: { display: true },
+                  tooltip: {
+                    callbacks: {
+                      label: (context) => `${context.raw.toFixed(1)}%`
+                    }
+                  },
+                  datalabels: {
+                    formatter: (v) => `${v.toFixed(1)}%`,
+                    anchor: 'end',
+                    align: 'end'
+                  }
+                },
+                scales: {
+                  r: {
+                    suggestedMin: 0,
+                    suggestedMax: 100,
+                    ticks: {
+                      callback: (v) => `${v}%`
+                    }
+                  }
                 }
               },
-              datalabels: {
-                formatter: (v) => `${v.toFixed(1)}%`,
-                anchor: 'end',
-                align: 'end'
-              }
-            },
-            scales: {
-              r: {
-                suggestedMin: 0,
-                suggestedMax: 100,
-                ticks: {
-                  callback: (v) => `${v}%`
-                }
-              }
-            }
-          },
-          plugins: [ChartDataLabels]
-        });
-      </script>
-
-
-      <div class="card mt-4">
-        <div class="card-header fw-bold">
-          Esencia – Total de afirmaciones
+              plugins: [ChartDataLabels]
+            });
+          </script>
+      
+          <div class="card mt-4">
+            <div class="card-header fw-bold">
+              Esencia – Total de afirmaciones
+            </div>
+            <ul class="list-group list-group-flush text-start">
+              {% for tipo, score in sorted_scores %}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Tipo {{ tipo }}
+                <span class="badge bg-primary rounded-pill">{{ score }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+      
         </div>
-        <ul class="list-group list-group-flush text-start">
-          {% for tipo, score in sorted_scores %}
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Tipo {{ tipo }}
-            <span class="badge bg-primary rounded-pill">{{ score }}</span>
-          </li>
-          {% endfor %}
-        </ul>
       </div>
       
       <p class="text-muted mt-3 mb-5" style="max-width: 800px; margin: 0 auto;">
