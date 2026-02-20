@@ -1605,7 +1605,8 @@ def result():
     Sus principales fortalezas son ser mediador, paciente, estable y conciliador. Sus áreas de mejora radican en la indecisión, la pasividad y la evasión de confrontaciones necesarias. El pecado capital del eneatipo 9 es la pereza (inercia interior o adormecimiento de sí mismo).
 
     En su lado luz se expresa con armonía, serenidad y presencia equilibrada. En su lado sombra puede desconectarse de sí mismo, anestesiar sus deseos o diluir su identidad. Cuando evoluciona, desarrolla determinación, foco y acción, aprende a priorizar sus metas personales, integra dinamismo sin perder serenidad. En estrés puede volverse ansioso, desconfiado o temeroso, puede anticipar problemas y perder su calma característica.
-    Las actitudes que lo equilibran son ser más firme, protector y práctico y ser más idealista, organizado y correcto.
+    Las actitudes que lo equilibran son ser más firme, protector y práctico y ser más idealista, organizado y correcto. Si logra el equilibrio, obtiene la capacidad de activarse para expresar y decidir, según lo que desea, piensa y siente, saliendo de la comodidad y el dejarse estar. Se compromete y decide con firmeza en función de un ideal de vida. 
+    Si no las desarrolla, es intolerante, impaciente, serio, con poco sentido del humor. Le cuesta activarse, espera que los demás le ayuden o hagan por él lo que se debe hacer.
 
     Otro de los caminos de evolución es identificar el punto ciego: creer que para ser amado debe desaparecer o adaptarse totalmente, tiene que aprender a decir lo que piensa y siente. Pertenece a la tríada instintiva (acción), su necesidad central es la autonomía, armonía y estabilidad. Vive en el presente. Guarda su capacidad de acción evitando el conflicto.  
 
