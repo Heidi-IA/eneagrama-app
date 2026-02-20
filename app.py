@@ -6,6 +6,16 @@ import os
 from datetime import datetime
 from sqlalchemy import create_engine, Column, Integer, String, DateTime, JSON, Text, Boolean
 from sqlalchemy.orm import declarative_base, sessionmaker
+import io
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import cm
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+from reportlab.lib.enums import TA_LEFT
+from flask import send_file
+
+
+
 
 DATA_PATH = Path("data/questions.json")
 
@@ -486,6 +496,120 @@ class Report(Base):
 
 if engine:
     Base.metadata.create_all(engine)
+def build_pdf_from_payload(payload: dict) -> bytes:
+    buffer = io.BytesIO()
+    doc = SimpleDocTemplate(
+        buffer,
+        pagesize=A4,
+        leftMargin=2*cm,
+        rightMargin=2*cm,
+        topMargin=2*cm,
+        bottomMargin=2*cm,
+        title=payload.get("titulo", "Informe")
+    )
+
+    styles = getSampleStyleSheet()
+    styles.add(ParagraphStyle(name="H1", parent=styles["Heading1"], alignment=TA_LEFT, spaceAfter=12))
+    styles.add(ParagraphStyle(name="H2", parent=styles["Heading2"], alignment=TA_LEFT, spaceAfter=8))
+    styles.add(ParagraphStyle(name="Body", parent=styles["BodyText"], alignment=TA_LEFT, leading=14, spaceAfter=8))
+
+    story = []
+
+    # Título
+    story.append(Paragraph(payload.get("titulo", "Informe de eneagrama extendido"), styles["H1"]))
+    story.append(Paragraph(f"Analista: {payload.get('analista', '')}", styles["Body"]))
+
+    # Propietario + fecha
+    propietario = payload.get("propietario", {}) or {}
+    fecha_test = payload.get("fecha_test") or propietario.get("fecha_test", "")
+
+    story.append(Spacer(1, 8))
+    story.append(Paragraph("Propietario del eneagrama", styles["H2"]))
+    story.append(Paragraph(f"Nombre: {propietario.get('nombre','')}", styles["Body"]))
+    story.append(Paragraph(f"Email: {propietario.get('email','')}", styles["Body"]))
+    story.append(Paragraph(f"Sexo: {propietario.get('sexo','')}", styles["Body"]))
+    story.append(Paragraph(f"Fecha nacimiento: {propietario.get('fecha_nacimiento','')}", styles["Body"]))
+    story.append(Paragraph(f"Hora nacimiento: {propietario.get('hora_nacimiento') or 'Desconocida'}", styles["Body"]))
+    story.append(Paragraph(f"Fecha del test: {fecha_test}", styles["Body"]))
+
+    # Introducción
+    story.append(Spacer(1, 10))
+    story.append(Paragraph("Introducción", styles["H2"]))
+    intro = (
+        "A continuación verás los resultados de tu test de autoidentificación personal. "
+        "Esta información te ayudará a desarrollar y potenciar tu perfil personal, profesional y vocacional. "
+        "Recordá que el eneagrama es dinámico: repetirlo anualmente te permitirá observar tu evolución hacia "
+        "un mayor equilibrio y bienestar."
+    )
+    story.append(Paragraph(intro, styles["Body"]))
+
+    # Desarrollo
+    story.append(Spacer(1, 10))
+    story.append(Paragraph("Desarrollo", styles["H2"]))
+
+    resultados = payload.get("resultados", {}) or {}
+    # tabla simple como lista
+    story.append(Paragraph("Resultados por eneatipo (%):", styles["Body"]))
+    for t in range(1, 10):
+        pct = resultados.get(str(t), 0)
+        story.append(Paragraph(f"• Tipo {t}: {pct}%", styles["Body"]))
+
+    # Secciones guardadas (si existen)
+    desarrollo = payload.get("desarrollo", {}) or {}
+    analisis_ejes = desarrollo.get("analisis_ejes", []) or []
+    sintesis = desarrollo.get("sintesis_evolutiva", []) or []
+
+    if analisis_ejes:
+        story.append(Spacer(1, 10))
+        story.append(Paragraph("Análisis de ejes", styles["H2"]))
+        for p in analisis_ejes:
+            story.append(Paragraph(p, styles["Body"]))
+
+    if sintesis:
+        story.append(Spacer(1, 10))
+        story.append(Paragraph("Síntesis evolutiva", styles["H2"]))
+        for p in sintesis:
+            story.append(Paragraph(p, styles["Body"]))
+
+    # Conclusiones finales
+    story.append(Spacer(1, 10))
+    story.append(Paragraph("Conclusiones finales", styles["H2"]))
+    story.append(Paragraph(payload.get("conclusiones", "Conclusiones finales."), styles["Body"]))
+
+    # Mensaje final
+    story.append(Spacer(1, 10))
+    story.append(Paragraph("Mensaje final", styles["H2"]))
+    story.append(Paragraph(payload.get("mensaje_final", ""), styles["Body"]))
+
+    doc.build(story)
+    pdf = buffer.getvalue()
+    buffer.close()
+    return pdf
+    
+@app.get("/pdf")
+def download_pdf():
+    payload = session.get("report_payload")
+
+    # fallback: si recargó y perdió session, intentamos desde BD con report_id
+    if not payload and DBSession and session.get("report_id"):
+        db = DBSession()
+        try:
+            r = db.get(Report, session["report_id"])
+            payload = r.report_json if r else None
+        finally:
+            db.close()
+
+    if not payload:
+        return redirect(url_for("index"))
+
+    pdf_bytes = build_pdf_from_payload(payload)
+
+    return send_file(
+        io.BytesIO(pdf_bytes),
+        mimetype="application/pdf",
+        as_attachment=False,
+        download_name="informe_eneagrama_extendido.pdf",
+    )
 
 
 
