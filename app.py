@@ -453,6 +453,40 @@ def build_bonus_estructura_pensamiento(porcentaje_scores: dict) -> dict:
         "sintesis": sintesis,
     }
 
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
+engine = create_engine(DATABASE_URL, pool_pre_ping=True) if DATABASE_URL else None
+Base = declarative_base()
+DBSession = sessionmaker(bind=engine) if engine else None
+
+
+class Report(Base):
+    __tablename__ = "reports"
+
+    id = Column(Integer, primary_key=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    # Carátula
+    owner_name = Column(String(200))
+    owner_email = Column(String(200))
+    owner_data = Column(JSON)          # dict completo de carátula
+    test_date_iso = Column(String(50)) # fecha_test guardada como ISO
+
+    # Resultados
+    porcentaje_scores = Column(JSON)   # % por tipo
+    top_types = Column(JSON)           # lista tipos top
+
+    # Informe (texto o JSON)
+    report_json = Column(JSON)         # secciones para rearmar PDF
+    report_text = Column(Text)         # opcional: texto plano (si querés)
+
+    # para monetizar después
+    paid = Column(Boolean, default=False)
+
+
+if engine:
+    Base.metadata.create_all(engine)
+
 
 
 @app.get("/")
@@ -1684,6 +1718,55 @@ def result():
     ]
     
     bonus_estructura = build_bonus_estructura_pensamiento(porcentaje_scores)
+
+# ✅ Armar payload del informe (guardamos secciones para el PDF)
+usuario = session.get("usuario", {})
+report_payload = {
+    "titulo": "Informe de eneagrama extendido",
+    "analista": "AZ Consultora @az_coaching.terapeutico / +542975203761",
+    "propietario": usuario,
+    "fecha_test": usuario.get("fecha_test"),
+    "resultados": {str(k): v for k, v in porcentaje_scores.items()},
+    "top_types": top_types,
+    "desarrollo": {
+        "analisis_ejes": analisis_ejes_parrafos,
+        "sintesis_evolutiva": sintesis_parrafos,
+        # si ya tenés afinidades/opuestos/bonus, también guardalos acá
+        # "afinidades_parrafos": afinidades_parrafos,
+        # "afinidades_sintesis": afinidades_sintesis,
+        # "opuestos_parrafos": opuestos_parrafos,
+        # "opuestos_sintesis": opuestos_sintesis,
+        # "pensamiento_parrafos": pensamiento_parrafos,
+    },
+    "conclusiones": "Conclusiones finales.",  # placeholder (si querés lo armamos luego)
+    "mensaje_final": (
+        "Para mayor información o consultas personalizadas sobre eneagrama u otras herramientas "
+        "de autoconocimiento y desarrollo contactar a AZ Consultora. El conocimiento es poder."
+    ),
+}
+
+# ✅ Guardar en session para el PDF inmediato
+session["report_payload"] = report_payload
+
+# ✅ Guardar en BD
+if DBSession:
+    db = DBSession()
+    try:
+        r = Report(
+            owner_name=usuario.get("nombre"),
+            owner_email=usuario.get("email"),
+            owner_data=usuario,
+            test_date_iso=usuario.get("fecha_test"),
+            porcentaje_scores={str(k): v for k, v in porcentaje_scores.items()},
+            top_types=top_types,
+            report_json=report_payload,
+            report_text="\n".join(sintesis_parrafos)  # opcional
+        )
+        db.add(r)
+        db.commit()
+        session["report_id"] = r.id
+    finally:
+        db.close()
 
     return render_template(
         "result.html",
