@@ -1950,86 +1950,86 @@ def result():
     
     bonus_estructura = build_bonus_estructura_pensamiento(porcentaje_scores)
 
-# ✅ Armar payload del informe (guardamos secciones para el PDF)
-usuario = session.get("usuario", {})
-report_payload = {
-    "titulo": "Informe de eneagrama extendido",
-    "analista": "AZ Consultora @az_coaching.terapeutico / +542975203761",
-    "propietario": usuario,
-    "fecha_test": usuario.get("fecha_test"),
-
-    # -----------------------
-    # RESULTADOS
-    # -----------------------
-    "total_marked": total_marked,
-    "resultados": {str(k): v for k, v in porcentaje_scores.items()},
-    "sorted_porcentajes": sorted_porcentajes,
-    "top_types": top_types,
-    "ala_textos": ala_textos,
-    "camino_evolucion": camino_evolucion,
-
-    # -----------------------
-    # DESARROLLO COMPLETO
-    # -----------------------
-    "desarrollo": {
-        "afinidades_parrafos": afinidades_parrafos,
-        "sintesis_afinidades": sintesis_afinidades_parrafos,
-        "opuestos_parrafos": opuestos_parrafos,
-        "opuestos_sintesis": opuestos_sintesis,
-        "analisis_ejes": analisis_ejes_parrafos,
-        "sintesis_evolutiva": sintesis_parrafos,
-        "bonus_estructura": bonus_estructura,
-    },
-
-    "conclusiones": "Conclusiones finales.",
-    "mensaje_final": (
-        "Para una consulta personalizada o exploración de otras herramientas "
-        "de autoconocimiento contactar a AZ Consultora @az_coaching.terapeutico "
-        "o WhatsApp +54-2975203761."
-    ),
-}
-
-# ✅ Guardar en session para el PDF inmediato
-session["report_payload"] = report_payload
-
-# ✅ Guardar en BD
-if DBSession:
-    db = DBSession()
-    try:
-        r = Report(
-            owner_name=usuario.get("nombre"),
-            owner_email=usuario.get("email"),
-            owner_data=usuario,
-            test_date_iso=usuario.get("fecha_test"),
-            porcentaje_scores={str(k): v for k, v in porcentaje_scores.items()},
+    # ✅ Armar payload del informe (guardamos secciones para el PDF)
+    usuario = session.get("usuario", {})
+    report_payload = {
+        "titulo": "Informe de eneagrama extendido",
+        "analista": "AZ Consultora @az_coaching.terapeutico / +542975203761",
+        "propietario": usuario,
+        "fecha_test": usuario.get("fecha_test"),
+    
+        # -----------------------
+        # RESULTADOS
+        # -----------------------
+        "total_marked": total_marked,
+        "resultados": {str(k): v for k, v in porcentaje_scores.items()},
+        "sorted_porcentajes": sorted_porcentajes,
+        "top_types": top_types,
+        "ala_textos": ala_textos,
+        "camino_evolucion": camino_evolucion,
+    
+        # -----------------------
+        # DESARROLLO COMPLETO
+        # -----------------------
+        "desarrollo": {
+            "afinidades_parrafos": afinidades_parrafos,
+            "sintesis_afinidades": sintesis_afinidades_parrafos,
+            "opuestos_parrafos": opuestos_parrafos,
+            "opuestos_sintesis": opuestos_sintesis,
+            "analisis_ejes": analisis_ejes_parrafos,
+            "sintesis_evolutiva": sintesis_parrafos,
+            "bonus_estructura": bonus_estructura,
+        },
+    
+        "conclusiones": "Conclusiones finales.",
+        "mensaje_final": (
+            "Para una consulta personalizada o exploración de otras herramientas "
+            "de autoconocimiento contactar a AZ Consultora @az_coaching.terapeutico "
+            "o WhatsApp +54-2975203761."
+        ),
+    }
+    
+    # ✅ Guardar en session para el PDF inmediato
+    session["report_payload"] = report_payload
+    
+    # ✅ Guardar en BD
+    if DBSession:
+        db = DBSession()
+        try:
+            r = Report(
+                owner_name=usuario.get("nombre"),
+                owner_email=usuario.get("email"),
+                owner_data=usuario,
+                test_date_iso=usuario.get("fecha_test"),
+                porcentaje_scores={str(k): v for k, v in porcentaje_scores.items()},
+                top_types=top_types,
+                report_json=report_payload,
+                report_text="\n".join(sintesis_parrafos)  # opcional
+            )
+            db.add(r)
+            db.commit()
+            session["report_id"] = r.id
+        finally:
+            db.close()
+    
+    return render_template(
+            "result.html",
+            sorted_scores=sorted_scores,
+            sorted_porcentajes=sorted_porcentajes,
             top_types=top_types,
-            report_json=report_payload,
-            report_text="\n".join(sintesis_parrafos)  # opcional
+            max_score=max_score,
+            total_marked=total_marked,
+            eneatipo_textos=eneatipo_textos,
+            ala_textos=ala_textos,
+            labels=labels,
+            values=values,
+            camino_evolucion=camino_evolucion,
+            analisis_ejes_parrafos=analisis_ejes_parrafos,
+            sintesis_parrafos=sintesis_parrafos,
+            afinidades_parrafos=afinidades_parrafos,
+            sintesis_afinidades_parrafos=sintesis_afinidades_parrafos,
+            opuestos_parrafos=opuestos_parrafos,
+            opuestos_sintesis=opuestos_sintesis,
+            bonus_estructura=bonus_estructura,
+    
         )
-        db.add(r)
-        db.commit()
-        session["report_id"] = r.id
-    finally:
-        db.close()
-
-return render_template(
-        "result.html",
-        sorted_scores=sorted_scores,
-        sorted_porcentajes=sorted_porcentajes,
-        top_types=top_types,
-        max_score=max_score,
-        total_marked=total_marked,
-        eneatipo_textos=eneatipo_textos,
-        ala_textos=ala_textos,
-        labels=labels,
-        values=values,
-        camino_evolucion=camino_evolucion,
-        analisis_ejes_parrafos=analisis_ejes_parrafos,
-        sintesis_parrafos=sintesis_parrafos,
-        afinidades_parrafos=afinidades_parrafos,
-        sintesis_afinidades_parrafos=sintesis_afinidades_parrafos,
-        opuestos_parrafos=opuestos_parrafos,
-        opuestos_sintesis=opuestos_sintesis,
-        bonus_estructura=bonus_estructura,
-
-    )
