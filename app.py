@@ -13,7 +13,11 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
 from reportlab.lib.enums import TA_LEFT
 from flask import send_file
-
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+from reportlab.platypus import Image
 
 
 
@@ -462,7 +466,40 @@ def build_bonus_estructura_pensamiento(porcentaje_scores: dict) -> dict:
         "reaccion_problemas": reaccion,
         "sintesis": sintesis,
     }
+    
+def generar_radar_image(resultados: dict):
+    """
+    resultados: {"1": 12.3, "2": 8.4, ...}
+    devuelve: BytesIO con imagen PNG
+    """
 
+    labels = [str(i) for i in range(1, 10)]
+    values = [resultados.get(str(i), 0) for i in range(1, 10)]
+
+    # Cerrar el círculo
+    values += values[:1]
+    angles = np.linspace(0, 2 * np.pi, 9, endpoint=False).tolist()
+    angles += angles[:1]
+
+    fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+
+    ax.plot(angles, values)
+    ax.fill(angles, values, alpha=0.25)
+
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels(labels)
+
+    ax.set_ylim(0, max(values) + 5)
+
+    ax.set_title("Radar Eneagrama", pad=20)
+
+    img_buffer = io.BytesIO()
+    plt.savefig(img_buffer, format="png", bbox_inches="tight")
+    plt.close(fig)
+    img_buffer.seek(0)
+
+    return img_buffer
+    
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
 engine = create_engine(DATABASE_URL, pool_pre_ping=True) if DATABASE_URL else None
@@ -628,7 +665,24 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Spacer(1, 10))
     story.append(Paragraph("Conclusiones finales", styles["H2"]))
     story.append(Paragraph(payload.get("conclusiones", "Conclusiones finales."), styles["Body"]))
-
+   
+    # ---------------------------------
+    # 7️⃣ GRÁFICOS ANEXOS
+    # ---------------------------------
+    story.append(PageBreak())
+    story.append(Paragraph("Gráficos anexos", styles["H2"]))
+    story.append(Spacer(1, 12))
+    
+    resultados = payload.get("resultados", {})
+    if resultados:
+        radar_img = generar_radar_image(resultados)
+    
+        img = Image(radar_img)
+        img.drawHeight = 12 * cm
+        img.drawWidth = 12 * cm
+    
+        story.append(img)
+    
     # Mensaje final
     story.append(Spacer(1, 10))
     story.append(Paragraph("Mensaje final", styles["H2"]))
