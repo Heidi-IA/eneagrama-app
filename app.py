@@ -544,33 +544,85 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     )
     story.append(Paragraph(intro, styles["Body"]))
 
-    # Desarrollo
-    story.append(Spacer(1, 10))
+    # ---------------------------------
+    # DESARROLLO
+    # ---------------------------------
+    story.append(Spacer(1, 12))
     story.append(Paragraph("Desarrollo", styles["H2"]))
-
-    resultados = payload.get("resultados", {}) or {}
-    # tabla simple como lista
+    
+    # Total afirmaciones
+    total_marked = payload.get("total_marked", 0)
+    story.append(Paragraph(f"Total de afirmaciones marcadas: {total_marked}", styles["Body"]))
+    
+    # Resultados por tipo
+    story.append(Spacer(1, 8))
     story.append(Paragraph("Resultados por eneatipo (%):", styles["Body"]))
+    
+    resultados = payload.get("resultados", {})
     for t in range(1, 10):
         pct = resultados.get(str(t), 0)
         story.append(Paragraph(f"• Tipo {t}: {pct}%", styles["Body"]))
-
-    # Secciones guardadas (si existen)
-    desarrollo = payload.get("desarrollo", {}) or {}
-    analisis_ejes = desarrollo.get("analisis_ejes", []) or []
-    sintesis = desarrollo.get("sintesis_evolutiva", []) or []
-
-    if analisis_ejes:
-        story.append(Spacer(1, 10))
-        story.append(Paragraph("Análisis de ejes", styles["H2"]))
-        for p in analisis_ejes:
-            story.append(Paragraph(p, styles["Body"]))
-
-    if sintesis:
-        story.append(Spacer(1, 10))
-        story.append(Paragraph("Síntesis evolutiva", styles["H2"]))
-        for p in sintesis:
-            story.append(Paragraph(p, styles["Body"]))
+    
+    # Ranking
+    story.append(Spacer(1, 8))
+    story.append(Paragraph("Ranking de tipos:", styles["H2"]))
+    for tipo, pct in payload.get("sorted_porcentajes", []):
+        story.append(Paragraph(f"Tipo {tipo}: {pct}%", styles["Body"]))
+    
+    # Ala
+    ala_textos = payload.get("ala_textos", [])
+    if ala_textos:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Ala (Wing)", styles["H2"]))
+        for txt in ala_textos:
+            story.append(Paragraph(txt, styles["Body"]))
+    
+    # Camino evolutivo
+    camino = payload.get("camino_evolucion", [])
+    if camino:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Camino evolutivo", styles["H2"]))
+        for tipo, pct, texto in camino:
+            story.append(Paragraph(f"Tipo {tipo} ({pct}%): {texto}", styles["Body"]))
+    
+    desarrollo = payload.get("desarrollo", {})
+    
+    # Afinidades
+    for p in desarrollo.get("afinidades_parrafos", []):
+        story.append(Paragraph(p, styles["Body"]))
+    
+    # Síntesis afinidades
+    for p in desarrollo.get("sintesis_afinidades", []):
+        story.append(Paragraph(p, styles["Body"]))
+    
+    # Opuestos
+    for p in desarrollo.get("opuestos_parrafos", []):
+        story.append(Paragraph(p, styles["Body"]))
+    
+    # Síntesis opuestos
+    for p in desarrollo.get("opuestos_sintesis", []):
+        story.append(Paragraph(p, styles["Body"]))
+    
+    # Análisis ejes
+    for p in desarrollo.get("analisis_ejes", []):
+        story.append(Paragraph(p, styles["Body"]))
+    
+    # Síntesis evolutiva
+    for p in desarrollo.get("sintesis_evolutiva", []):
+        story.append(Paragraph(p, styles["Body"]))
+    
+    # Bonus estructura
+    bonus = desarrollo.get("bonus_estructura", {})
+    if bonus:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Estructura del pensamiento", styles["H2"]))
+    
+        for key, value in bonus.items():
+            if isinstance(value, dict) and "parrafo" in value:
+                story.append(Paragraph(value["parrafo"], styles["Body"]))
+    
+        for linea in bonus.get("sintesis", []):
+            story.append(Paragraph(linea, styles["Body"]))
 
     # Conclusiones finales
     story.append(Spacer(1, 10))
