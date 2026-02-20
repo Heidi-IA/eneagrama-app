@@ -1740,8 +1740,7 @@ report_payload = {
     },
     "conclusiones": "Conclusiones finales.",  # placeholder (si querés lo armamos luego)
     "mensaje_final": (
-        "Para mayor información o consultas personalizadas sobre eneagrama u otras herramientas "
-        "de autoconocimiento y desarrollo contactar a AZ Consultora. El conocimiento es poder."
+        "Para una consulta personalizada o exploración de otras herramientas de autoconocimiento contactar a AZ Consultora @az_coaching.terapeutico o WhatsApp +54-2975203761."
     ),
 }
 
