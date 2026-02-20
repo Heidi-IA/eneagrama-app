@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from flask import Flask, render_template, request, redirect, url_for, session
+from datetime import datetime
 
 DATA_PATH = Path("data/questions.json")
 
@@ -491,6 +492,7 @@ def start_quiz():
         "fecha_nacimiento": fecha,
         "hora_nacimiento": None if desconozco_hora else hora,
         "hora_desconocida": desconozco_hora,
+        "fecha_test": datetime.utcnow().isoformat(),
     }
 
     # Inicializar respuestas vacías
