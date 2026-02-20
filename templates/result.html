@@ -238,6 +238,57 @@
         </div>
       </div>
 
+      <div class="card border-dark mt-4 text-start">
+        <div class="card-header bg-dark text-white fw-bold">
+          🏁 Conclusiones
+        </div>
+      
+        <div class="card-body">
+      
+          {% if top_types %}
+            {% set principal = top_types[0] %}
+            {% set txt = eneatipo_textos[principal] %}
+      
+            <h5 class="fw-bold mb-2">{{ txt.titulo }}</h5>
+            <p class="mb-3">{{ txt.descripcion }}</p>
+          {% endif %}
+      
+          {% if ala_textos %}
+            <h6 class="fw-bold">🪽 Tu Ala</h6>
+            {% for t in ala_textos %}
+              <p class="mb-2">{{ t }}</p>
+            {% endfor %}
+            <hr>
+          {% endif %}
+      
+          <h6 class="fw-bold">Síntesis Evolutiva</h6>
+          {% for p in sintesis_parrafos %}
+            <p class="mb-2">{{ p }}</p>
+          {% endfor %}
+      
+          <hr>
+      
+          <h6 class="fw-bold">Síntesis de Afinidades</h6>
+          {% for p in sintesis_afinidades_parrafos %}
+            <p class="mb-2">{{ p }}</p>
+          {% endfor %}
+      
+          <hr>
+      
+          <h6 class="fw-bold">🧩 Síntesis de Opuestos complementarios</h6>
+          {% for p in opuestos_sintesis %}
+            <p class="mb-2">{{ p }}</p>
+          {% endfor %}
+      
+          <hr>
+      
+          <h6 class="fw-bold">🧠 Síntesis estructural</h6>
+          {% for p in bonus_estructura.sintesis %}
+            <p class="mb-2">{{ p }}</p>
+          {% endfor %}
+      
+        </div>
+      </div>
       
       <!-- Gráfico -->
       <canvas id="eneagramaChart"></canvas>
