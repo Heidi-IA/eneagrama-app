@@ -20,7 +20,6 @@ import numpy as np
 from reportlab.platypus import Image
 
 
-
 DATA_PATH = Path("data/questions.json")
 
 app = Flask(__name__)
