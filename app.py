@@ -24,7 +24,7 @@ from reportlab.platypus import Image
 DATA_PATH = Path("data/questions.json")
 
 app = Flask(__name__)
-app.secret_key = "CHANGE_ME_IN_HEROKU"  # luego lo ponemos por variable de entorno
+app.secret_key = os.environ.get("SECRET_KEY", "dev-secret")
 
 ALAS = {
     1: (9, 2),
