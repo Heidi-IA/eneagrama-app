@@ -721,7 +721,8 @@ def download_pdf():
         download_name="informe_eneagrama_extendido.pdf",
     )
 
-
+    response.headers["Content-Disposition"] = "attachment; filename=informe_eneagrama_extendido.pdf"
+    return response
 
 @app.get("/")
 def index():
