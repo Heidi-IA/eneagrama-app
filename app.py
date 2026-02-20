@@ -1600,14 +1600,14 @@ def result():
     Sus conductas recurrentes pueden incluir postergación, evitación del conflicto y adaptación excesiva. Tiende a minimizar sus propias necesidades para mantener la calma externa, volviendose indeciso. Busca pasar inadvertido, no adquiere compromiso. Puede tener hábitos como la inercia psicológica, sobreadaptación, resignación, poco interés
     por sobresalir, propensión a hábitos robóticos, distracción, amistosa sociabilización y como resultado, desarrolla el síndrome del buen tipo, con una actitud pasiva que se relega. 
 
-    La creencia arraigada en su interior es que el conflicto rompe el vínculo y debe evitarse. "El mundo no me toma en cuenta, es mejor pasar inadvertido". El miedo básico es la pérdida de conexión y el conflicto. El miedo constitutivo es quedar excluido o desconectado, lo que genera una necesidad profunda de pertenencia y estabilidad.
+    La creencia arraigada en su interior es que el conflicto rompe el vínculo y debe evitarse. "El mundo no me toma en cuenta, es mejor pasar inadvertido". El miedo básico es la pérdida de conexión y el conflicto. El miedo constitutivo es a no poder, quedar excluido o desconectado, lo que genera una necesidad profunda de pertenencia y estabilidad y de ser fuerte. Se siente fuerte no haciendo, lo que deriva en una adicción a la comodidad.
 
     Sus principales fortalezas son ser mediador, paciente, estable y conciliador. Sus áreas de mejora radican en la indecisión, la pasividad y la evasión de confrontaciones necesarias. El pecado capital del eneatipo 9 es la pereza (inercia interior o adormecimiento de sí mismo).
 
     En su lado luz se expresa con armonía, serenidad y presencia equilibrada. En su lado sombra puede desconectarse de sí mismo, anestesiar sus deseos o diluir su identidad. Cuando evoluciona, desarrolla determinación, foco y acción, aprende a priorizar sus metas personales, integra dinamismo sin perder serenidad. En estrés puede volverse ansioso, desconfiado o temeroso, puede anticipar problemas y perder su calma característica.
     Las actitudes que lo equilibran son ser más firme, protector y práctico y ser más idealista, organizado y correcto.
 
-    Punto ciego: creer que para ser amado debe desaparecer o adaptarse totalmente. Necesidad central: armonía y estabilidad. Adicción: . Vive en el presente. Pertenece a la tríada instintiva (acción).
+    Otro de los caminos de evolución es identificar el punto ciego: creer que para ser amado debe desaparecer o adaptarse totalmente, tiene que aprender a decir lo que piensa y siente. Pertenece a la tríada instintiva (acción), su necesidad central es la autonomía, armonía y estabilidad. Vive en el presente. Guarda su capacidad de acción evitando el conflicto.  
 
     Cabe destacar que existen 3 subtipos:
     🏠 9 Conservación: busca seguridad, recursos y estabilidad. Desarrolla apetito. Busca comodidad y bienestar físico. Evita conflicto.
@@ -1649,7 +1649,9 @@ def result():
     • Cultivando claridad y enfoque.
     • Ejercitando toma de decisiones conscientes.
     • Integrando presencia activa con serenidad interior.
-    • Aprendiendo a expresar lo que deseas sin minimizarlo.""",
+    • Aprendiendo a expresar lo que deseas sin minimizarlo.
+    • Motivarse con una causa trascendental, espiritual, solidaria.
+    • No presionarse, exigirse o reclamarse. Tampoco permitir que otros lo hagan.""",
 },
 
 }
