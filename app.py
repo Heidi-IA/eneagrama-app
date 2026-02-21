@@ -697,6 +697,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     
 @app.get("/pdf/<int:report_id>")
 def download_pdf(report_id):
+
     if not DBSession:
         return redirect(url_for("index"))
 
@@ -718,7 +719,6 @@ def download_pdf(report_id):
         as_attachment=True,
         download_name="informe_eneagrama_extendido.pdf",
     )
-
 @app.get("/")
 def index():
     return render_template("index.html")
@@ -2030,5 +2030,6 @@ def result():
             opuestos_parrafos=opuestos_parrafos,
             opuestos_sintesis=opuestos_sintesis,
             bonus_estructura=bonus_estructura,
+            report_id=session.get("report_id")  # 👈 AGREGAR ESTO
     
         )
