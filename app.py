@@ -695,21 +695,20 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     buffer.close()
     return pdf
     
-@app.get("/pdf")
-def download_pdf():
-    payload = session.get("report_payload")
-
-    # fallback: si recargó y perdió session, intentamos desde BD con report_id
-    if not payload and DBSession and session.get("report_id"):
-        db = DBSession()
-        try:
-            r = db.get(Report, session["report_id"])
-            payload = r.report_json if r else None
-        finally:
-            db.close()
-
-    if not payload:
+@app.get("/pdf/<int:report_id>")
+def download_pdf(report_id):
+    if not DBSession:
         return redirect(url_for("index"))
+
+    db = DBSession()
+    try:
+        r = db.get(Report, report_id)
+        if not r:
+            return redirect(url_for("index"))
+
+        payload = r.report_json
+    finally:
+        db.close()
 
     pdf_bytes = build_pdf_from_payload(payload)
 
@@ -719,9 +718,6 @@ def download_pdf():
         as_attachment=True,
         download_name="informe_eneagrama_extendido.pdf",
     )
-
-    response.headers["Content-Disposition"] = "attachment; filename=informe_eneagrama_extendido.pdf"
-    return response
 
 @app.get("/")
 def index():
