@@ -1988,9 +1988,7 @@ def result():
         ),
     }
     
-    # ✅ Guardar en session para el PDF inmediato
-    session["report_payload"] = report_payload
-    
+   
     # ✅ Guardar en BD
     if DBSession:
         db = DBSession()
