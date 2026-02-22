@@ -589,9 +589,29 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Spacer(1, 12))
     story.append(Paragraph("Desarrollo", styles["H2"]))
     
-    # Total afirmaciones
+    # ---------------------------------
+    # Afirmaciones marcadas (como web)
+    # ---------------------------------
     total_marked = payload.get("total_marked", 0)
-    story.append(Paragraph(f"Total de afirmaciones marcadas: {total_marked}", styles["Body"]))
+    total_preguntas = 270
+    
+    porcentaje_total = round((total_marked / total_preguntas) * 100, 1) if total_marked else 0
+    
+    texto_afirmaciones = (
+        f"<b>Afirmaciones marcadas:</b> {total_marked} de {total_preguntas} — {porcentaje_total}%"
+    )
+    
+    story.append(Paragraph(texto_afirmaciones, styles["BodyPro"]))
+    story.append(Spacer(1, 6))
+    
+    # Mensaje condicional (igual que la web)
+    if porcentaje_total > 30:
+        mensaje = "📣 <b>No tienes problema en mostrarte.</b>"
+    else:
+        mensaje = "🤫 <b>Eres más bien reservado, te cuesta mostrarte.</b>"
+    
+    story.append(Paragraph(mensaje, styles["BodyPro"]))
+    story.append(Spacer(1, 12))
     
     # Resultados por tipo
     story.append(Spacer(1, 8))
