@@ -943,8 +943,8 @@ def build_pdf_from_payload(payload: dict) -> bytes:
 
     doc.build(
         story,
-        onFirstPage=add_page_number,
-        onLaterPages=add_page_number
+        onFirstPage=lambda c, d: None,   # portada limpia
+        onLaterPages=add_header_footer
     )
     
 @app.get("/pdf/<int:report_id>")
