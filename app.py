@@ -584,6 +584,11 @@ if engine is not None:
     
 def build_pdf_from_payload(payload: dict) -> bytes:
     buffer = io.BytesIO()
+    desarrollo = payload.get("desarrollo", {})  # ← UNA VEZ ACÁ ARRIBA
+    top_types = payload.get("graficos_anexos", {}).get("top_types", [])
+    eneatipo_data_raw = desarrollo.get("eneatipo_textos", {})
+    eneatipo_data = {int(k): v for k, v in eneatipo_data_raw.items()}    
+    
     doc = SimpleDocTemplate(
         buffer,
         pagesize=A4,
@@ -731,7 +736,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
             story.append(Paragraph(txt, styles["Body"]))
     
     # Camino evolutivo
-    camino = payload.get("camino_evolucion", [])
+    camino = payload.get("desarrollo", {}).get("camino_evolucion", [])
     if camino:
         story.append(Spacer(1, 8))
         story.append(Paragraph("Camino evolutivo", styles["H2"]))
@@ -816,6 +821,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # ---------------------------------
     # Estructura del pensamiento
     # ---------------------------------
+    desarrollo = payload.get("desarrollo", {})
     bonus = desarrollo.get("bonus_estructura", {})
     bonus_sintesis = desarrollo.get("bonus_sintesis", [])
     
@@ -926,7 +932,8 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     
         for linea in bonus_sintesis:
             story.append(Paragraph(linea, styles["Body"]))
-   
+
+
     # ---------------------------------
     # 7️⃣ GRÁFICOS ANEXOS
     # ---------------------------------
