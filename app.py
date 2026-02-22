@@ -883,10 +883,11 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Paragraph("Mensaje final", styles["H2"]))
     story.append(Paragraph(payload.get("mensaje_final", ""), styles["Body"]))
 
-    doc.build(story)
-    pdf = buffer.getvalue()
-    buffer.close()
-    return pdf
+    doc.build(
+        story,
+        onFirstPage=add_page_number,
+        onLaterPages=add_page_number
+    )
     
 @app.get("/pdf/<int:report_id>")
 def download_pdf(report_id):
