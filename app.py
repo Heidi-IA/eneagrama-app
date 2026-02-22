@@ -705,7 +705,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
         story.append(Paragraph("Eneatipo principal", styles["H2"]))
     
         for tipo in top_types:
-            data = eneatipo_data.get(tipo)
+            data = eneatipo_data.get(tipo) or eneatipo_data.get(str(tipo))
             if not data:
                 continue
     
@@ -854,7 +854,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     
     if top_types:
         for tipo in top_types:
-            data = eneatipo_data.get(tipo)
+            data = eneatipo_data.get(tipo) or eneatipo_data.get(str(tipo))
             if not data:
                 continue
     
