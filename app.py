@@ -855,13 +855,13 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Spacer(1, 8))
     story.append(Paragraph("Resultados por eneatipo (%):", styles["Body"]))
     
-    resultados = payload.get("resultados", {})
+    resultados = payload.get("graficos_anexos", {}).get("resultados", {})
     for t in range(1, 10):
         pct = resultados.get(str(t), 0)
         story.append(Paragraph(f"• Tipo {t}: {pct}%", styles["Body"]))
     
    
-    resultados = payload.get("resultados", {})
+    resultados = payload.get("graficos_anexos", {}).get("resultados", {})
     if resultados:
         radar_img = generar_radar_image(resultados)
     
