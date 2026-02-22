@@ -1985,6 +1985,7 @@ def result():
             "analisis_ejes": analisis_ejes_parrafos,
             "sintesis_evolutiva": sintesis_parrafos,
             "bonus_estructura": bonus_estructura,
+            "bonus_sintesis": bonus_sintesis,
         },
     
         "conclusiones": {
@@ -1994,7 +1995,7 @@ def result():
             "sintesis_afinidades": sintesis_afinidades_parrafos,
             "opuestos_sintesis": opuestos_sintesis,
             "sintesis_evolutiva": sintesis_parrafos,
-            "sintesis": sintesis,
+            "bonus_sintesis": bonus_sintesis,
         },
 
         "gráficos anexos":  {
@@ -2050,6 +2051,7 @@ def result():
             opuestos_parrafos=opuestos_parrafos,
             opuestos_sintesis=opuestos_sintesis,
             bonus_estructura=bonus_estructura,
+            bonus_sintesis= bonus_sintesis,
             report_id=session.get("report_id")  # 👈 AGREGAR ESTO
     
         )
