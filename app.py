@@ -659,15 +659,21 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     
     # Bonus estructura
     bonus = desarrollo.get("bonus_estructura", {})
+    bonus_sintesis = desarrollo.get("bonus_sintesis", [])
+    
     if bonus:
         story.append(Spacer(1, 8))
         story.append(Paragraph("Estructura del pensamiento", styles["H2"]))
     
-        for key, value in bonus.items():
+        for value in bonus.values():
             if isinstance(value, dict) and "parrafo" in value:
                 story.append(Paragraph(value["parrafo"], styles["Body"]))
     
-        for linea in bonus.get("sintesis", []):
+    if bonus_sintesis:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Síntesis estructura del pensamiento", styles["H2"]))
+    
+        for linea in bonus_sintesis:
             story.append(Paragraph(linea, styles["Body"]))
 
     # Conclusiones finales
