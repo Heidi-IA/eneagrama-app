@@ -18,7 +18,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from reportlab.platypus import Image
+from reportlab.platypus import PageTemplate, Frame
+from reportlab.pdfgen import canvas
 
+def add_page_number(canvas, doc):
+    page_num = canvas.getPageNumber()
+    text = f"Página {page_num}"
+    canvas.setFont("Helvetica", 9)
+    canvas.drawRightString(A4[0] - 2*cm, 1.5*cm, text)
 
 DATA_PATH = Path("data/questions.json")
 
