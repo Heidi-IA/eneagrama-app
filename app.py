@@ -672,7 +672,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # ---------------------------------
     # Afirmaciones marcadas (como web)
     # ---------------------------------
-    total_marked = payload.get("total_marked", 0)
+    total_marked = payload.get("desarrollo", {}).get("total_marked", 0)
     total_preguntas = 270
     
     porcentaje_total = round((total_marked / total_preguntas) * 100, 1) if total_marked else 0
@@ -696,8 +696,9 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # ---------------------------------
     # Eneatipo principal
     # ---------------------------------
-    eneatipo_data = payload.get("desarrollo", {}).get("eneatipo_textos", {})
-    top_types = payload.get("top_types", [])
+    desarrollo = payload.get("desarrollo", {})
+    eneatipo_data = desarrollo.get("eneatipo_textos", {})
+    top_types = payload.get("graficos_anexos", {}).get("top_types", [])
     
     if top_types:
         story.append(Spacer(1, 8))
@@ -848,7 +849,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # -------------------------
     # Eneatipo principal
     # -------------------------
-    top_types = payload.get("top_types", [])
+    top_types = payload.get("graficos_anexos", {}).get("top_types", [])
     eneatipo_data = desarrollo.get("eneatipo_textos", {})
     
     if top_types:
