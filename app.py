@@ -579,7 +579,7 @@ class Report(Base):
     paid = Column(Boolean, default=False)
 
 
-if engine:
+if engine is not None:
     Base.metadata.create_all(engine)
     
 def build_pdf_from_payload(payload: dict) -> bytes:
