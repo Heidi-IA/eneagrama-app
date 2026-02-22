@@ -2160,7 +2160,9 @@ def result():
             "bonus_estructura": bonus_estructura,
             "bonus_sintesis": bonus_sintesis,
         },
-    
+
+       story.append(PageBreak())
+
         "conclusiones": {
             "max_score": max_score,
             "eneatipo_textos": eneatipo_textos,
