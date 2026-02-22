@@ -230,14 +230,23 @@
       
           <hr class="my-3">
       
-          <h6 class="fw-bold mb-2">Síntesis</h6>
-          {% for p in b.sintesis %}
-            <p class="mb-2">{{ p }}</p>
+          </div>
+      </div>
+      
+      <!-- 🧠 Síntesis estructural -->
+      <div class="card border-secondary mb-3  text-start">
+        <div class="card-header bg-secondary text-white">
+           🧠 Síntesis estructural
+        </div>
+        <div class="card-body  text-start">
+      
+          {% for p in bonus_sintesis %}
+            <p class="card-text  text-start">{{ p }}</p>
           {% endfor %}
-          
+      
         </div>
       </div>
-
+      
       <div class="card border-dark mt-4 text-start">
         <div class="card-header bg-dark text-white fw-bold">
           🏁 Conclusiones
