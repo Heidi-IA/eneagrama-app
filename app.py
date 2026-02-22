@@ -954,15 +954,15 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Paragraph("Mensaje final", styles["H2"]))
     story.append(Paragraph(payload.get("mensaje_final", ""), styles["Body"]))
 
-doc.build(
-    story,
-    onFirstPage=lambda c, d: None,
-    onLaterPages=add_header_footer
-)
-
-pdf = buffer.getvalue()
-buffer.close()
-return pdf
+    doc.build(
+        story,
+        onFirstPage=lambda c, d: None,
+        onLaterPages=add_header_footer
+    )
+    
+    pdf = buffer.getvalue()
+    buffer.close()
+    return pdf
 
 
 @app.get("/pdf/<int:report_id>")
@@ -2230,6 +2230,7 @@ def result():
         "fecha_test": usuario.get("fecha_test"),
     
         "desarrollo": {
+            "top_types": top_types,
             "total_marked": total_marked,
             "max_score": max_score,
             "eneatipo_textos": eneatipo_textos,
