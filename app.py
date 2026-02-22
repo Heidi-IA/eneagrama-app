@@ -847,6 +847,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # CONCLUSIONES FINALES
     # ---------------------------------
     story.append(Spacer(1, 12))
+    story.append(PageBreak())
     story.append(Paragraph("🏁 Conclusiones", styles["H2"]))
     story.append(Spacer(1, 6))
     
