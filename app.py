@@ -212,7 +212,7 @@ OPUESTOS_COMPLEMENTARIOS = {
 def add_header_footer(canvas, doc):
     canvas.saveState()
 
-    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_color.png")
+    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_az.png")
 
     canvas.drawImage(
         logo_path,
@@ -614,13 +614,13 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     
     story = []
 
-    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_color.png")
+    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_az.png")
 
     # ---------------------------------
     # PORTADA
     # ---------------------------------
     
-    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_color.png")
+    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_az.png")
     
     logo = Image(logo_path)
     logo.drawHeight = 4 * cm
