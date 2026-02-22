@@ -463,6 +463,7 @@ def build_bonus_estructura_pensamiento(porcentaje_scores: dict) -> dict:
         "vincularidad": vincularidad,
         "conflictos_internos": conflictos,
         "reaccion_problemas": reaccion,
+        },
         "sintesis": sintesis,
     }
     
@@ -613,21 +614,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Paragraph(mensaje, styles["BodyPro"]))
     story.append(Spacer(1, 12))
     
-    # Resultados por tipo
-    story.append(Spacer(1, 8))
-    story.append(Paragraph("Resultados por eneatipo (%):", styles["Body"]))
-    
-    resultados = payload.get("resultados", {})
-    for t in range(1, 10):
-        pct = resultados.get(str(t), 0)
-        story.append(Paragraph(f"• Tipo {t}: {pct}%", styles["Body"]))
-    
-    # Ranking
-    story.append(Spacer(1, 8))
-    story.append(Paragraph("Ranking de tipos:", styles["H2"]))
-    for tipo, pct in payload.get("sorted_porcentajes", []):
-        story.append(Paragraph(f"Tipo {tipo}: {pct}%", styles["Body"]))
-    
+  
     # Ala
     ala_textos = payload.get("ala_textos", [])
     if ala_textos:
@@ -642,7 +629,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
         story.append(Spacer(1, 8))
         story.append(Paragraph("Camino evolutivo", styles["H2"]))
         for tipo, pct, texto in camino:
-            story.append(Paragraph(f"Tipo {tipo} ({pct}%): {texto}", styles["Body"]))
+            story.append(Paragraph(f"{texto}", styles["Body"]))
     
     desarrollo = payload.get("desarrollo", {})
     
@@ -691,10 +678,16 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # ---------------------------------
     # 7️⃣ GRÁFICOS ANEXOS
     # ---------------------------------
-    story.append(PageBreak())
-    story.append(Paragraph("Gráficos anexos", styles["H2"]))
-    story.append(Spacer(1, 12))
+    # Resultados por tipo
+    story.append(Spacer(1, 8))
+    story.append(Paragraph("Resultados por eneatipo (%):", styles["Body"]))
     
+    resultados = payload.get("resultados", {})
+    for t in range(1, 10):
+        pct = resultados.get(str(t), 0)
+        story.append(Paragraph(f"• Tipo {t}: {pct}%", styles["Body"]))
+    
+   
     resultados = payload.get("resultados", {})
     if resultados:
         radar_img = generar_radar_image(resultados)
@@ -1967,7 +1960,9 @@ def result():
         (tipo, pct, creencias_limitantes[tipo]) for tipo, pct in low3
     ]
     
-    bonus_estructura = build_bonus_estructura_pensamiento(porcentaje_scores)
+    bonus_data = build_bonus_estructura_pensamiento(porcentaje_scores) 
+    bonus_estructura = bonus_data["estructura"] 
+    bonus_sintesis = bonus_data["sintesis"]
 
     # ✅ Armar payload del informe (guardamos secciones para el PDF)
     usuario = session.get("usuario", {})
