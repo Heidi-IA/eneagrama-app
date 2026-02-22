@@ -499,14 +499,15 @@ def build_bonus_estructura_pensamiento(porcentaje_scores: dict) -> dict:
     ]
 
     return {
-        "pensamiento": pensamiento,
-        "inteligencia": inteligencia,
-        "polaridad": polaridad,
-        "triadas": triadas,
-        "expresion": expresion,
-        "vincularidad": vincularidad,
-        "conflictos_internos": conflictos,
-        "reaccion_problemas": reaccion,
+        "estructura": {
+            "pensamiento": pensamiento,
+            "inteligencia": inteligencia,
+            "polaridad": polaridad,
+            "triadas": triadas,
+            "expresion": expresion,
+            "vincularidad": vincularidad,
+            "conflictos_internos": conflictos,
+            "reaccion_problemas": reaccion,
         },
         "sintesis": sintesis,
     }
@@ -2212,7 +2213,7 @@ def result():
         "fecha_test": usuario.get("fecha_test"),
     
         "desarrollo": {
-            "total_marked" = payload.get("desarrollo", {}).get("total_marked", 0),
+            "total_marked": total_marked,
             "max_score": max_score,
             "eneatipo_textos": eneatipo_textos,
             "ala_textos": ala_textos,
@@ -2227,8 +2228,6 @@ def result():
             "bonus_sintesis": bonus_sintesis,
         },
 
-       story.append(PageBreak())
-
         "conclusiones": {
             "max_score": max_score,
             "eneatipo_textos": eneatipo_textos,
@@ -2239,7 +2238,7 @@ def result():
             "bonus_sintesis": bonus_sintesis,
         },
 
-        "gráficos anexos":  {
+        "graficos_anexos":  {
             "resultados": {str(k): v for k, v in porcentaje_scores.items()},
             "sorted_porcentajes": sorted_porcentajes,
             "top_types": top_types,
