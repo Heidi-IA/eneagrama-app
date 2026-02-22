@@ -938,7 +938,9 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     # 7️⃣ GRÁFICOS ANEXOS
     # ---------------------------------
     # Resultados por tipo
-    story.append(Spacer(1, 8))
+    story.append(PageBreak())
+    story.append(Paragraph("Gráficos anexos", styles["H1"]))
+    story.append(Spacer(1, 12))
     story.append(Paragraph("Resultados por eneatipo (%):", styles["Body"]))
     
     resultados = payload.get("graficos_anexos", {}).get("resultados", {})
