@@ -2006,7 +2006,7 @@ def result():
             "resultados": {str(k): v for k, v in porcentaje_scores.items()},
             "sorted_porcentajes": sorted_porcentajes,
             "top_types": top_types,
-          
+        },  
             
         "mensaje_final": (
             "Para una consulta personalizada o exploración de otras herramientas "
