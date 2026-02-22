@@ -20,6 +20,8 @@ import numpy as np
 from reportlab.platypus import Image
 from reportlab.platypus import PageTemplate, Frame
 from reportlab.pdfgen import canvas
+import os
+from flask import current_app
 
 def add_page_number(canvas, doc):
     page_num = canvas.getPageNumber()
@@ -207,6 +209,41 @@ OPUESTOS_COMPLEMENTARIOS = {
     },
 }
 
+def add_header_footer(canvas, doc):
+    canvas.saveState()
+
+    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_color.png")
+
+    canvas.drawImage(
+        logo_path,
+        2*cm,
+        A4[1] - 2.2*cm,
+        width=2*cm,
+        height=2*cm,
+        preserveAspectRatio=True,
+        mask='auto'
+    )
+
+    canvas.setFont("Helvetica", 8)
+
+    contacto = (
+        "AZ Consultora\n"
+        "@az_coaching.terapeutico\n"
+        "+54 2975203761"
+    )
+
+    text_obj = canvas.beginText(A4[0] - 7*cm, A4[1] - 1.8*cm)
+    for line in contacto.split("\n"):
+        text_obj.textLine(line)
+    canvas.drawText(text_obj)
+
+    # Número de página
+    page_num = canvas.getPageNumber()
+    canvas.setFont("Helvetica", 9)
+    canvas.drawRightString(A4[0] - 2*cm, 1.5*cm, f"Página {page_num}")
+
+    canvas.restoreState()
+    
 # -----------------------------
 # BONUS: Estructura del pensamiento
 # -----------------------------
@@ -561,8 +598,29 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     styles.add(ParagraphStyle(name="H2", parent=styles["Heading2"], alignment=TA_JUSTIFY, spaceAfter=8))
     styles.add(ParagraphStyle(name="BodyPro", parent=styles["Body"], fontSize=11, leading=15))
     styles.add(ParagraphStyle(name="H3", parent=styles["Heading3"], spaceAfter=6))
-
+    
     story = []
+
+    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_color.png")
+
+    # ---------------------------------
+    # PORTADA
+    # ---------------------------------
+    
+    logo_path = os.path.join(current_app.root_path, "static", "img", "logo_color.png")
+    
+    logo = Image(logo_path)
+    logo.drawHeight = 4 * cm
+    logo.drawWidth = 4 * cm
+    
+    story.append(Spacer(1, 6*cm))
+    story.append(logo)
+    story.append(Spacer(1, 1*cm))
+    story.append(Paragraph(payload.get("titulo", ""), styles["H1"]))
+    story.append(Spacer(1, 1*cm))
+    story.append(Paragraph("Informe confidencial", styles["H2"]))
+    
+    story.append(PageBreak()) 
 
     # Título
     story.append(Paragraph(payload.get("titulo", "Informe de eneagrama extendido"), styles["H1"]))
