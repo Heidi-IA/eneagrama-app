@@ -1957,20 +1957,12 @@ def result():
         "propietario": usuario,
         "fecha_test": usuario.get("fecha_test"),
     
-        # -----------------------
-        # RESULTADOS
-        # -----------------------
-        "total_marked": total_marked,
-        "resultados": {str(k): v for k, v in porcentaje_scores.items()},
-        "sorted_porcentajes": sorted_porcentajes,
-        "top_types": top_types,
-        "ala_textos": ala_textos,
-        "camino_evolucion": camino_evolucion,
-    
-        # -----------------------
-        # DESARROLLO COMPLETO
-        # -----------------------
         "desarrollo": {
+            "total_marked": total_marked,
+            "max_score": max_score,
+            "eneatipo_textos": eneatipo_textos,
+            "ala_textos": ala_textos,
+            "camino_evolucion": camino_evolucion,
             "afinidades_parrafos": afinidades_parrafos,
             "sintesis_afinidades": sintesis_afinidades_parrafos,
             "opuestos_parrafos": opuestos_parrafos,
@@ -1980,7 +1972,22 @@ def result():
             "bonus_estructura": bonus_estructura,
         },
     
-        "conclusiones": "Conclusiones finales.",
+        "conclusiones": {
+            "max_score": max_score,
+            "eneatipo_textos": eneatipo_textos,
+            "ala_textos": ala_textos,
+            "sintesis_afinidades": sintesis_afinidades_parrafos,
+            "opuestos_sintesis": opuestos_sintesis,
+            "sintesis_evolutiva": sintesis_parrafos,
+            "sintesis": sintesis,
+        },
+
+        "gráficos anexos":  {
+            "resultados": {str(k): v for k, v in porcentaje_scores.items()},
+            "sorted_porcentajes": sorted_porcentajes,
+            "top_types": top_types,
+          
+            
         "mensaje_final": (
             "Para una consulta personalizada o exploración de otras herramientas "
             "de autoconocimiento contactar a AZ Consultora @az_coaching.terapeutico "
