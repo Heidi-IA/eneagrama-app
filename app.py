@@ -552,7 +552,8 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     styles = getSampleStyleSheet()
     styles.add(ParagraphStyle(name="H1", parent=styles["Heading1"], alignment=TA_LEFT, spaceAfter=12))
     styles.add(ParagraphStyle(name="H2", parent=styles["Heading2"], alignment=TA_LEFT, spaceAfter=8))
-    styles.add(ParagraphStyle(name="Body", parent=styles["BodyText"], alignment=TA_LEFT, leading=14, spaceAfter=8))
+    styles.add(ParagraphStyle(name="BodyPro", parent=styles["Body"], fontSize=11, leading=15))
+    styles.add(ParagraphStyle(name="H3", parent=styles["Heading3"], spaceAfter=6))
 
     story = []
 
@@ -613,13 +614,40 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     
     story.append(Paragraph(mensaje, styles["BodyPro"]))
     story.append(Spacer(1, 12))
+
+    # ---------------------------------
+    # Eneatipo principal
+    # ---------------------------------
+    eneatipo_data = payload.get("desarrollo", {}).get("eneatipo_textos", {})
+    top_types = payload.get("top_types", [])
     
+    if top_types:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Eneatipo principal", styles["H2"]))
+    
+        for tipo in top_types:
+            data = eneatipo_data.get(tipo)
+            if not data:
+                continue
+    
+            story.append(Spacer(1, 6))
+            story.append(Paragraph(data["titulo"], styles["H2"]))
+            story.append(Paragraph(data["descripcion"], styles["Body"]))
+            story.append(Paragraph(data["caracteristicas"], styles["Body"]))
+    
+            story.append(Spacer(1, 6))
+            story.append(Paragraph("Orientación vocacional", styles["H3"]))
+            story.append(Paragraph(data["orientacion"], styles["Body"]))
+    
+            story.append(Spacer(1, 6))
+            story.append(Paragraph("Claves de mejora", styles["H3"]))
+            story.append(Paragraph(data["mejorar"], styles["Body"]))
   
     # Ala
     ala_textos = payload.get("ala_textos", [])
     if ala_textos:
         story.append(Spacer(1, 8))
-        story.append(Paragraph("Ala (Wing)", styles["H2"]))
+        story.append(Paragraph("Ala", styles["H2"]))
         for txt in ala_textos:
             story.append(Paragraph(txt, styles["Body"]))
     
@@ -634,52 +662,191 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     desarrollo = payload.get("desarrollo", {})
     
     # Afinidades
-    for p in desarrollo.get("afinidades_parrafos", []):
-        story.append(Paragraph(p, styles["Body"]))
+    if desarrollo.get("afinidades_parrafos"):
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Ejes de Afinidad", styles["H2"]))
     
-    # Síntesis afinidades
-    for p in desarrollo.get("sintesis_afinidades", []):
-        story.append(Paragraph(p, styles["Body"]))
+        for p in desarrollo.get("afinidades_parrafos", []):
+            story.append(Paragraph(p, styles["Body"]))
     
-    # Opuestos
-    for p in desarrollo.get("opuestos_parrafos", []):
-        story.append(Paragraph(p, styles["Body"]))
+    # ---------------------------------
+    # Síntesis de Afinidades
+    # ---------------------------------
+    sintesis_afinidades = desarrollo.get("sintesis_afinidades", [])
+    if sintesis_afinidades:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Síntesis de afinidades", styles["H2"]))
+        story.append(Spacer(1, 4))
     
-    # Síntesis opuestos
-    for p in desarrollo.get("opuestos_sintesis", []):
-        story.append(Paragraph(p, styles["Body"]))
+        for p in sintesis_afinidades:
+            story.append(Paragraph(p, styles["Body"]))
     
-    # Análisis ejes
-    for p in desarrollo.get("analisis_ejes", []):
-        story.append(Paragraph(p, styles["Body"]))
     
-    # Síntesis evolutiva
-    for p in desarrollo.get("sintesis_evolutiva", []):
-        story.append(Paragraph(p, styles["Body"]))
+    # ---------------------------------
+    # Opuestos Complementarios
+    # ---------------------------------
+    opuestos_parrafos = desarrollo.get("opuestos_parrafos", [])
+    if opuestos_parrafos:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Opuestos complementarios", styles["H2"]))
+        story.append(Spacer(1, 4))
     
-    # Bonus estructura
+        for p in opuestos_parrafos:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # ---------------------------------
+    # Síntesis de Opuestos
+    # ---------------------------------
+    opuestos_sintesis = desarrollo.get("opuestos_sintesis", [])
+    if opuestos_sintesis:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Síntesis de opuestos", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for p in opuestos_sintesis:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # ---------------------------------
+    # Análisis de Ejes
+    # ---------------------------------
+    analisis_ejes = desarrollo.get("analisis_ejes", [])
+    if analisis_ejes:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Análisis de ejes", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for p in analisis_ejes:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # ---------------------------------
+    # Síntesis Evolutiva
+    # ---------------------------------
+    sintesis_evolutiva = desarrollo.get("sintesis_evolutiva", [])
+    if sintesis_evolutiva:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Síntesis evolutiva", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for p in sintesis_evolutiva:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # ---------------------------------
+    # Estructura del pensamiento
+    # ---------------------------------
     bonus = desarrollo.get("bonus_estructura", {})
     bonus_sintesis = desarrollo.get("bonus_sintesis", [])
     
     if bonus:
         story.append(Spacer(1, 8))
         story.append(Paragraph("Estructura del pensamiento", styles["H2"]))
+        story.append(Spacer(1, 4))
     
         for value in bonus.values():
             if isinstance(value, dict) and "parrafo" in value:
                 story.append(Paragraph(value["parrafo"], styles["Body"]))
     
+    
     if bonus_sintesis:
         story.append(Spacer(1, 8))
         story.append(Paragraph("Síntesis estructura del pensamiento", styles["H2"]))
+        story.append(Spacer(1, 4))
     
         for linea in bonus_sintesis:
             story.append(Paragraph(linea, styles["Body"]))
 
-    # Conclusiones finales
-    story.append(Spacer(1, 10))
-    story.append(Paragraph("Conclusiones finales", styles["H2"]))
-    story.append(Paragraph(payload.get("conclusiones", "Conclusiones finales."), styles["Body"]))
+    # ---------------------------------
+    # CONCLUSIONES FINALES
+    # ---------------------------------
+    story.append(Spacer(1, 12))
+    story.append(Paragraph("🏁 Conclusiones", styles["H2"]))
+    story.append(Spacer(1, 6))
+    
+    desarrollo = payload.get("desarrollo", {})
+    
+    # -------------------------
+    # Eneatipo principal
+    # -------------------------
+    top_types = payload.get("top_types", [])
+    eneatipo_data = desarrollo.get("eneatipo_textos", {})
+    
+    if top_types:
+        for tipo in top_types:
+            data = eneatipo_data.get(tipo)
+            if not data:
+                continue
+    
+            story.append(Spacer(1, 6))
+            story.append(Paragraph(data["titulo"], styles["H2"]))
+            story.append(Paragraph(data["descripcion"], styles["Body"]))
+    
+    
+    # -------------------------
+    # Ala
+    # -------------------------
+    ala_textos = desarrollo.get("ala_textos", [])
+    if ala_textos:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("🪽 Tu Ala", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for txt in ala_textos:
+            story.append(Paragraph(txt, styles["Body"]))
+    
+    
+    # -------------------------
+    # Síntesis Evolutiva
+    # -------------------------
+    sintesis_evolutiva = desarrollo.get("sintesis_evolutiva", [])
+    if sintesis_evolutiva:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Síntesis Evolutiva", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for p in sintesis_evolutiva:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # -------------------------
+    # Síntesis de Afinidades
+    # -------------------------
+    sintesis_afinidades = desarrollo.get("sintesis_afinidades", [])
+    if sintesis_afinidades:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("Síntesis de Afinidades", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for p in sintesis_afinidades:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # -------------------------
+    # Síntesis de Opuestos
+    # -------------------------
+    opuestos_sintesis = desarrollo.get("opuestos_sintesis", [])
+    if opuestos_sintesis:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("🧩 Síntesis de Opuestos complementarios", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for p in opuestos_sintesis:
+            story.append(Paragraph(p, styles["Body"]))
+    
+    
+    # -------------------------
+    # Síntesis estructural
+    # -------------------------
+    bonus_sintesis = desarrollo.get("bonus_sintesis", [])
+    if bonus_sintesis:
+        story.append(Spacer(1, 8))
+        story.append(Paragraph("🧠 Síntesis estructural", styles["H2"]))
+        story.append(Spacer(1, 4))
+    
+        for linea in bonus_sintesis:
+            story.append(Paragraph(linea, styles["Body"]))
    
     # ---------------------------------
     # 7️⃣ GRÁFICOS ANEXOS
@@ -1979,7 +2146,7 @@ def result():
         "fecha_test": usuario.get("fecha_test"),
     
         "desarrollo": {
-            "total_marked": total_marked,
+            "total_marked" = payload.get("desarrollo", {}).get("total_marked", 0),
             "max_score": max_score,
             "eneatipo_textos": eneatipo_textos,
             "ala_textos": ala_textos,
