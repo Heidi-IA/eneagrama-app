@@ -589,11 +589,21 @@ def build_pdf_from_payload(payload: dict) -> bytes:
         pagesize=A4,
         leftMargin=2*cm,
         rightMargin=2*cm,
-        topMargin=2*cm,
+        topMargin=3*cm,
         bottomMargin=2*cm,
         title=payload.get("titulo", "Informe")
     )
 
+    styles.add(
+    ParagraphStyle(
+        name="Body",
+        parent=styles["BodyText"],
+        alignment=TA_JUSTIFY,
+        leading=15,
+        spaceAfter=8
+    )
+)
+    
     styles = getSampleStyleSheet()
     styles.add(ParagraphStyle(name="H1", parent=styles["Heading1"], alignment=TA_JUSTIFY, spaceAfter=12))
     styles.add(ParagraphStyle(name="H2", parent=styles["Heading2"], alignment=TA_JUSTIFY, spaceAfter=8))
@@ -942,12 +952,17 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(Paragraph("Mensaje final", styles["H2"]))
     story.append(Paragraph(payload.get("mensaje_final", ""), styles["Body"]))
 
-    doc.build(
-        story,
-        onFirstPage=lambda c, d: None,   # portada limpia
-        onLaterPages=add_header_footer
-    )
-    
+doc.build(
+    story,
+    onFirstPage=lambda c, d: None,
+    onLaterPages=add_header_footer
+)
+
+pdf = buffer.getvalue()
+buffer.close()
+return pdf
+
+
 @app.get("/pdf/<int:report_id>")
 def download_pdf(report_id):
 
