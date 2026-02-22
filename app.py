@@ -594,6 +594,8 @@ def build_pdf_from_payload(payload: dict) -> bytes:
         title=payload.get("titulo", "Informe")
     )
 
+    styles = getSampleStyleSheet()
+    
     styles.add(
     ParagraphStyle(
         name="Body",
@@ -604,7 +606,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     )
 )
     
-    styles = getSampleStyleSheet()
+
     styles.add(ParagraphStyle(name="H1", parent=styles["Heading1"], alignment=TA_JUSTIFY, spaceAfter=12))
     styles.add(ParagraphStyle(name="H2", parent=styles["Heading2"], alignment=TA_JUSTIFY, spaceAfter=8))
     styles.add(ParagraphStyle(name="BodyPro", parent=styles["Body"], fontSize=11, leading=15))
