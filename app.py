@@ -22,6 +22,10 @@ from reportlab.platypus import PageTemplate, Frame
 from reportlab.pdfgen import canvas
 import os
 from flask import current_app
+import mercadopago
+
+MP_ACCESS_TOKEN = os.environ.get("MP_ACCESS_TOKEN")
+APP_URL = os.environ.get("APP_URL", "http://localhost:5000")
 
 def add_page_number(canvas, doc):
     page_num = canvas.getPageNumber()
@@ -1029,26 +1033,65 @@ def quiz_get():
         answers=answers,
     )
 
-@app.post("/start")
-def start_quiz():
-    fecha = request.form.get("fecha_nacimiento")
-    hora = request.form.get("hora_nacimiento")
-    desconozco_hora = request.form.get("hora_desconocida") == "1"
-
+@app.post("/crear_preferencia")
+def crear_preferencia():
+    # Guardar datos del usuario en sesión antes del pago
     session["usuario"] = {
         "nombre": request.form.get("nombre"),
         "email": request.form.get("email"),
         "sexo": request.form.get("sexo"),
-        "fecha_nacimiento": fecha,
-        "hora_nacimiento": None if desconozco_hora else hora,
-        "hora_desconocida": desconozco_hora,
+        "fecha_nacimiento": request.form.get("fecha_nacimiento"),
+        "hora_nacimiento": None if request.form.get("hora_desconocida") == "1" else request.form.get("hora_nacimiento"),
+        "hora_desconocida": request.form.get("hora_desconocida") == "1",
         "fecha_test": datetime.utcnow().isoformat(),
     }
-
-    # Inicializar respuestas vacías
     session["answers"] = {}
 
-    return redirect(url_for("quiz_get", page=1))
+    sdk = mercadopago.SDK(MP_ACCESS_TOKEN)
+
+    preference_data = {
+        "items": [{
+            "title": "Informe de Eneagrama Extendido",
+            "quantity": 1,
+            "unit_price": 5000,  # ← precio en pesos ARS
+            "currency_id": "ARS",
+        }],
+        "payer": {
+            "email": session["usuario"]["email"],
+        },
+        "back_urls": {
+            "success": f"{APP_URL}/pago_exitoso",
+            "failure": f"{APP_URL}/pago_fallido",
+            "pending": f"{APP_URL}/pago_pendiente",
+        },
+        "auto_return": "approved",
+        "external_reference": session["usuario"]["email"],
+    }
+
+    result = sdk.preference().create(preference_data)
+    preference = result["response"]
+
+    return redirect(preference["init_point"])  # redirige a MP
+
+
+@app.get("/pago_exitoso")
+def pago_exitoso():
+    # Mercado Pago redirige aquí con ?status=approved
+    status = request.args.get("status")
+    if status == "approved":
+        session["pago_ok"] = True
+        return redirect(url_for("quiz_get", page=1))
+    return redirect(url_for("pago_fallido"))
+
+
+@app.get("/pago_fallido")
+def pago_fallido():
+    return render_template("pago_fallido.html")
+
+
+@app.get("/pago_pendiente")
+def pago_pendiente():
+    return render_template("pago_pendiente.html")
 
 @app.post("/quiz")
 def quiz_post():
