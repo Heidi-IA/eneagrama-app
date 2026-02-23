@@ -1012,6 +1012,8 @@ def index():
 
 @app.get("/quiz")
 def quiz_get():
+    if not session.get("pago_ok"):
+        return redirect(url_for("index"))
     questions_all = load_questions()
     page = int(request.args.get("page") or 1)
 
@@ -1095,7 +1097,8 @@ def pago_pendiente():
 
 @app.post("/quiz")
 def quiz_post():
-
+    if not session.get("pago_ok"):
+        return redirect(url_for("index"))
     questions_all = load_questions()
     page = int(request.args.get("page") or 1)
 
@@ -1160,6 +1163,8 @@ def juntar_lista_humana(items):
 
 @app.get("/result")
 def result():
+    if not session.get("pago_ok"):
+        return redirect(url_for("index"))
     questions = load_questions()
     answers = session.get("answers", {})
 
