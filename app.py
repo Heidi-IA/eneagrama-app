@@ -1570,6 +1570,24 @@ def result():
     max_score = max(scores.values()) if scores else 0
     top_types = [t for t, s in scores.items() if s == max_score and max_score > 0]
     
+    # 🔥 NUEVA LÓGICA DE DESEMPATE POR ALA
+    if len(top_types) > 1:
+        mejor_tipo = None
+        mejor_valor_ala = -1
+    
+        for tipo in top_types:
+            ala_izq, ala_der = ALAS[tipo]
+            valor_ala = max(
+                porcentaje_scores.get(ala_izq, 0),
+                porcentaje_scores.get(ala_der, 0)
+            )
+    
+            if valor_ala > mejor_valor_ala:
+                mejor_valor_ala = valor_ala
+                mejor_tipo = tipo
+    
+        top_types = [mejor_tipo]
+    
     sorted_scores = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     sorted_porcentajes = [(t, porcentaje_scores[t]) for (t, _) in sorted_scores]
 
