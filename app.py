@@ -1055,7 +1055,7 @@ def crear_preferencia():
         "items": [{
             "title": "Informe de Eneagrama Extendido",
             "quantity": 1,
-            "unit_price": 1000,  # ← precio en pesos ARS
+            "unit_price": 29999,  # ← precio en pesos ARS
             "currency_id": "ARS",
         }],
         "payer": {
