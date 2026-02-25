@@ -1003,7 +1003,7 @@ def download_pdf(report_id):
         io.BytesIO(pdf_bytes),
         mimetype="application/pdf",
         as_attachment=True,
-        download_name="informe_eneagrama_extendido.pdf",
+        download_name="Informe profundo de autoconocimiento.pdf",
     )
 @app.get("/")
 def index():
