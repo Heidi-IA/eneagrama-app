@@ -645,7 +645,7 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(PageBreak()) 
 
     # Título
-    story.append(Paragraph(payload.get("titulo", "Informe de eneagrama extendido"), styles["H1"]))
+    story.append(Paragraph(payload.get("titulo", "Informe profundo de autoconocimiento"), styles["H1"]))
     story.append(Paragraph(f"Analista: {payload.get('analista', '')}", styles["Body"]))
 
     # Propietario + fecha
@@ -1053,7 +1053,7 @@ def crear_preferencia():
 
     preference_data = {
         "items": [{
-            "title": "Informe de Eneagrama Extendido",
+            "title": "Informe profundo de autoconocimiento",
             "quantity": 1,
             "unit_price": 24999,  # ← precio en pesos ARS
             "currency_id": "ARS",
@@ -2302,7 +2302,7 @@ def result():
     # ✅ Armar payload del informe (guardamos secciones para el PDF)
     usuario = session.get("usuario", {})
     report_payload = {
-        "titulo": "Informe de eneagrama extendido",
+        "titulo": "Informe profundo de autoconocimiento",
         "analista": "AZ Consultora @az_coaching.terapeutico / +542975203761",
         "propietario": usuario,
         "fecha_test": usuario.get("fecha_test"),
