@@ -639,9 +639,10 @@ def build_pdf_from_payload(payload: dict) -> bytes:
     story.append(logo)
     story.append(Spacer(1, 1*cm))
     story.append(Paragraph(payload.get("titulo", ""), styles["H1"]))
+    story.append(Spacer(1, 0.5*cm))
+    story.append(Paragraph("Eneagrama evolutivo integral", styles["H2"]))
     story.append(Spacer(1, 1*cm))
-    story.append(Paragraph("Informe confidencial", styles["H2"]))
-    
+    story.append(Paragraph("Informe confidencial", styles["H2"]))    
     story.append(PageBreak()) 
 
     # Título
