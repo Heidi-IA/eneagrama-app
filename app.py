@@ -1056,7 +1056,7 @@ def crear_preferencia():
         "items": [{
             "title": "Informe profundo de autoconocimiento",
             "quantity": 1,
-            "unit_price": 24999,  # ← precio en pesos ARS
+            "unit_price": 29999,  # ← precio en pesos ARS
             "currency_id": "ARS",
         }],
         "payer": {
