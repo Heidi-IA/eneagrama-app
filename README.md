@@ -17,6 +17,4 @@ Incluye:
 ⏱ Cuestionario: 25–30 minutos
 📩 Entrega automática en PDF
 
-🎯 Lanzamiento 72 hs: $29.999 ARS
-✨ Precio especial Marzo: $39.000 ARS
-💰 Valor regular: $45.000 ARS
+💰 Valor regular: $25.000 ARS
